@@ -1,0 +1,361 @@
+* {
+	margin: 0;
+	padding: 0;
+	/*color:#c52f2b;*/
+}
+
+body {
+	/*background-image: url("img/mooning_@2X.png");*/
+	max-width: 960px;
+	margin: auto;
+}
+
+/***Wraps whole page***/
+.mainContainer {
+	/*position: relative;*/
+	width: 100%;
+	margin: auto;
+	border: 1px solid #DFD7E8;
+}
+
+/***Header sections***/
+header {
+	/*overflow: hidden;*/
+	/*position: relative;*/
+	margin-bottom: 35px;
+	box-sizing: border-box;
+}
+
+.logo {
+	background-image: url("img/AVNET-INC-sRGB-300x105px.png");
+	/*max-height: 105px;*/
+	/*max-width: 300px;*/
+	width: 300px;
+	height: 90px;
+	display: block;
+	float: left;
+	margin-top: -15px;
+}
+
+.contactNav {
+	min-height: 35px;
+	font-size: 1.3em;
+	letter-spacing: 1px;
+	color: #474747;
+	padding: 5px 0px 0px 10px;
+}
+
+/*Upper right each page either have .userButton or .welcome - controlled by JS*/
+.userNav {
+	/*overflow: hidden;*/
+	/*min-height: 35px;*/
+	/*width: 300px;*/
+	/*position: absolute;*/
+	/*top: 0px;
+	right: 10px;
+	padding: 3px 3px;*/
+	float: left;
+}
+
+.userButton {
+	position: fixed;
+	right:30px;
+	top: 26px;
+	font-size: 1.3em;
+	letter-spacing: 1px;
+	color: white;
+	padding: 5px 5px;
+	/*margin-right: 30px;*/
+}
+
+.userButton span {
+	font-size: 1em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #474747;
+	padding: 5px 0px 0px 10px;
+}
+.userButton button:hover{
+	background-color: #b9b9b9;
+}
+.active{
+	background-color:#b9b9b9;
+} 
+
+.userButton button {
+	font-size: 1em;
+	letter-spacing: 1px;
+	color: #474747;
+	padding: 5px;
+	margin-left: 0px;
+	float: right;
+
+}
+
+.welcome {
+	/*display: none;*/
+	position: absolute;
+	top: 0px;
+	right: 15px;
+	font-size: 1.2em;
+	letter-spacing: 1px;
+	color: #474747;
+}
+
+/***Inside the lower part of the Header section***/
+.subContainer {
+	/*float: left;*/
+	position: fixed;
+	right:0;
+	top:0;
+	left:0;
+	overflow: hidden;
+	background-color: #0e97c0;
+	/*background-color: #0593bc;*/
+	/*background-color: #1b5c67;*/
+	/*height: 110px;*/
+	box-sizing: border-box;
+}
+
+.subContainerNav {
+	overflow: hidden;
+	float: left;
+	margin-top: 29px;
+	box-sizing: border-box;
+
+	
+}
+.subContainerNav a{
+	/*border: 1px solid white;*/
+	padding:0px 5px;	
+
+}	
+	
+
+#logo {
+	float: left;
+	margin: 5px 20px;
+}
+
+.subContainerNav a {
+	display: block;
+	float: left;
+	border: 4px solid #e22422;
+	padding: 6px 15px;
+	margin: 0px -2px;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.5em;
+	letter-spacing: 1px;
+}
+/*Need to clean this up*/
+.subContainerNav a:link {color:#c52f2b;}    
+.subContainerNav a:visited {color:#e22422;} 
+.subContainerNav a:hover {color:white;}   
+.subContainerNav a:active {
+	background-color:white;
+	border-color: white;
+}  
+
+
+/*This is hidden until user clicks on Log In/ Sign Up button*/
+.userPopUp {
+	display: none;
+	z-index: 1000;
+	position: fixed;
+	top: 66px;
+	right: 35px;
+	/*float: right;*/
+	width: 300px;
+	/*height: 250px;*/
+	/*background-image: url(mooning_@2X.png);*/
+	background-color: #b9b9b9;
+	opacity:0.9;
+	background-size: cover;
+	font-size: 2em;
+	letter-spacing: 1px;
+	color: #474747;
+	border: 1px solid #000;
+	border-top: none;
+	/*border-top-left-radius:8px;
+	border-top-right-radius:0px;
+	border-bottom-right-radius:8px;
+	border-bottom-left-radius:8px;*/
+	/*box-shadow: 10px 10px 5px #888888;}*/
+}
+.forgotPasswordButton {
+	border: none;
+	padding-left:8px;
+	text-decoration: underline;
+	font-size: 10pt;
+	color: red;
+}
+.forgotPassword {
+	position: fixed;
+	top:240px;
+	right:480px;
+	padding:10px;
+	background-color:#474747;
+	color:white;
+	font-size: 20pt;
+	text-align:center;
+	display: none; 
+}
+.forgotPassword button{
+	padding:3px;
+}
+.profilePopUp{
+	display: none;
+}
+
+
+.userSignUp {
+	display: none;
+}
+.signInTab{
+	padding:10px;
+
+}
+.signUpTab{
+	padding:10px;
+	
+}
+.error{
+	padding-left: 10px;
+
+}
+
+.email, .password{
+
+}
+
+/***Main content section - inbetween header and footer***/
+.contentContainer {
+	width: 90%;
+	margin: auto;
+	overflow: hidden;
+	margin-top: 125px;
+}
+.welcome img{
+	border: solid 1px # ;
+}
+.welcome a{
+	font-size: 8pt;
+}
+.userName {
+	padding: 10px;
+	color:red;
+	/*float: right;*/
+}
+
+
+aside {
+	background-color: #F6F6F6;
+	float: left;
+	min-width: 250px;
+	min-height: 500px;
+	border-top: 3px #02406e solid;
+	/*border-radius: 5px;*/
+	padding: 5px 5px;
+	font-size: 1.5em;
+	letter-spacing: 1px;
+}
+
+aside ul {
+	list-style-type: none;
+	text-transform: uppercase;
+}
+
+aside a {
+	text-decoration: none;
+	padding:15px;
+}
+
+.asideLinks a:link {color:#e22422;}    
+.asideLinks a:visited {color:#e22422;} 
+.asideLinks a:hover {color:#02406e;}   
+.asideLinks a:active {color:#0000FF;}  
+
+.contentContainer p {
+	margin-left: 300px;
+	/*border-top: 3px #02406e solid;*/
+	/*border-radius: 5px;*/
+	padding: 5px 5px;
+}
+
+.contentContainer p:nth-child(2) {
+	border-top: 3px #02406e solid;
+	/*border-radius: 5px;*/
+}
+
+/***Footer***/
+footer {
+	width: 100%;
+	margin: auto;
+	min-height: 170px;
+	color: white;
+	font-size: 1.4em;
+	letter-spacing: 1px;
+	background-image: url("img/atg-running-man-960x200.jpg");
+}
+
+footer div {
+	text-align: right;
+	padding: 15px 10px;
+}
+
+/************************/
+.userSignIn{
+
+}
+
+.userSignIn a {
+	font-size: 0.5em;
+	margin-left: 10px;
+	
+}
+
+.userPopUp input {
+	/*margin-left: 10px;
+	margin-right: 10px;*/
+	width: 85%;
+	margin:5px 10px;
+	height: 20px;
+	text-align: center;
+}
+
+.submitButton {
+	height: 30px;
+	width: 70px;
+	float: right;
+	margin: 10px 20px;
+}
+
+.modalOverlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.3); /* black semi-transparent */
+}
+
+#activeTab{
+	background-color: white;
+	border-bottom-color:white; 
+}
+
+.fa{
+	border: 1px solid black;
+	border-radius: 100%;
+	padding:1px 6px;
+}
+.btn{
+	border: 1px solid black;
+	background-color: #adafb0;
+	/*padding:3px;*/
+	text-decoration: none;
+	border-radius: 5px;
+	/*margin: 3px;*/
+}

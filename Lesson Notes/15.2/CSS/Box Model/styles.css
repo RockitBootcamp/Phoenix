@@ -1,0 +1,17 @@
+.container {
+    background-color: red;
+    position: relative;
+
+    /**
+     * Here are the fixes
+     */
+    /*padding: 1px;*/
+    /*border: 1px solid red;*/
+    /*overflow: hidden;*/
+}
+
+.child {
+    background-color: blue;
+    margin: 10px
+}
+

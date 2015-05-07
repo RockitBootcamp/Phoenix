@@ -1,0 +1,113 @@
+MVP
+---
+as a player, i want to choose a character so i can make the game more fun.
+as a player, i want to play as guest
+as a player, I want to see my health
+as a player, i want to see my weapons
+as a player, i want to see my score.
+as a player, i want to increase my health
+as a player, i want to quit the game when done
+as a player, i want to attack the monsters
+as a player, i want to walk around the map
+as a player, i want to take the monsters' weapons
+as a player, i want to be able to run away
+as a player, i want to 
+as a player, i want to 
+
+NTH
+---
+as a player, i want to move through the world
+as a player, i want to level up
+as a player, i want to see my enemies
+as a player, i want to see my character
+as a player, i want to see some scenery (static)
+as a player, i want to change weapons
+
+MNT 
+---
+as a player, i want to 
+as a player, i want to choose a level
+as a player, i want to see high scores
+as a player, i want to save my progress
+as a player, i want to log in so i can continue a previous level
+
+Nouns
+-----
+characters
+player 
+monster
+weapon
+map
+tile
+start
+text
+storyboard
+buttons
+    runaway
+health
+score
+database
+tables
+images
+
+Verbs
+-----
+run away 
+attack
+walk
+    math of walking (+1, +5)
+add health
+pick up item
+quit
+animate
+encounter monster
+
+backlog
+-------
+write a choosePlayer() denette
+write a startGame() dennette
+write a playerWalk() function keith
+    randomize low chance of item, high chance of monster
+write a playerTurn() function (or fight)
+    monster is chosen randomly by chooseMonster()
+    playerAttack is a random number
+    weaponStrength calculated
+    attack compared to monster level
+        if success, monster dies, score +
+            low chance of item found,
+        else health -, attack again (or run away)
+** write a chooseMonster() function rick
+write a runAway() function gloria
+    returns player to prevLocation
+write a pickUpItem() function gloria
+write a addHealth() function
+design display
+**    design start page
+**      players
+        bios
+        images
+        startbutton
+    design gameplay.php
+    **  design map (5X5) (left column)
+        design textarea (middle)
+        design sidebar (right column)
+            display sdcore
+            display health
+            display monster
+                & bio
+            quit
+            restart
+            (save)
+        design interface (buttons)
+    **      N,S,E,W
+    **      runaway
+    **      attack/pickup
+        design header
+    design gameover.php
+
+**schema
+**simplified db rick
+SQL tables
+    schema.ods
+
+    

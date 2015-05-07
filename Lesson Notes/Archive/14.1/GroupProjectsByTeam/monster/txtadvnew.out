@@ -1,0 +1,180 @@
+-- MySQL dump 10.13  Distrib 5.6.17, for osx10.7 (x86_64)
+--
+-- Host: localhost    Database: txtadvnew
+-- ------------------------------------------------------
+-- Server version	5.6.17
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `character`
+--
+
+DROP TABLE IF EXISTS `character`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `character` (
+  `char_id` int(11) NOT NULL AUTO_INCREMENT,
+  `char_type_id` int(11) NOT NULL COMMENT 'foreign key to character_type table',
+  `name` varchar(60) NOT NULL,
+  `bio` varchar(255) NOT NULL,
+  `weapon_id` int(11) NOT NULL COMMENT 'foreign key to weapons table',
+  `char_imag` varchar(255) NOT NULL COMMENT 'url to player or monster image',
+  PRIMARY KEY (`char_id`),
+  UNIQUE KEY `char_type_id` (`char_type_id`),
+  UNIQUE KEY `weapon_id` (`weapon_id`),
+  CONSTRAINT `character_ibfk_2` FOREIGN KEY (`weapon_id`) REFERENCES `weapons` (`weapon_id`),
+  CONSTRAINT `character_ibfk_1` FOREIGN KEY (`char_type_id`) REFERENCES `character_type` (`char_type_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='Contains all the possible players and monsters';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `character`
+--
+
+LOCK TABLES `character` WRITE;
+/*!40000 ALTER TABLE `character` DISABLE KEYS */;
+/*!40000 ALTER TABLE `character` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `character_type`
+--
+
+DROP TABLE IF EXISTS `character_type`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `character_type` (
+  `char_type_id` int(11) NOT NULL AUTO_INCREMENT,
+  `type` int(11) NOT NULL COMMENT '0=player, 1 = monster',
+  PRIMARY KEY (`char_type_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `character_type`
+--
+
+LOCK TABLES `character_type` WRITE;
+/*!40000 ALTER TABLE `character_type` DISABLE KEYS */;
+/*!40000 ALTER TABLE `character_type` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `monster`
+--
+
+DROP TABLE IF EXISTS `monster`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `monster` (
+  `char_id` int(11) NOT NULL COMMENT 'primary and foreign key',
+  PRIMARY KEY (`char_id`),
+  CONSTRAINT `monster_ibfk_1` FOREIGN KEY (`char_id`) REFERENCES `character` (`char_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `monster`
+--
+
+LOCK TABLES `monster` WRITE;
+/*!40000 ALTER TABLE `monster` DISABLE KEYS */;
+/*!40000 ALTER TABLE `monster` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `player`
+--
+
+DROP TABLE IF EXISTS `player`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `player` (
+  `char_id` int(11) NOT NULL COMMENT 'primary key and foreign key to character table',
+  `health` int(11) NOT NULL,
+  `score` int(11) NOT NULL,
+  PRIMARY KEY (`char_id`),
+  CONSTRAINT `player_ibfk_1` FOREIGN KEY (`char_id`) REFERENCES `character` (`char_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `player`
+--
+
+LOCK TABLES `player` WRITE;
+/*!40000 ALTER TABLE `player` DISABLE KEYS */;
+/*!40000 ALTER TABLE `player` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `weapon_type`
+--
+
+DROP TABLE IF EXISTS `weapon_type`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `weapon_type` (
+  `char_id` int(11) NOT NULL COMMENT 'foreign key to character table',
+  `weapon_id` int(11) NOT NULL COMMENT 'foreign key to weapon table',
+  UNIQUE KEY `char_id` (`char_id`),
+  UNIQUE KEY `weapon_id` (`weapon_id`),
+  CONSTRAINT `weapon_type_ibfk_2` FOREIGN KEY (`weapon_id`) REFERENCES `weapons` (`weapon_id`),
+  CONSTRAINT `weapon_type_ibfk_1` FOREIGN KEY (`char_id`) REFERENCES `character` (`char_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `weapon_type`
+--
+
+LOCK TABLES `weapon_type` WRITE;
+/*!40000 ALTER TABLE `weapon_type` DISABLE KEYS */;
+/*!40000 ALTER TABLE `weapon_type` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `weapons`
+--
+
+DROP TABLE IF EXISTS `weapons`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `weapons` (
+  `weapon_id` int(11) NOT NULL AUTO_INCREMENT,
+  `weapon_name` varchar(60) NOT NULL,
+  `weapon_image` varchar(255) NOT NULL COMMENT 'url of weapon image',
+  PRIMARY KEY (`weapon_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `weapons`
+--
+
+LOCK TABLES `weapons` WRITE;
+/*!40000 ALTER TABLE `weapons` DISABLE KEYS */;
+INSERT INTO `weapons` VALUES (2,'club','images/club1.jpg');
+/*!40000 ALTER TABLE `weapons` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2014-06-11 23:35:52

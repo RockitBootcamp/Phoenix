@@ -1,0 +1,805 @@
+/*1em is equal to 100% which is also equal to the current font size*/
+
+/*============================================================================*/
+/*BODY========================================================================*/
+/*============================================================================*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 62.5%;
+	font-family: 'Roboto', 'sans-serif';
+}
+
+.body {
+	padding: 1em;
+	width: 600px;
+	width: 90%;
+	/*margin: auto;*/
+}
+
+/*============================================================================*/
+/*HEADER======================================================================*/
+/*============================================================================*/
+header {
+	background-color: #FFF;
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+.logo {
+	float: left;
+	margin: 2em;
+}
+
+.container {
+	float: right;
+	margin: 2em;
+}
+
+.loginFields {
+	display: none;
+	float: right;
+}
+
+.secondaryButton {
+	background-color: #8CB31A;
+}
+
+.secondaryButton:active {
+	background-color: #B2B2B2;
+}
+
+.topHeader {
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+.loginHeader {
+	float: right;
+	display: inline-block;
+	width: 50%;
+}
+
+.loginHeader input, .loginHeader button{
+	margin-top: 0;
+	margin-right: .2em;
+}
+
+.userSignIn {
+	float: right;
+}
+
+/*============================================================================*/
+/*NAV=========================================================================*/
+/*============================================================================*/
+nav {
+	display: block;
+	float: left;
+	width: 100%;
+	margin: auto;
+	background-color: #0593bc;
+}
+
+nav a {
+	float: left;
+	font-size: 1.5em;
+	padding: .5em;
+	text-decoration: none;
+	text-align: center;
+	color: #FFFFFF;
+	font-weight: 700;
+	height: 25%;  
+	margin: 0 .1em; 
+	margin-bottom: .2em;
+}
+
+nav a:hover, .activeNav {
+	margin-bottom: .0;
+	border-bottom: .2em solid #FFFFFF;
+}
+
+/*============================================================================*/
+/*LEFT FLOAT NAV==============================================================*/
+/*============================================================================*/
+.leftNav {
+	float: left;
+	width: 200px;
+	display: block;
+}
+
+.leftNav li {
+	list-style: none;
+	font-size: 1.5em;
+	padding: .5em;
+	text-decoration: none;
+	text-align: left;
+	color: #B2B2B2;
+	font-weight: 700;
+	margin: .1em 0; 
+	margin-left: .2em;
+}
+
+.leftNav li:hover, .leftNav li:active, .activeLeftNav {
+	margin-left: 0;
+	border-left: .2em solid #E22422;
+	color: #E22422;
+}
+
+.leftNav li.active {
+	background-color: #ccc;
+}
+
+
+/*============================================================================*/
+/*FORMS=======================================================================*/
+/*============================================================================*/
+input {
+	outline: 0 none;
+	padding: .4em;
+	margin: .4em 0;
+}
+
+.modal {
+	display: none;
+	position: relative;
+}
+
+.forgotPasswordModal, .registerModal {
+	margin: auto;
+	padding: 0;
+	background-color: rgba(0,0,0,0.6); /* black semi-transparent */
+	z-index: 999;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+
+}
+
+.forgotPasswordModal form, .registerModal form {
+	max-width: 70%;
+	height: 50%;
+	overflow: hidden;
+	margin: auto;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+
+@media screen and (min-width: 400px) and (max-width: 700px){
+	.forgotPasswordModal form, .registerModal form {
+		max-width: 50%;
+	}
+}
+
+@media screen and (min-width: 700px){
+	.forgotPasswordModal form, .registerModal form {
+		max-width: 20%;
+	}
+}
+
+button {
+	border-style: none;
+	padding: .5em;
+	background-color: #B2B2B2;
+	color: #FFFFFF;
+	font-weight: 700;
+	outline: 0 none;
+	margin: .4em 0;
+}
+
+button:active {
+	background-color: #8CB31A;
+}
+
+a {
+	color: #E22422;
+	text-decoration: none;
+}
+
+a:active {
+	color: #B2B2B2;
+}
+
+.formElement label{
+	float: left;
+	text-align: left;
+	width: 100px;
+	padding: 1em;
+}
+.formElement{
+	overflow: hidden;
+}
+.formElement input{
+	float: left;
+}
+
+.saveChanges {
+	text-align: center;
+	margin: auto;
+	padding: 1em 0;
+}
+
+.formElement a {
+	display: inline-block;
+	padding-top: 1em;
+}
+
+.control-group {
+	margin-left:200px;
+}
+
+/*============================================================================*/
+/*CHANGE PHOTO IN FORM========================================================*/
+/*============================================================================*/
+.changePhoto {
+	display: inline-block;
+	background: #0593bc;
+	width: 140px;
+	height: 140px;
+	text-align: center;
+
+}
+.changePhoto a {
+	padding-top: 0;
+}
+
+.changePhoto a:hover {
+	opacity: .5;
+}
+
+
+/*============================================================================*/
+/*MENU========================================================================*/
+/*============================================================================*/
+.menu {
+	display: none;
+	float:left;
+	width: 100%;
+	background-color: #B2B2B2;
+}
+
+.menu a {
+	color: #FFFFFF;
+	float: left;
+	width: 100%;
+	margin: .1em 0;
+	font-size: 2em;
+	padding:1em 0;
+	text-align: center;
+	text-decoration: none;
+	background-color: #575757;
+}
+
+.menu a:hover, .menu a:active {
+	background-color: #E22422; 
+	color: #FFFFFF;
+}
+
+@media screen and (min-width: 500px) {
+	.menu {
+		background-color: #575757;
+		margin-bottom: ;
+	}
+	.menu a {
+		width: auto;
+		font-size: 1em;
+		margin: 0;
+		padding: 1em 2em;
+		background-color: none;
+	}
+}
+
+/*============================================================================*/
+/*MEDIA OBJECT================================================================*/
+/*============================================================================*/
+.mediaObject {
+	display: flex;
+	align-items:flex-start;
+	background-color: #E22422;
+	padding: 1em;
+	font-size: 24px;
+}
+
+.mediaObject img {
+	margin-right: 1em;
+	height: auto;
+	display: block;
+}
+
+.mediaObject a {
+	color: #FFFFFF;
+}
+
+.mediaObjectBody {
+	flex: 1;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 700px){
+	.mediaObject {
+		max-width: 50%;
+	}
+}
+
+@media only screen and (min-width: 700px){
+	.mediaObject {
+		max-width: 25%;
+	}
+}
+
+.profilePopUp {
+	display: none;
+}
+
+/*============================================================================*/
+/*HOME SCREEN BUTTONS=========================================================*/
+/*============================================================================*/
+.homeButton {
+
+	float: left;
+/*	background-color: #E22422;
+*/	padding: 1em;
+	width: 300%;
+	height: 300%;
+	/*min-width: 100px;*/
+	max-width: 100%;
+	padding: 0 0;
+	/*position: relative;*/
+	padding: 1em;
+	margin: 1em;
+    display: inline-block;
+
+}
+.popUp{
+    background-color: #ffa039;
+    display: none;
+    opacity: 0.6;
+    /*position: fixed;*/
+    position: absolute;
+    left: 305px;
+    top: 0px;
+    padding: 10px;
+    /*display: inline-block;*/
+    /*float:left;*/
+    width:300px;
+    border:black 2px solid;
+
+}
+.popUp{
+    color:white;
+}
+.gameImag{
+    display:block;
+    margin: 5px 10px;
+    /*position: relative;*/
+    float: left;
+    background-color: #0593bc;
+    width: 300px;
+    height: 300px;
+}
+
+.homeButton img {
+	display: block;
+	margin: 0 auto;
+}
+
+.homeButtonBody {
+
+	text-align: center;
+}
+
+.homeButtonContainer {
+	margin: auto;
+	text-align: center;
+}
+
+.homeButtonContainer a {
+	color: #FFFFFF;
+}
+
+.homeButton:hover {
+	background-color: #ffa039;
+}
+
+/*============================================================================*/
+/*MAIN CONTENT================================================================*/
+/*============================================================================*/
+
+.bodyInformation {
+	float: left;
+	width: 100%;
+	padding: 1em 0;
+}
+
+/*============================================================================*/
+/*FOOTER======================================================================*/
+/*============================================================================*/
+footer {
+	float: left;
+	width: 100%;
+	text-align: center;
+	background-color: #575757;
+	padding: 1em 0;
+	color: #FFFFFF;
+}
+
+footer a {
+	color: #FFFFFF;
+}
+
+footer a:hover {
+	color: #E22422;;
+}
+
+/*============================================================================*/
+/*ERORRS======================================================================*/
+/*============================================================================*/
+.inputError {
+	border: 2px solid #E22422;
+}
+
+.fa{
+	border: 1px solid black;
+	border-radius: 100%;
+	padding:1px 6px;
+}
+
+/* Tables */
+
+table{
+	border-collapse:collapse;
+	border-spacing:0
+}
+td,th{
+	padding:0
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+.table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #ddd;
+}
+.table > caption + thead > tr:first-child > th,
+.table > colgroup + thead > tr:first-child > th,
+.table > thead:first-child > tr:first-child > th,
+.table > caption + thead > tr:first-child > td,
+.table > colgroup + thead > tr:first-child > td,
+.table > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+.table > tbody + tbody {
+  border-top: 2px solid #ddd;
+}
+.table .table {
+  background-color: #fff;
+}
+.table-condensed > thead > tr > th,
+.table-condensed > tbody > tr > th,
+.table-condensed > tfoot > tr > th,
+.table-condensed > thead > tr > td,
+.table-condensed > tbody > tr > td,
+.table-condensed > tfoot > tr > td {
+  padding: 5px;
+}
+.table-bordered {
+  border: 1px solid #ddd;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+  border: 1px solid #ddd;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > thead > tr > td {
+  border-bottom-width: 2px;
+}
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: #f9f9f9;
+}
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+  background-color: #f5f5f5;
+}
+table col[class*="col-"] {
+  position: static;
+  display: table-column;
+  float: none;
+}
+table td[class*="col-"],
+table th[class*="col-"] {
+  position: static;
+  display: table-cell;
+  float: none;
+}
+.table > thead > tr > td.active,
+.table > tbody > tr > td.active,
+.table > tfoot > tr > td.active,
+.table > thead > tr > th.active,
+.table > tbody > tr > th.active,
+.table > tfoot > tr > th.active,
+.table > thead > tr.active > td,
+.table > tbody > tr.active > td,
+.table > tfoot > tr.active > td,
+.table > thead > tr.active > th,
+.table > tbody > tr.active > th,
+.table > tfoot > tr.active > th {
+  background-color: #f5f5f5;
+}
+.table-hover > tbody > tr > td.active:hover,
+.table-hover > tbody > tr > th.active:hover,
+.table-hover > tbody > tr.active:hover > td,
+.table-hover > tbody > tr.active:hover > th {
+  background-color: #e8e8e8;
+}
+.table > thead > tr > td.success,
+.table > tbody > tr > td.success,
+.table > tfoot > tr > td.success,
+.table > thead > tr > th.success,
+.table > tbody > tr > th.success,
+.table > tfoot > tr > th.success,
+.table > thead > tr.success > td,
+.table > tbody > tr.success > td,
+.table > tfoot > tr.success > td,
+.table > thead > tr.success > th,
+.table > tbody > tr.success > th,
+.table > tfoot > tr.success > th {
+  background-color: #dff0d8;
+}
+.table-hover > tbody > tr > td.success:hover,
+.table-hover > tbody > tr > th.success:hover,
+.table-hover > tbody > tr.success:hover > td,
+.table-hover > tbody > tr.success:hover > th {
+  background-color: #d0e9c6;
+}
+.table > thead > tr > td.info,
+.table > tbody > tr > td.info,
+.table > tfoot > tr > td.info,
+.table > thead > tr > th.info,
+.table > tbody > tr > th.info,
+.table > tfoot > tr > th.info,
+.table > thead > tr.info > td,
+.table > tbody > tr.info > td,
+.table > tfoot > tr.info > td,
+.table > thead > tr.info > th,
+.table > tbody > tr.info > th,
+.table > tfoot > tr.info > th {
+  background-color: #d9edf7;
+}
+.table-hover > tbody > tr > td.info:hover,
+.table-hover > tbody > tr > th.info:hover,
+.table-hover > tbody > tr.info:hover > td,
+.table-hover > tbody > tr.info:hover > th {
+  background-color: #c4e3f3;
+}
+.table > thead > tr > td.warning,
+.table > tbody > tr > td.warning,
+.table > tfoot > tr > td.warning,
+.table > thead > tr > th.warning,
+.table > tbody > tr > th.warning,
+.table > tfoot > tr > th.warning,
+.table > thead > tr.warning > td,
+.table > tbody > tr.warning > td,
+.table > tfoot > tr.warning > td,
+.table > thead > tr.warning > th,
+.table > tbody > tr.warning > th,
+.table > tfoot > tr.warning > th {
+  background-color: #fcf8e3;
+}
+.table-hover > tbody > tr > td.warning:hover,
+.table-hover > tbody > tr > th.warning:hover,
+.table-hover > tbody > tr.warning:hover > td,
+.table-hover > tbody > tr.warning:hover > th {
+  background-color: #faf2cc;
+}
+.table > thead > tr > td.danger,
+.table > tbody > tr > td.danger,
+.table > tfoot > tr > td.danger,
+.table > thead > tr > th.danger,
+.table > tbody > tr > th.danger,
+.table > tfoot > tr > th.danger,
+.table > thead > tr.danger > td,
+.table > tbody > tr.danger > td,
+.table > tfoot > tr.danger > td,
+.table > thead > tr.danger > th,
+.table > tbody > tr.danger > th,
+.table > tfoot > tr.danger > th {
+  background-color: #f2dede;
+}
+.table-hover > tbody > tr > td.danger:hover,
+.table-hover > tbody > tr > th.danger:hover,
+.table-hover > tbody > tr.danger:hover > td,
+.table-hover > tbody > tr.danger:hover > th {
+  background-color: #ebcccc;
+}
+
+table.schedule{
+	width:80%;
+}
+
+table.schedule .day  {
+	background-color: #ccc;
+	padding-top: 3em;
+}
+
+table.schedule .last > td  {
+	
+	padding-bottom: 3em;
+}
+
+
+/*//////////carosul///////////
+/////////////////////////////
+////////////////////////////*/
+.carousel {
+  position: relative;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner > .item {
+  position: relative;
+  display: none;
+  -webkit-transition: 0.6s ease-in-out left;
+     -moz-transition: 0.6s ease-in-out left;
+       -o-transition: 0.6s ease-in-out left;
+          transition: 0.6s ease-in-out left;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+	margin: auto;
+  display: block;
+  line-height: 1;
+}
+
+.carousel-inner > .active,
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  display: block;
+}
+
+.carousel-inner > .active {
+  left: 0;
+}
+
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.carousel-inner > .next {
+  left: 100%;
+}
+
+.carousel-inner > .prev {
+  left: -100%;
+}
+
+.carousel-inner > .next.left,
+.carousel-inner > .prev.right {
+  left: 0;
+}
+
+.carousel-inner > .active.left {
+  left: -100%;
+}
+
+.carousel-inner > .active.right {
+  left: 100%;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 40%;
+  left: 15px;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  font-size: 60px;
+  font-weight: 100;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  background: #222222;
+  border: 3px solid #ffffff;
+  -webkit-border-radius: 23px;
+     -moz-border-radius: 23px;
+          border-radius: 23px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.carousel-control.right {
+  right: 15px;
+  left: auto;
+}
+
+.carousel-control:hover,
+.carousel-control:focus {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+
+.carousel-indicators {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 5;
+  margin: 0;
+  list-style: none;
+}
+
+.carousel-indicators li {
+  display: block;
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  text-indent: -999px;
+  background-color: #ccc;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+}
+
+.carousel-indicators .active {
+  background-color: #fff;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  background: #333333;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.carousel-caption h4,
+.carousel-caption p {
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.carousel-caption h4 {
+  margin: 0 0 5px;
+}
+
+.carousel-caption p {
+  margin-bottom: 0;
+}

@@ -1,0 +1,176 @@
+{% extends 'RockITTechgamesBundle::layout.html.twig' %}
+
+{% block content %}
+
+<div class="row">
+
+        <div class="col-sm-9 game-main">
+
+          <div class="game-header">
+        <h1 class="game-title">{{game.title}} <a class="btn btn-link btn-lg" rel="edit" href="{{path('game_edit', {'gameId':game.getGameId()})}}">Edit</a></h1>
+        
+      </div>
+
+          <div class="row">
+              <div class="col-sm-4"  >
+                <div class="logo" style="background-color: {{game.getColor()}}">
+
+                  {% if game.getImage() == "" %}
+
+                      <i class="glyphicon glyphicon-{{game.getIcon()}}"></i>
+
+                  {% else %}
+
+                      <img src="{{ asset('bundles/rockittechgames/images/')  }}{{game.getImage()}}" alt="...">
+
+                  {% endif %}
+                </div>
+
+              </div>
+
+              <div class="col-sm-8">
+                  
+                  <div class="reg">
+                    <div class="reg-option">
+                      <div>Seats open</div>
+                      <div class="reg-value">{{game.getSeatsOpen()}}</div>
+                    </div>
+                    <div class="reg-option">
+                      <div>Team Size</div>
+                      <div class="reg-value">{{game.getTeamSize()}}</div>
+                    </div>
+                    <div class="reg-option">
+                      <div>Location</div>
+                      <div class="reg-value">{{game.getLocation()}}</div>
+                    </div>
+                  </div>
+                  <p class="lead">{{game.getDescription()}}</p>
+              </div>
+          </div>
+          
+          <div class="row">
+            {%  if game.getSchedule()|length > 0 %}
+
+            <h3>Schedule</h3>
+            <table class="table">
+              {% for key, dailyEvents in game.getDailySchedule() %}
+              <thead>
+                <tr>
+                  <th><span class="pull-left">{{ key|date("l") }}</span></th>
+                  <th><span class="pull-right">{{ key|date("F j, Y") }}</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for event in dailyEvents %}
+                <tr>
+                  <td>{{ event.getStartDateTime()|date("g:i") }}-{{ event.getEndDateTime()|date("g:i A") }}</td>
+                  <td>{{ event.getTitle() }}</td>
+                </tr>
+                {% endfor %}
+
+              </tbody>
+              {% endfor %}
+            </table>
+
+            {%  endif %}
+
+            {%  if game.getOverview()|length > 0 %}
+            <h3>Details</h3>
+            {{ game.getOverview()|raw }}
+            {%  endif %}
+
+
+            {%  if game.getSkills()|length > 0 %}
+            <h3>Skills</h3>
+            {{ game.getSkills()|raw }}
+            {%  endif %}
+
+            {%  if game.getScoring()|length > 0 %}
+            <h3>Scoring</h3>
+            {{ game.getScoring()|raw }}
+            {%  endif %}
+
+            {%  if game.getParameters()|length > 0 %}
+            <h3>Parameters</h3>
+            {{ game.getParameters()|raw }}
+            {%  endif %}
+
+            {%  if game.getEquipment()|length > 0 %}
+            <h3>Equipment</h3>
+            {{ game.getEquipment()|raw }}
+            {%  endif %}
+
+            {%  if game.getGrading()|length > 0 %}
+            <h3>Grading</h3>
+            {{ game.getGrading()|raw }}
+            {%  endif %}
+
+          </div>
+
+        </div><!-- /.game-main -->
+
+        <div class="col-sm-3 game-sidebar">
+          
+
+          <div class="sidebar-module"> 
+            <a class="btn btn-primary btn-lg btn-join" href="{{path('game_join', {'gameId':'1'})}}">Join Game</a>
+          </div>
+          
+          <div class="sidebar-module">
+              {%  if game.getSponsor()|length > 0 %}
+              <div>
+              <label >Sponsor</label>              
+              <a href="{{path('sponsor_detail', {'sponsorId': game.getSponsor().getSponsorId() })}}">{{ game.getSponsor().getName() }}</a>
+              </div>
+              {%  endif %}
+              {%  if game.getGameOwner()|length > 0 %}
+              <div>
+              <label> Game Owner</label>
+              <a href="{{path('profile_detail', {'profileId':game.getGameOwner().getProfileId()})}}">{{ game.getGameOwner().getDisplayName() }}</a>
+              </div>
+              {%  endif %}
+              {%  if game.getJudge()|length > 0 %}
+              <div>
+              <label>Judge</label>
+              <a href="{{path('profile_detail', {'profileId':game.getJudge().getProfileId()})}}">{{ game.getJudge().getDisplayName() }}</a>
+              </div>
+              {%  endif %}
+          </div>
+
+          {%  if game.getAwards()|length > 0 %}
+          <div class="sidebar-module"> 
+            <label>Awards</label>         
+            <p>{{ game.getAwards() }}</p>
+          </div>
+          {%  endif %}
+
+
+          <div class="sidebar-module"> 
+            <label>Scheduled Teams</label>
+            {%  if game.getTeams()|length > 0 %}
+            <ol class="list-unstyled">
+              {% for key, team in game.getTeams() %}
+              <li><a href="{{path('team_detail', {'teamId':team.getTeamId()})}}">{{ team.getName() }} ({{ team.getMembers()|length }})</a></li>
+              {% endfor %}
+            <ol>
+            {%  else %}
+            <p>No Teams Scheduled</p>
+            {%  endif %}
+          </div>
+
+          {%  if game.getStandbyTeams()|length > 0 %}
+          <div class="sidebar-module"> 
+            <label>Standby Teams</label>         
+            <ol class="list-unstyled">
+              {% for key, team in game.getStandbyTeams() %}
+              <li><a href="{{path('team_detail', {'teamId':team.getTeamId()})}}">{{ team.getName() }} ({{ team.getMembers()|length }})</a></li>
+              {% endfor %}
+            <ol>       
+          </div>
+          {%  endif %}
+        </div><!-- /.game-sidebar -->
+
+      </div><!-- /.row -->
+
+{% endblock %}
+

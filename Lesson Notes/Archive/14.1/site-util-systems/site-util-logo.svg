@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 600 600" enable-background="new 0 0 600 600" xml:space="preserve">
+<g>
+	
+		<radialGradient id="SVGID_1_" cx="149.9" cy="449.4" r="148.1" gradientTransform="matrix(2 0 0 2 0 -600)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="1" style="stop-color:#FFFFFF"/>
+	</radialGradient>
+	
+		<circle display="none" fill="none" stroke="url(#SVGID_1_)" stroke-width="6" stroke-miterlimit="10" cx="299.8" cy="298.8" r="290.2"/>
+	
+		<radialGradient id="SVGID_2_" cx="203.0542" cy="514.6815" r="349.9577" fx="205.0768" fy="512.077" gradientTransform="matrix(2 0 0 -2 0 1200)" gradientUnits="userSpaceOnUse">
+		<stop  offset="1.351856e-02" style="stop-color:#FFFFFF"/>
+		<stop  offset="1.377784e-02" style="stop-color:#FDFEFE"/>
+		<stop  offset="1.708033e-02" style="stop-color:#E2EFF7"/>
+		<stop  offset="2.082374e-02" style="stop-color:#CCE3F1"/>
+		<stop  offset="2.524808e-02" style="stop-color:#BBD9ED"/>
+		<stop  offset="3.072186e-02" style="stop-color:#B0D3E9"/>
+		<stop  offset="3.839951e-02" style="stop-color:#A9CFE8"/>
+		<stop  offset="5.971903e-02" style="stop-color:#A7CEE7"/>
+		<stop  offset="6.075116e-02" style="stop-color:#9BC7E4"/>
+		<stop  offset="6.280224e-02" style="stop-color:#8ABEDF"/>
+		<stop  offset="6.535731e-02" style="stop-color:#7FB7DC"/>
+		<stop  offset="6.894244e-02" style="stop-color:#78B3DA"/>
+		<stop  offset="7.889511e-02" style="stop-color:#76B2DA"/>
+		<stop  offset="9.822253e-02" style="stop-color:#75B2DA"/>
+		<stop  offset="0.1028" style="stop-color:#58A2D2"/>
+		<stop  offset="0.1083" style="stop-color:#3D93CB"/>
+		<stop  offset="0.1146" style="stop-color:#2787C5"/>
+		<stop  offset="0.1219" style="stop-color:#167DC1"/>
+		<stop  offset="0.131" style="stop-color:#0B77BD"/>
+		<stop  offset="0.1437" style="stop-color:#0473BC"/>
+		<stop  offset="0.179" style="stop-color:#0272BB"/>
+		<stop  offset="0.1938" style="stop-color:#0272BB"/>
+		<stop  offset="0.2835" style="stop-color:#0272BB"/>
+		<stop  offset="0.3731" style="stop-color:#0168AD"/>
+		<stop  offset="0.4628" style="stop-color:#0062A4"/>
+		<stop  offset="0.5433" style="stop-color:#0060A2"/>
+		<stop  offset="0.99" style="stop-color:#005B9A"/>
+		<stop  offset="1" style="stop-color:#005A99"/>
+	</radialGradient>
+	<circle fill="url(#SVGID_2_)" cx="299.8" cy="298.8" r="290.2"/>
+</g>
+<text transform="matrix(1 0 0 1 91.46 341.5938)" fill="#FFFFFF" font-family="'Georgia-BoldItalic'" font-size="337.8726">S</text>
+<text transform="matrix(1 0 0 1 91.46 341.5938)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" font-family="'Georgia-BoldItalic'" font-size="337.8726">S</text>
+<text transform="matrix(1 0 0 1 250.1211 503.3555)" fill="#FFFFFF" font-family="'Georgia-BoldItalic'" font-size="291.4204">U</text>
+<text transform="matrix(1 0 0 1 250.1211 503.3555)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" font-family="'Georgia-BoldItalic'" font-size="291.4204">U</text>
+</svg>

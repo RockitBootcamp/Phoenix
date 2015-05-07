@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body{
+			font-size: 2em;
+		}
+
+		.txtTask{
+			border: 1px solid #ccc;
+			margin: 3px 10px 3px 0;
+			width: 50%;
+			font-size: 1em;
+		}
+		.task{
+
+		}
+	</style>
+
+	
+</head>
+<body>
+	
+	<h3>Todo Tasks</h3>
+
+	<input type="text" id="txtTask" placeholder="add a task" class="txtTask" name="txtTask" value="">
+		
+	<ul id="tasks" class="tasks">		
+	</ul>
+
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="jquery-1.11.0.min.js"></script>
+
+	<script>
+
+		var todoItems = $('.tasks');
+		var txtTask = $('.txtTask');
+
+		function onKeyPress(event){
+			if(event.charCode == 13){
+
+				// Create a new element
+				var newTask = $("<li></li>").text(txtTask.val());
+				
+				// Append to ul element
+				todoItems.prepend(newTask);
+
+				// Clear text value
+				txtTask.val("");
+			}	
+		}
+
+		// Hook into the keypress event
+		txtTask.keypress(onKeyPress);
+		            
+		
+	</script>
+	
+	
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,10 @@
+div {
+	background-color: red;
+	padding: 2px;
+}
+
+a {
+	background-color: blue;
+	padding: 5px;
+	display: inline-block;
+}

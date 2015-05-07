@@ -1,0 +1,374 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+body {
+	min-width: 1300px;
+	margin: auto;
+}
+
+header {
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 20px;
+	text-shadow: 0px 3px 0px #1285E3;
+	text-align: center;
+	background-color: #000;
+	border-radius: 5px;
+}
+
+.header h1 {
+	text-align: center;
+	color: lime;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-family: 'Press Start 2p', cursive;
+}
+
+li {
+    list-style-position: outside; 
+    margin-left: 30px;
+}
+
+/* playerSelector styles*/
+
+.playerSelector {
+	width: 600px;
+	margin-left: 75px;
+}
+
+.playerSelectorFieldset {
+	min-height: 450px;
+	float: left;
+	min-width: 70%;
+	position: relative;
+}
+
+.playerSelectorButton {
+	display: inline-block;
+	margin: 20px;
+	background-color: #ccc;
+	width: 150px;
+	height: 150px;
+	text-align: center;
+}
+
+.playerSelectorButton.selected {
+	background-color: #35D523;
+	transition: 1s;
+}
+
+.startGameButton {
+	display: none;
+	width: 150px;
+	padding: 10px;
+	float: right;
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	/*background-color: #ccc;*/
+}
+
+.startGameButton {
+  background: #1eff05;
+  background-image: -webkit-linear-gradient(top, #1eff05, #0b8a13);
+  background-image: -moz-linear-gradient(top, #1eff05, #0b8a13);
+  background-image: -ms-linear-gradient(top, #1eff05, #0b8a13);
+  background-image: -o-linear-gradient(top, #1eff05, #0b8a13);
+  background-image: linear-gradient(to bottom, #1eff05, #0b8a13);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.startGameButton:hover {
+  background: #aabdaf;
+  background-image: -webkit-linear-gradient(top, #aabdaf, #010f04);
+  background-image: -moz-linear-gradient(top, #aabdaf, #010f04);
+  background-image: -ms-linear-gradient(top, #aabdaf, #010f04);
+  background-image: -o-linear-gradient(top, #aabdaf, #010f04);
+  background-image: linear-gradient(to bottom, #aabdaf, #010f04);
+  text-decoration: none;
+}
+
+/** Game Play **/
+
+.mapContainer {
+	padding: 5px;
+	margin-left: 8px;
+	margin-right: 30px;
+}
+
+.map, .legend {
+	/*margin-r: 15px;*/
+	float: left;
+	width: 200px;
+	padding: 5px;
+}
+
+.gamedialog {
+	min-width: 100px;
+	height: 500px;
+	margin: 15px;
+	padding: 5px;
+}
+
+.scoreboard {
+	float: right;
+	width: 350px;
+}
+
+.playerStats {
+	padding: 0;
+}
+
+.hiddenRules {
+	min-height: 25px;
+}
+
+fieldset {
+	border-radius: 5px;
+	padding: 10;
+}
+
+.tile {
+	width: 30px;
+	height: 30px;
+/*	background-color: #000;*/
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: 0;
+	display: inline-block;
+	position: relative;
+}
+
+.row {
+	display: block;
+	margin: 0;
+}
+
+.activeTile {
+	background-color: green;
+}
+
+.visitedTile {
+	width: 30px;
+	height: 30px;
+	background-color: blue;
+}
+
+.goalTile {
+	background-color: yellow;
+}
+
+
+.controller {
+	background-color: #000;
+	height: 170px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.nothing,.dpad {
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+}
+
+.nothing {
+	background-color: #000;
+}
+
+.dpad {
+	background-color: #777;
+	font-size: 3em;
+}
+
+.directional {
+	background-color: #000;
+	width: 165px;
+	display: inline-block;
+	margin-left: 4px;
+}
+
+.up {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.left {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.right {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.down {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.button {
+	border-left: 2px solid #ccc;
+	border-top: 2px solid #ccc;
+	color: #fff;
+	text-align: center;
+}
+
+.button:active {
+	border-right: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
+	border-left: none;
+	border-top: none;
+}
+
+.center {
+	color: #fff;
+	text-align: center;
+}
+
+.directional .clicked {
+	border-top: 2px solid #ccc;
+	border-left: 2px solid #ccc;
+}
+.attack, .runAway, .pickUp, .quit {
+	background-color: #777;
+	display: inline-block;
+	border-radius: 5px;
+	padding: 6px;
+	min-width: 75px;
+	position: absolute;
+	top: 75px;
+}
+
+.attack, .pickUp  {
+	left: 200px;
+}
+
+.runAway {
+	left: 300px;
+}
+
+.quit {
+	left: 400px;
+}
+
+.scoreboard {
+	padding: 0;
+	width: 270px;
+	margin-right: 8px;
+}
+
+.scoreboard fieldset{
+	padding: 10px;
+	margin-right: 10px;
+}
+
+legend {
+	font-family: 'Press Start 2p';
+	font-size: 1.1em;
+}
+
+.divider {
+	text-align: center;
+}
+
+/*gameover.php*/
+.gameOver {
+	background-color: #000;
+	font-family: 'Press Start 2p';
+	color: lime;
+	max-width: 60%;
+	margin: auto;
+	text-align: center;
+	margin-top: 150px;
+	z-index: 500;
+	padding: 10px;
+}
+
+.replay {
+	background-color: #ccc;
+	color: #fff;
+	margin: auto;
+	padding: 10px;
+	width: 200px;
+
+}
+
+.inactive {
+	display: none;
+	background-color: red;	
+}
+
+
+
+
+/********THINK THIS IS OLD CSS FROM DENETTE THAT NEEDS TO BE DELETED. 
+Is commented out to see if we need it anymore
+
+.playerChoices fieldset {
+	background-color: #EDEDED;
+	padding: 10px;
+	margin: 0 300px 15px 15px;
+	overflow: hidden;
+}
+
+.playerImageBox {
+	display: inline-block;
+	margin: 20px;
+	background-color: #B2B2B2;	
+	height: 175px;
+	width: 150px;
+	opacity: 0.8; 
+}
+
+.playerImageBox:hover {
+	box-shadow: 0 0 10px #ccc;
+	opacity: 1;
+}
+
+
+
+.playerImageBox img {
+	float: left;
+	height: 150px;
+	width: 100px;
+}
+.playerImageBox h3 {
+	margin-left: 110px;
+}
+
+.startButton {
+	display: none;
+}
+
+.homePageAside {
+	float: right;
+	width: 400px;
+	height: 600px;
+	margin: 0px 20px;
+	border: 1px;
+	padding: 3px;
+	background-color: #14FA61;
+	font-size: 20px;
+}
+
+.homePageAside fieldset {
+	padding: 10px;
+	margin: 10px;
+}
+
+.bioAside {
+	display: none;
+}*/

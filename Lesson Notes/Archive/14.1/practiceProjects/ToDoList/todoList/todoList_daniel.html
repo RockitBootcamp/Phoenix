@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body{
+			font-size: 2em;
+		}
+
+		.add-text{
+			border: 1px solid #ccc;
+			margin: 3px 10px 3px 0;
+			width: 50%;
+			font-size: 1em;
+		}
+		.task{
+
+		}
+	</style>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	
+</head>
+<body>
+	
+	<h3>Todo Tasks</h3>
+
+	<input type="text" id="add-text" placeholder="add a task" class="add-text" name="add-text" value="" autocomplete="off">
+	<button id="addButton">Add</button>
+	<ul id="tasks" class="tasks">		
+	</ul>
+
+	<script>
+		// Define variables
+		var todoItems, addText, newTask, addButton;
+
+		// Create a function to add a new list item
+		function addNewTask(event){
+			// If the KeyboardEvent was the ENTER key
+			if(event.charCode == 13){
+				addNewTaskOnly();
+			}		
+		}
+
+		function addNewTaskOnly() {
+			// Create a new element
+			if(addText.value.length > 0) {
+				var newTask = document.createElement("li");
+				newTask.innerHTML = '<b>' + addText.value + '</b>';
+				var deleteButton = document.createElement("button");
+				deleteButton.innerHTML = "delete item";
+				newTask.appendChild(deleteButton);
+				deleteButton.onclick = deleteTask;
+
+				// Append to ul element
+				todoItems.appendChild(newTask);
+
+				// Clear text value
+				addText.value = "";
+			} else {
+				alert("Please add text for the todo item");
+			}
+		}
+
+		function deleteTask(event) {
+			// alert("gonna delete it");
+			var taskToDelete = event.currentTarget.parentElement;
+			todoItems.removeChild(taskToDelete);
+		}
+
+		$(document).ready(function() { // first jquery usage
+			// Get elements out of the DOM
+			addText = document.getElementById("add-text");
+			todoItems = document.getElementById("tasks");
+			addButton = $("#addButton"); // first jquery usage
+
+			addText.onkeypress = addNewTask;
+			addButton.click(addNewTaskOnly); // first jquery usage
+		});
+
+
+	</script>
+	
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,54 @@
+/* The main structure */
+.page {
+	background-color: red;
+	padding: 5px;
+	overflow: hidden;
+}
+
+.left {
+	width: 200px;
+	min-height: 200px;
+	background-color: green;
+	float: left;
+}
+
+.content {
+	background-color: yellow;
+	margin-left: 200px;
+	min-height: 200px;
+	overflow: hidden;
+}
+
+
+
+/* The Tweet */
+.comment {
+	background-color: magenta;
+	padding: 5px;
+	overflow: hidden;
+	margin: 10px;
+}
+
+.pic {
+	width: 40px;
+	height: 40px;
+	background-color: orange;
+	float: left;
+}
+
+.tweet {
+	background-color: lightblue;
+	margin-left: 50px;
+}
+
+
+/* Helped explain collapsing margins */
+.foo {
+	background-color: red;
+}
+
+.foo div {
+	height: 20px;
+	background-color: blue;
+	margin: 10px;
+}

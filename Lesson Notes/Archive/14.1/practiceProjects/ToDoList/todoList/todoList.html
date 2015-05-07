@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body{
+			font-size: 2em;
+		}
+
+		.add-text{
+			border: 1px solid #ccc;
+			margin: 3px 10px 3px 0;
+			width: 50%;
+			font-size: 1em;
+		}
+		.task{
+
+		}
+	</style>
+
+	
+</head>
+<body>
+	
+	<h3>Todo Tasks</h3>
+
+	<input type="text" id="add-text" placeholder="add a task" class="add-text" name="add-text" value="" autocomplete="off">
+		
+	<ul id="tasks" class="tasks">		
+	</ul>
+
+	<script>
+
+		// Define variables
+		var todoItems, addText, newTask;
+
+		// Get elements out of the DOM
+		addText = document.getElementById("add-text");
+		todoItems = document.getElementById("tasks");	
+
+		// Create a function to add a new list item
+		function addNewTask(event){
+
+			// If the KeyboardEvent was the ENTER key
+			if(event.charCode == 13){
+
+				// Create a new element
+				var newTask=document.createElement("li");
+				newTask.innerHTML = addText.value;
+				
+				// Append to ul element
+				todoItems.appendChild(newTask);
+
+				// Clear text value
+				addText.value = "";
+
+			}		
+
+		}
+
+		// Call function when the KeyPress event happens
+		addText.onkeypress = addNewTask;
+		
+		
+	</script>
+	
+</body>
+</html>
+
+
+
+
+

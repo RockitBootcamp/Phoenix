@@ -1,0 +1,45 @@
+CREATE TABLE user (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(64) NOT NULL,
+    password VARCHAR(32) NOT NULL
+);
+
+CREATE TABLE search (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    zip_code INT(5) NOT NULL,
+    category VARCHAR(255),
+    user_id INT
+);
+
+CREATE TABLE restaurants (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255),
+    street_address VARCHAR(255),
+    zip_code VARCHAR(9),
+    phone VARCHAR(20),
+    category VARCHAR(255),
+    twitter_name VARCHAR(255)
+);
+
+CREATE TABLE tweets (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    tweet_count INT,
+    twitter_name VARCHAR(255)
+);
+
+
+INSERT INTO restaurants (name, street_address, zip_code, phone, category, twitter_name) VALUES ("Tortilla Fish", "1320 W Elliot Rd", ""85284"", "4808202323", "Mexican", "@TortillaFish");
+INSERT INTO restaurants (name, street_address, zip_code, phone, category, twitter_name) VALUES ("Costa Vida", "1324 S Rural Rd", "85281", "4802682110", "Mexican", "@CostaVida");
+INSERT INTO restaurants (name, street_address, zip_code, phone, category, twitter_name) VALUES ("Susie's Mexican Cafe","2405 E University Dr", "85281", "4809667091", "Mexican", "@SusiesMexCafe");
+INSERT INTO restaurants (name, street_address, zip_code, phone, category, twitter_name) VALUES ("Thirsty Lion", "2000 E Rio Salado Rd Pkwy #1041", "85281", "4809682920", "American", "@thirstylion");
+INSERT INTO restaurants (name, street_address, zip_code, phone, category, twitter_name) VALUES ("Green New American Vegitarian", "2240 N Scottsdale Rd", "85281", "4809419003", "American", "@greendamon");
+INSERT INTO restaurants (name, street_address, zip_code, phone, category, twitter_name) VALUES ("Rigatony's", "1850 E Warner Rd", "85284", "4808991111", "Italian", "@Rigatonys");
+INSERT INTO restaurants (name, street_address, zip_code, phone, category, twitter_name) VALUES ("Oregano's Pizza Bistro", "523 W University Dr", "85281", "4808580501", "Italian", "@Oreganos");
+INSERT INTO restaurants (name, street_address, zip_code, phone, category, twitter_name) VALUES ("Spinato's Pizza", "227 S Smith Rd", "85281", "4809670020", "Italian", "@SpinatosPizza");
+INSERT INTO restaurants (name, street_address, zip_code, phone, category, twitter_name) VALUES ("Yupha's Thai Kitchen", "1805 E Elliot Rd", "85284", "4808390576", "Thai", "@yuphasthaifood");
+INSERT INTO restaurants (name, street_address, zip_code, phone, category, twitter_name) VALUES ("Thai Elephant", "815 W University Dr Ste 108", "85281", "4809660351", "Thai", "@ThaiElephantAZ");
+INSERT INTO restaurants (name, street_address, zip_code, phone, category, twitter_name) VALUES ("Mika's Greek", "780 W Elliot Rd", "85284", "4804566452", "Greek", "@mikasgreek");
+INSERT INTO restaurants (name, street_address, zip_code, phone, category, twitter_name) VALUES ("Pita Jungle", "1250 E Apache Blvd", "85281", "4808040234", "Greek", "@pitajungle");
+INSERT INTO restaurants (name, street_address, zip_code, phone, category, twitter_name) VALUES ("Four Peaks Brew", "1340 E 8th St #104", "85281", "4803039967", "American", "@fourpeaksbrew");
+
+

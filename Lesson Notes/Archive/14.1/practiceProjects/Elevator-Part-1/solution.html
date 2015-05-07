@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<script>
+
+var person_at = 4;
+var person_request = 'up'
+var car_at = 5;
+var car_direction = 'up';
+
+/*
+One possible right solution would be this. Notice that the outer IF statements
+are checking the person's request while the inner IF statements are checking
+The car's direction. This could be reversed and would be just as efficient - 
+leading to multiple right answers
+*/
+if (person_request == 'up') {
+	if (car_direction == 'up') {
+		if (car_at <= person_at) {
+			console.log('Pickup Person Going Up');
+		} else {
+			console.log('Can\'t pickup person, (car already passed)');
+		}
+	} else {
+		console.log('Can\'t pickup person (Car going in wrong direction)');
+	}
+} else {
+	if (car_direction == 'down') {
+		if (car_at >= person_at) {
+			console.log('Pickup Person Going Down');
+		} else {
+			console.log('Can\'t pickup person, (car already passed)');
+		}
+	} else {
+		console.log('Can\'t pickup person (Car going in wrong direction)');
+	}
+}
+
+/*
+One of the main points of this exercise is to teach the importance of
+nesting IF statements as oppose to combining them. Look at our student
+Sally's progress. She's on the right track but by combining the car direction
+and the car's position relative to the person (all at line 59), she thinks
+that the else clause is for the car going down. She has programmed herself
+into a corner with no good spot for "Can't pickup person, (car already passed)"
+*/
+
+// Sally's Algo:
+if (person_request == 'up') {
+
+	if (car_direction == 'up' && car_at < person_at) {
+		console.log('Pickup Person Going Up');
+	} else {
+		console.log('Can\'t pickup person (Car going in wrong direction)');
+	}
+
+} else if (person_request == 'down') {
+	// todo soon
+}
+
+
+// After talking to Sally, here is her new solution which incorporates
+// "car already passed":
+
+
+// Sally's Algo:
+if (person_request == 'up') {
+
+	if (car_direction == 'up' && car_at < person_at) {
+		console.log('Pickup Person Going Up');
+	} else if (car_direction == 'up' && car_at > person_at) {
+		console.log('Can\'t pickup person, (car already passed)');
+	} else {
+		console.log('Can\'t pickup person (Car going in wrong direction)');
+	}
+
+} else if (person_request == 'down') {
+	// todo soon
+}
+
+/*
+Even though her new solution technically produces the right answer, she now
+has (car_direction == 'up') written twice. It's not very DRY code and if we
+decide to change the string 'up' to another value, she has two places she 
+needs to update. Also, she forgot to program for the situation of the car
+being at the same location as the person. What a good learning lesson for Sally :)
+
+Possible next steps for this assignment are:
+1. Changing the person_request to be person_up (where it becomes a boolean)
+		- This would lead to using the "!" operator more
+		- We can identify patterns such as (person_up != true) and tell the
+		  student that (!person_up) is probably cleanner
+
+2. We could ask "Hey did anyone think of programming the messages to be variables"
+   and therefore show them that they can do console.log(msg_person_up)
+
+3. Imagine if we made a file that included the student's algo .js files all into
+   one page. We would control the starting variables. Each student's console
+   log would be preceeded by their name. When we run the script we get:
+      "Mike:  Can't pickup person, (car already passed)"
+      "Sally: Can't pickup person, (car already passed)"
+      "Jim:   Can't pickup person, (car going in wrong direction)"
+      "Jen:   Can't pickup person, (car already passed)"
+    And it looks like Jim has a mistake he needs to work on
+
+4. Imagine how much cooler and more efficient this will be when we introduce
+   functions, arrays, and looping
+*/
+
+</script>
+
+</html>

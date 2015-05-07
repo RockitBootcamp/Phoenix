@@ -1,0 +1,13 @@
+body {
+	margin: 0;
+}
+
+.container {
+	background-color: red;
+}
+
+.container div {
+	background-color: yellow;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}

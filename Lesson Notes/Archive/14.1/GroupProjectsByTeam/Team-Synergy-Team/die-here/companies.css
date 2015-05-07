@@ -1,0 +1,45 @@
+.companies {
+  overflow: hidden;
+}
+.listing {
+  list-style-type: none;
+  float: left;
+}
+
+.listing h4 {
+  margin-top: 0;
+}
+
+.listing div img {
+  height: 100px;
+  min-width: 100px;
+  max-width: 200px;
+  float: left;
+  display: block;
+  border-radius: 10px;
+  margin:5px;
+}
+
+.content {
+  background-color: #597571;
+  margin: 5px;
+  text-align: center;
+  float:right;
+  
+}
+
+.listing div {
+  margin: 5px;
+  background-color: #597571;
+  list-style-type: none;
+  
+
+}
+
+
+.outer {
+  background-color: #597571;
+  margin:3px;
+  width: 550px;
+  float: left;
+}

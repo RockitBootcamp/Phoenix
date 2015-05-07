@@ -1,0 +1,36 @@
+rock_it_techgames_homepage:
+    pattern:  /
+    defaults: { _controller: RockITTechgamesBundle:Default:index }
+
+rock_it_techgames_about:
+    pattern:  /about
+    defaults: { _controller: RockITTechgamesBundle:Default:about }
+
+game_detail:
+    pattern:  /game/{gameId}
+    defaults: { _controller: RockITTechgamesBundle:Game:detail }
+
+game_edit:
+    pattern:  /game/{gameId}/edit
+    defaults: { _controller: RockITTechgamesBundle:Game:edit }
+
+game_join:
+    pattern:  /game/{gameId}/join
+    defaults: { _controller: RockITTechgamesBundle:Game:join }
+
+
+sponsor_detail:
+    pattern:  /sponsors/{sponsorId}
+    defaults: { _controller: RockITTechgamesBundle:Sponsor:detail }
+
+profile_detail:
+    pattern:  /profile/{profileId}
+    defaults: { _controller: RockITTechgamesBundle:Profile:detail }
+
+team_detail:
+    pattern:  /team/{teamId}
+    defaults: { _controller: RockITTechgamesBundle:Team:detail }
+
+school_detail:
+    pattern:  /school/{schoolId}
+    defaults: { _controller: RockITTechgamesBundle:School:detail }

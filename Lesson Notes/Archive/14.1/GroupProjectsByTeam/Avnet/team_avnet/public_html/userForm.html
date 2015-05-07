@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Users</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		Tech Games
+	</header>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="user.js"></script>
+	</div>
+</body>
+</html><!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register for Avnet Games</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+<!-- HEADER SECTION------------------------------------------------------------>
+
+    <header>
+        <?php require 'templates/header.php';?>
+    </header>
+
+<!-- MIDDLE SECTION------------------------------------------------------------>
+
+    <div class="contentContainer">
+        <?php require 'aside.php';?>
+    </div>
+
+    <div class="userForm">
+        <!-- <form action="" method="POST"> -->
+        <div class="userName">
+            <div>User Name:</div>
+            <div><input type="text" id="userName" name="userName"></div>
+        </div>
+        <div class="email">
+            <div>Email:</div>
+            <div><input type="Email" id="email" name="email"></div>
+        </div>
+        <div class="firstName">
+            <div>Name:</div>
+            <div><input type="text" id="name" name="firstName"></div>
+        </div>
+        <div class="lastName">
+            <div>Last Name:</div>
+            <div><input type="text" id="lastName" name="lastName"></div>
+        </div>
+            <!-- //maybe make a full birthday or age group  -->
+        <div class="age">
+            <div>Age:</div> 
+            <div><input type="text" id="age" name="age"></div>
+        </div>
+        <div class="image">
+            <div>please up load your user Photo</div>
+            <div><input type="file" name="datafile" size="40"></div>
+        </div>
+        <div class="affiliatedSchool">
+            <div>Affiliated School:</div> 
+            <div><input type="text" id="affiliatedSchool" name="affiliatedSchool"></div>
+        </div>
+             <fieldset>
+                <legend>Gender</legend>
+                <input type="radio" name="Gender" value="m"> Male 
+                <input type="radio" name="Gender" value="f"> Female 
+            </fieldset>
+        <div class="bio">
+            <div>Bio:</div>
+            <div><textarea cols="50" rows="6" name="bio"></textarea></div>
+        </div>
+            <p><button id="bread">submit</button>
+
+    </div>
+    
+
+
+<!-- FOOTER SECTION------------------------------------------------------------>
+    <footer>
+                <?php require 'footer.php';?>   
+    </footer>
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="tgregister.js"></script>
+
+</body>
+</html>

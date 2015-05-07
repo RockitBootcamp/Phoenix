@@ -1,0 +1,155 @@
+/*  *************************************************
+
+Avnet Color Scheme
+Primary Color 1 (red) #e22422 - logo, tagline box, links, sub headlines
+
+Primary Color 2 light-blue #0593bc - Top Headlines, colored circles for icons, colored bar
+Primary Color 2 light-green #8cb31a - Top Headlines, colored circles for icons, colored bar
+Primary Color 2 turquoise-muted #1b5c67 - Top Headlines, colored circles for icons, colored bar
+Primary Color 2 deep-blue #02406e - Top Headlines, colored circles for icons, colored bar
+
+Secondary Colors dark-gray #575757 - Copy text, social media icons
+Secondary Colors light-gray #b2b2b2 - lines, tables
+
+Tertiary Colors Orange #eb6730 - Limited: reserved for PPT charts and websites!
+Tertiary Colors dark yellow #eb6730 - Limited: reserved for PPT charts and websites!
+
+*/
+
+*{
+	margin: 0;
+	padding:0;
+	font-family: Arial;
+	color: #575757;
+}
+
+body{
+	background-color: #ddd;
+}
+.maincontainer{
+	margin:10px;
+	border: 2px solid black;
+}
+
+header, #dialog-form{
+	background-color: #fff;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.logo{
+	float: left;
+}
+
+h2{
+	display: inline-block;
+	font-size: 36px;
+	margin-top: 5px;
+}
+
+.siteNav{
+	float:right;
+	color:#e22422;
+	margin-top:30px;
+}
+
+.siteNav a{
+	color:#e22422;
+	margin: 3px;
+}
+
+.listTitle{
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	background-color: #1b5c67;
+	overflow: hidden;
+}
+
+.listTitle span{
+	text-align: center;
+	display: inline-block;
+	width:15%;
+	overflow: hidden;
+	margin:3px;
+	text-decoration: underline;
+	color: #fff;
+}
+
+.createNew {
+	float:right;
+	margin:3px;
+	font-weight: bold;
+}
+
+.allStudents{
+	overflow: hidden;
+	background-color: #f8f8f8;
+}
+
+.student span{
+	text-align: center;
+	display: inline-block;
+	width: 15%;
+	overflow: hidden;
+	border:1px solid black;
+	margin:3px;
+	background-color: #fff;
+}
+
+button{
+	min-width: 50px;
+	float: right;
+	margin:3px;
+	font-weight: bold;
+}
+
+/* dialog  begin */
+
+#dialog-form{
+	width: 500px;
+}
+
+#dialog-form span{
+	font-weight: bold;
+	font-size: 24px;
+	width: 500px;
+}
+
+.ui-dialog-titlebar{
+
+}
+input.text { 
+	margin-bottom:12px; width:95%; padding: .4em; 
+}
+    
+fieldset { 
+	padding:0; border:0; margin-top:25px; 
+}
+    
+h3 { 
+	font-size: 1.2em; margin: .6em 0; 
+}
+    
+div#users-contain { 
+	width: 500px;
+  
+/* todo */  
+/*div#users-contain table { 
+	margin: 1em 0; border-collapse: collapse; width: 100%; 
+}
+    
+div#users-contain table td, div#users-contain table th { 
+	border: 1px solid #eee; padding: .6em 10px; text-align: left; 
+}*/
+    
+.ui-dialog .ui-state-error { 
+	padding: .3em; 
+}
+    
+.validateTips { 
+	border: 1px solid transparent; padding: 0.3em; 
+}
+
+/* dialog  end */

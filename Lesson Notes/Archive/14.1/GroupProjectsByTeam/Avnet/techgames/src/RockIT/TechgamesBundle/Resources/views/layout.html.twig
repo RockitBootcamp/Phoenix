@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <title>Avnet TechGames</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{{ asset('bundles/rockittechgames/css/bootstrap.min.css') }}">
+
+    <!-- Custom styles for this template -->
+    <!-- <link href="{{ asset('bundles/rockittechgames/css/offcanvas.css') }}" rel="stylesheet"> -->
+
+    <!-- Custom styles for this project -->
+    <link href="{{ asset('bundles/rockittechgames/css/main.css') }}" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+  
+    <div class="header">
+        
+        
+        <h1 class="navbar-title"><a href="{{path('rock_it_techgames_homepage')}}">Avnet Tech Games</a></h1>
+        
+        
+        <img class="resize" src="{{ asset(
+        'bundles/rockittechgames/images/logo.png') }}" />
+        
+
+        <div class="navbar-row">
+            <div>
+                <a href="{{path('rock_it_techgames_about')}}" class="btn btn-link btn-lg">
+                  <i class="glyphicon glyphicon-unchecked"></i><span class="txt">About</span>
+                </a>
+            
+                <button type="button" class="btn btn-link btn-lg">
+                  <i class="glyphicon glyphicon-tower"></i><span class="txt">News</span>
+                </button>
+            </div>
+           <!--  <div>
+                <a type="button" class="btn btn-default btn-lg">
+                  <i class="glyphicon glyphicon-login"></i><span class="txt">Login</span>
+                </a>
+            </div> -->
+            
+        </div>
+
+    </div>
+    
+    <div class="container">
+        {% block content %}{% endblock %}
+
+      
+
+    </div><!--/.container-->
+    <hr>
+    <footer>
+        <div class="row">
+            <div class="sponsor col-md-4 col-lg-2 ">
+                <a href="http://www.cisco.com/"><img src="{{ asset('bundles/rockittechgames/images/cisco.png') }}" alt="Cisco"></a>
+            </div>
+            <div class="sponsor col-md-4 col-lg-2 ">
+                <a href="http://www.dpair.com/"><img src="{{ asset('bundles/rockittechgames/images/dpair.jpg') }}" alt="DP Air Data Center Design"></a>
+            </div>
+            <div class="sponsor col-md-4 col-lg-2 ">
+                <a href="http://www.emc.com/"><img src="{{ asset('bundles/rockittechgames/images/emc.jpg') }}" alt="EMC - Leading Cloud Computing, Big Data, and Trusted IT Solutions"></a>
+            </div>
+            <div class="sponsor col-md-4 col-lg-2 ">
+                <a href="http://www.hp.com/"><img src="{{ asset('bundles/rockittechgames/images/hp.jpg') }}" alt="Hewlett-Packard, printers, desktops, laptops, servers, services, storage, enterprise solutions"></a>
+            </div>
+            <div class="sponsor col-md-4 col-lg-2 ">
+                <a href="http://jda.com"><img src="{{ asset('bundles/rockittechgames/images/jda.jpg') }}" alt="JDA Software Supply Chain Software, Supply Chain Management Software"></a>
+            </div>
+            <div class="sponsor col-md-4 col-lg-2 ">
+                <a href="http://phxrockit.com"><img src="{{ asset('bundles/rockittechgames/images/rockit.png') }}" alt="RockIT immersive 12-week web development bootcamp"></a>
+            </div>
+        </div>
+      <!-- <div class="container">
+
+        <img src="{{ asset(
+        'bundles/rockittechgames/images/computer.jpg') }}" />
+
+      </div> -->
+
+      <nav class="navbar">
+        
+          <ul class="left">
+              <li><a href="{{path('rock_it_techgames_about')}}">About</a></li>
+              <li><a href="/pressroom">Pressroom</a></li>
+              <li><a href="/sponsors">Sponsors</a></li>
+          </ul>
+        
+        </div>
+    </nav>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="{{ asset('bundles/rockittechgames/js/bootstrap.min.js')}}"></script>
+    <script src="{{ asset('bundles/rockittechgames/js/main.js')}}"></script>
+
+    <!--<script src="offcanvas.js"></script>-->
+  </body>
+</html>

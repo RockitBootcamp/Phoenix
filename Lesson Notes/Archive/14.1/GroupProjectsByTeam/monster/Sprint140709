@@ -1,0 +1,65 @@
+Sprint 7/9 - 7/13
+
+notes
+    backend
+    gameplay
+    db
+    interlock
+    final design
+
+Objects
+    player 
+        controls movement on map
+    weapon
+        picks a weapon
+    monster
+        picks a monster
+
+    map
+        draws the map
+    scoreboard
+        renders scoreboard display
+    game
+        update display
+    payload
+        json object holds 
+
+Monday
+------
+    Daily goals
+        front end working
+    Backlog
+        diceRoll() object
+            methods
+        player object
+            attr
+            methods
+        monster object
+            attr
+            methods
+        stats object
+            attr
+            methods
+        map object
+            
+Tuesday
+-------
+    Daily goals
+        db
+    Backlog
+Wednesday
+---------
+    Daily goals
+        functional integration
+    Backlog
+Thursday
+--------
+    Daily goals
+        design day
+    Backlog
+Friday
+------
+    Daily goals
+        design day / cleanup
+    Backlog
+

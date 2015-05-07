@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.main {
+
+    background-color: grey;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+    width: 800px;
+    padding: 10px;
+    margin: auto;
+
+}
+
+.dialog {
+    background-color: lime;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+}
+
+.monsterContainer {
+    background-color: #000;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;    
+    width: 200px;    
+    float: left;
+    spadding: 5px;
+    margin: 10px;
+    overflow: hidden;
+    height: 210px;
+}
+
+.monster {
+    background-color: #000;
+    float:left;
+    padding: 5px;
+    margin: 10px;
+    height:210px;
+    width:320px;
+    overflow: hidden;
+}
+
+.monsterBio {
+    background-color: lime;
+    float:left;
+    font-family: 'Press Start 2P', cursive;
+    color: #000;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+    height:180px;
+    width:290px;
+    overflow: hidden;
+}
+
+.monsterImg {
+    /*background-color: yellow;*/
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    padding-left: 10px;
+    text-align: center;
+    padding-right: 10px;
+    height: 140px;   
+}
+
+#monsterPic {
+    margin-top: 10px;
+    height: 80px;
+    width: 80px;
+    
+}
+
+.monsterDesc {
+    background-color: grey;
+    padding: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    text-align: center;
+    min-height: 30px;
+}
+
+.weaponContainer {
+    background-color: #000;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    spadding: 5px;
+    margin: 10px;
+    overflow: hidden;
+    float: right;
+    width: 200px;
+    height: 210px;
+    
+}
+
+.weaponImg {
+    /*background-color: green;*/
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-top: 5px;
+    height: 140px;
+    text-align: center;
+}
+
+#weaponPic {
+    margin-top: 10px;
+    max-height: 80px;
+}
+
+.weaponName {
+    background-color: grey;
+    padding: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    text-align: center;
+    min-height: 30px;
+}
+
+.gamePlay {
+    background-color: black;
+    height: 100px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10pt;
+    color: lime;
+    padding: 5px;
+}
+
+.scenery {
+    padding-top: 5px;
+    height: 100px;
+    overflow: hidden;
+    text-align: center;
+    background-image: url("image/jungle2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/*#jungle {
+    max-height: 130px;
+    
+}*/
+
+.controlBlock {
+    position: relative;
+    
+}

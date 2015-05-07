@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+
+
+table {
+  /*border-collapse: collapse;*/
+  /*display: block;*/
+  /*float: left;*/
+  margin: 10px;
+
+}
+
+
+td, th {
+  
+  padding: 0.5rem;
+  text-align: center;
+  border: 1px solid #999;
+}
+
+th {
+    background-color: #969F85;
+    border: none;
+    
+}

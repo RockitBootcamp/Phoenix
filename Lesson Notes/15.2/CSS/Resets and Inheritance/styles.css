@@ -1,0 +1,18 @@
+html {
+  box-sizing: border-box;
+  font-family: Arial;
+  color: blue;
+}
+
+* {
+  box-sizing: inherit;
+  font-family: inherit;
+  color: inherit;
+}
+
+
+
+header nav {
+    color: red;
+    font-size: 20pt;
+}

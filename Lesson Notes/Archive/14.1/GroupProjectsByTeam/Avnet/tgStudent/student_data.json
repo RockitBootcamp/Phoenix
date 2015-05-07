@@ -1,0 +1,35 @@
+[
+    {
+        "FirstName": "Bill",
+        "LastName": "Johnson",
+        "Username": "billjohnson",
+        "Password": "password",
+        "Phone": 9112342345,
+        "Email": "bill@gmail.com",
+        "Team": "Team Thunder",
+        "Game": "Speed Computer Building",
+        "School": "Arizona State University"
+    }, 
+    {
+        "FirstName": "Frank",
+        "LastName": "Enstein",
+        "Username": "bigfrank",
+        "Password": "password",
+        "Phone": 9110980989,
+        "Email": "bigfrank@gmail.com",
+        "Team": "It's Alive!!!",
+        "Game": "Speed Computer Building",
+        "School": "University of Arizona"
+    }, 
+    {
+        "FirstName": "Sally",
+        "LastName": "Sunflower",
+        "Username": "happysally",
+        "Password": "password",
+        "Phone": 9114554545,
+        "Email": "happysally@yahoo.com",
+        "Team": "Team Thunder",
+        "Game": "Flower Frolicking",
+        "School": "Arizona State University"
+    }
+]

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS: Objects/ Arrays</title>
+</head>
+<body>
+	
+
+	<script>
+
+    var dog_food = {
+      'purina': {'wet': true, 'can': true},
+      'science_diet': {'wet': false, 'can': true},
+      'alpo': {'wet': false, 'can': false}
+    }
+
+    var results = ['purina', 'science_diet'];
+
+    for (var i in results) {
+      console.log(dog_food[results[i]].wet);
+    }
+
+	</script>
+</body>
+</html>

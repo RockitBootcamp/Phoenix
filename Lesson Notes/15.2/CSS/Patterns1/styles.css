@@ -1,0 +1,28 @@
+.hero {
+    width: 960px;
+    height: 400px;
+    background: radial-gradient(blue, blue), url('fiji.jpg');
+    background-size: contain;
+}
+
+
+.breakouts {
+    width: 960px;
+    background-color: green;
+    text-align: center;
+}
+
+
+.breakouts > div {
+    background-color: lime;
+    width: 250px;
+    height: 200px;
+    display: inline-block;
+    vertical-align: top;
+
+    /*margin-top: -20px;*/
+    transform: translateY(-20px);
+}
+
+
+

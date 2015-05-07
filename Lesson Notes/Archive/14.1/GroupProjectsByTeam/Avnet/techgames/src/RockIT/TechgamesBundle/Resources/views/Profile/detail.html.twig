@@ -1,0 +1,67 @@
+{% extends 'RockITTechgamesBundle::layout.html.twig' %}
+
+{% block content %}
+
+
+<div class="row">
+    <div class="col-md-4"><img src="http://placehold.it/300x300" /></div>
+    
+    <div class="col-md-8">
+
+        <h1>{{profile.displayName}}</h1>
+        
+        <div class="row">
+            <p><b>School:</b> <a href="{{path('school_detail', {'schoolId':'1'})}}">{{profile.school}}</a></p>
+            <p><b>Email:</b> <a href="#">{{profile.email}}</a></p>
+            
+            <p>{{profile.bio}}</p>
+            
+            <h3>Schedule</h3>
+            
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th><span class="pull-left">Saturday</span></th>
+                        <th></th>
+                        <th></th>
+                        <th><span class="pull-right">April 12, 2014</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>7:00-8:00 AM</td>
+                        <td><a href="{{path('team_detail', {'teamId':'1'})}}">Zoom Zoom (3)</a></td>
+                        <td><a href="{{path('game_detail', {'gameId':'1'})}}">GRN</a></td>
+                        <td>Registration</td>
+                    </tr>
+                    <tr>
+                        <td>8:00-8:30 AM</td>
+                        <td><a href="{{path('team_detail', {'teamId':'1'})}}">Zoom Zoom (3)</a></td>
+                        <td><a href="{{path('game_detail', {'gameId':'1'})}}">GRN</a></td>
+                        <td>Game Kickoff (Commons Area - Confirm your Schedules</td>
+                    </tr>
+                    <tr>
+                        <td>8:30-12:30 AM</td>
+                        <td><a href="{{path('team_detail', {'teamId':'1'})}}">Zoom Zoom (3)</a></td>
+                        <td><a href="{{path('game_detail', {'gameId':'1'})}}">GRN</a></td>
+                        <td>3 events begin at the same time and run all morning</td>
+                    </tr>
+                    <tr>
+                        <td>4:00-4:00 PM</td>
+                        <td><a href="{{path('team_detail', {'teamId':'2'})}}">3rd Degree (5)</a></td>
+                        <td><a href="{{path('game_detail', {'gameId':'2'})}}">DRD</a></td>
+                        <td>Winners Announced</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+{% endblock %}

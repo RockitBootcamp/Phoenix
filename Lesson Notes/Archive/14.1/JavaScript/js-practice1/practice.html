@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script type="text/javascript" src="practice.js"></script>
+    <script type="text/javascript" src="solver.js"></script>
+    <link rel="stylesheet" type="text/css" href="practice.css">
+</head>
+<body>
+    <div id="results"></div>
+    <button id="resultsButton">Show Results</button>
+    <script type="text/javascript">
+        document.getElementById("resultsButton").onclick = runAllTests;
+        resultsPane = document.getElementById("results");
+        runAllTests();
+    </script>
+</body>
+</html>

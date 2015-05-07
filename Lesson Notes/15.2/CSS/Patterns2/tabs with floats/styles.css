@@ -1,0 +1,16 @@
+.tabs {
+    background: green;
+}
+
+.tabs::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.tabs a {
+    background-color: yellow;
+    float: left;
+    display: block;
+    padding: 10px;
+}
