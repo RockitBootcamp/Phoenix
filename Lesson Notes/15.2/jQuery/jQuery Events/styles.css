@@ -1,0 +1,6 @@
+div:nth-child(odd) { background: red; }
+div:nth-child(even) { background: green; }
+
+div {
+    padding: 10px;
+}
