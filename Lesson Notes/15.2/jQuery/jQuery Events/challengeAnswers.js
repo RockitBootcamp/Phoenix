@@ -1,13 +1,13 @@
-// Challenge 1. Console.log hello world when you click the button
+// Challenge 1. Console.log hello world when you click the button.btn
 
 // Step 1. Find the element you want to hook onto.
-// $('button')
+// $('button.btn')
 
 // Step 2. Write the code to hook a specific event
-// $('button').on('click', function(){});
+// $('button.btn').on('click', function(){});
 
 // Step 3. Do you action inside the function
-// $('button').on('click', function(){
+// $('button.btn').on('click', function(){
 //    console.log("hello world");
 //});
 
@@ -30,6 +30,20 @@
 // $('.fn').on('focus', function(){
 //    console.log("Sup");
 // });
+
+// Challenge 6. Console.log "Good bye" when the firstname looses focus(blur)
+// $('.fn').on('blur', function(){
+//    console.log("Good bye");
+// });
+
+// Challenge 7. Console.log "Nice try" when you Submit the form
+// $('form').on('submit', function(){
+//         event.stopPropagation();
+//         console.log("Good bye");
+//         return false;
+
+        
+//     });
 
 // Challenge 6. Console.log $(this) when anything is clicked
 // $('*').on('click', function(){
