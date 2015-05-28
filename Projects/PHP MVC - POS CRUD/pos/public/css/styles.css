@@ -1,0 +1,26 @@
+.error {
+    color: red;
+}
+
+table td, table th {
+    padding: 5px;
+}
+
+footer, fieldset {
+    margin-top: 20px;
+}
+
+/**
+ * Buttons
+ */
+
+.button, button {
+    display: inline-block;
+    padding: 10px 20px;
+    font: 12pt Serif;
+    background-color: #ddd;
+    color: #000;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}

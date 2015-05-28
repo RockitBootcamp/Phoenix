@@ -1,0 +1,1057 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"line",
+				"lineItems"
+			],
+			[
+				"main",
+				"maxdb_init"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"client",
+				"client_id"
+			],
+			[
+				"clie",
+				"clients"
+			],
+			[
+				"cli",
+				"clients"
+			],
+			[
+				"confirm",
+				"confirm_dialog"
+			],
+			[
+				"list",
+				"list_rate"
+			],
+			[
+				"expense",
+				"expenseUnitCost"
+			],
+			[
+				"addItemto",
+				"addItemToInvoice"
+			],
+			[
+				"add",
+				"addDiscountedItemToInvoice"
+			],
+			[
+				"lin",
+				"lineitem_form_type"
+			],
+			[
+				"adde",
+				"addExpenseItemToInvoice"
+			],
+			[
+				"createLine",
+				"createLineDeleteButton"
+			],
+			[
+				"lineitem",
+				"lineitem_form"
+			],
+			[
+				"discount",
+				"discounted_price"
+			],
+			[
+				"li",
+				"lineitem_item_num"
+			],
+			[
+				"edit",
+				"edit_mode"
+			],
+			[
+				"form",
+				"formField"
+			],
+			[
+				"item",
+				"item_num"
+			],
+			[
+				"qua",
+				"quantity_type"
+			],
+			[
+				"q",
+				"q_type"
+			],
+			[
+				"open",
+				"openLineItemForm"
+			],
+			[
+				"new",
+				"new_or_edit"
+			],
+			[
+				"a",
+				"addClass"
+			],
+			[
+				"re",
+				"renderInvoice"
+			],
+			[
+				"de",
+				"description_raw"
+			],
+			[
+				"quanti",
+				"quantity_type"
+			],
+			[
+				"Freshbooks",
+				"FreshBooksApi"
+			],
+			[
+				"quan",
+				"quantity_type"
+			],
+			[
+				"cre",
+				"create"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"border-c",
+				"border-collapse"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"search",
+				"search_form"
+			],
+			[
+				"add-",
+				"add-new-customer"
+			],
+			[
+				"sear",
+				"search_form"
+			],
+			[
+				"disc",
+				"discounted_price"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"ext",
+				"ext-list"
+			],
+			[
+				"fee",
+				"fee_pct"
+			],
+			[
+				"button",
+				"button-calc"
+			],
+			[
+				"tie",
+				"ticket_params"
+			],
+			[
+				"foreach",
+				"foreach	bladeforeach"
+			],
+			[
+				"table",
+				"table-cell"
+			],
+			[
+				"create",
+				"created_at"
+			],
+			[
+				"var",
+				"var	sqlvar"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"gene",
+				"generate-report"
+			],
+			[
+				"location",
+				"location_names"
+			],
+			[
+				"margi",
+				"margin-left"
+			],
+			[
+				"border",
+				"border-left"
+			],
+			[
+				"border-",
+				"border-right"
+			],
+			[
+				"vendor",
+				"vendor_id"
+			],
+			[
+				"min-",
+				"min-width"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"list-style",
+				"list-style-type"
+			],
+			[
+				"prepare",
+				"prepared_query"
+			],
+			[
+				"array",
+				"array_reduce"
+			],
+			[
+				"array_fi",
+				"array_filter"
+			],
+			[
+				"strto",
+				"strtoupper"
+			],
+			[
+				"_S",
+				"_SESSION"
+			],
+			[
+				"session",
+				"session_start"
+			],
+			[
+				"build",
+				"buildIt"
+			],
+			[
+				"pet_",
+				"pet_type_id"
+			],
+			[
+				"throw",
+				"throwSomething"
+			],
+			[
+				"set",
+				"setWashed"
+			],
+			[
+				"sess",
+				"session_start"
+			],
+			[
+				"Digger",
+				"DiggerFactory"
+			],
+			[
+				"private",
+				"private_dig"
+			],
+			[
+				"is",
+				"is_int"
+			],
+			[
+				"border-s",
+				"border-style"
+			],
+			[
+				"field",
+				"field_states"
+			],
+			[
+				"error",
+				"error_msg"
+			],
+			[
+				"input",
+				"input_types"
+			],
+			[
+				"val",
+				"validate_param"
+			],
+			[
+				"err",
+				"error_msg"
+			],
+			[
+				"Vali",
+				"ValidationException"
+			],
+			[
+				"arra",
+				"array_keys"
+			],
+			[
+				"ar",
+				"array_pop"
+			],
+			[
+				"s",
+				"substr"
+			],
+			[
+				"U",
+				"USER_SITES_DIR"
+			],
+			[
+				"PHP",
+				"PHP_TEST_INDEX_FILE"
+			],
+			[
+				"US",
+				"USER_VHOSTS_DIR"
+			],
+			[
+				"loc",
+				"localhost"
+			],
+			[
+				"u",
+				"USER_VHOSTS_DIR"
+			],
+			[
+				"APT",
+				"APT_CAHCE_EXE"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"INT",
+				"INT_VAL"
+			],
+			[
+				"for",
+				"formalRest"
+			],
+			[
+				"String",
+				"StringBuffer"
+			],
+			[
+				"inv",
+				"invoice"
+			],
+			[
+				"ins",
+				"insert_id"
+			],
+			[
+				"purchas",
+				"purchase_id"
+			],
+			[
+				"pr",
+				"product_results"
+			],
+			[
+				"mysq",
+				"mysqli"
+			],
+			[
+				"reqURL",
+				"reqURLParts"
+			],
+			[
+				"con",
+				"controllerName"
+			],
+			[
+				"req",
+				"reqURLParts"
+			],
+			[
+				"reqU",
+				"reqURL"
+			],
+			[
+				"Produ",
+				"Product2"
+			],
+			[
+				"v",
+				"VARCHAR"
+			],
+			[
+				"pro",
+				"prodId"
+			],
+			[
+				"get",
+				"getProductBySKU"
+			],
+			[
+				"prod",
+				"prodId"
+			],
+			[
+				"getPro",
+				"getProductsForCategory"
+			],
+			[
+				"cart",
+				"cartBox"
+			],
+			[
+				"preg_",
+				"preg_match"
+			],
+			[
+				"las",
+				"last_name"
+			],
+			[
+				"first",
+				"first_name"
+			],
+			[
+				"array_p",
+				"array_push"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"data",
+				"datapoint"
+			],
+			[
+				"Budget",
+				"BudgetItem"
+			],
+			[
+				"mon",
+				"monthlyBudgets"
+			],
+			[
+				"hap",
+				"hapi-route	create new hapi route"
+			],
+			[
+				"mod",
+				"modelData"
+			],
+			[
+				"ite",
+				"item_id_validation"
+			],
+			[
+				"find",
+				"findById"
+			],
+			[
+				"b",
+				"base_path"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "remo",
+		"selected_items":
+		[
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"make",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"set bla",
+				"Set Syntax: PHP - Laravel Blade"
+			],
+			[
+				"pac",
+				"Package Control: List Packages"
+			],
+			[
+				"set ba",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"set ph",
+				"Set Syntax: PHP"
+			],
+			[
+				"set sq",
+				"Set Syntax: SQL"
+			],
+			[
+				"set sy a",
+				"Set Syntax: Antlr"
+			],
+			[
+				"open",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"set html",
+				"Set Syntax: HTML"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"colors",
+				"Color Scheme Editor: Edit current color scheme"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"lint cu",
+				"SublimeLinter: Lint Current File"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"snippet	",
+				"Snippet: hellosnippets"
+			],
+			[
+				"snipp",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"Snippet: ",
+				"Snippet: hapi"
+			],
+			[
+				"edit s",
+				"SnippetMaker: Edit Snippet"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"tab",
+				"Indentation: Convert to Tabs"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/flansburg/rockit/Full-Stack-LAMP/Milestones/m4/Users"
+	],
+	"file_history":
+	[
+		"/Users/flansburg/rockit/Full-Stack-LAMP/Milestones/m4/POS System/pos_sample/app/Http/Controllers/InvoiceController.php",
+		"/Users/flansburg/rockit/Full-Stack-LAMP/Milestones/m4/POS System/pos_sample/app/Models/Invoice.php",
+		"/Users/flansburg/rockit/Full-Stack-LAMP/Milestones/m4/POS System/pos_sample/resources/views/invoice.blade.php",
+		"/Users/flansburg/rockit/Full-Stack-LAMP/Milestones/m4/POS System/pos_sample/app/Models/Customer.php",
+		"/Users/flansburg/rockit/Full-Stack-LAMP/Milestones/m4/POS System/pos_sample/resources/views/layout.blade.php",
+		"/Users/flansburg/rockit/Full-Stack-LAMP/Milestones/m4/POS System/pos_sample/resources/views/item_all.blade.php",
+		"/Users/flansburg/rockit/Full-Stack-LAMP/Milestones/m4/POS System/pos_sample/resources/views/customer.blade.php",
+		"/Users/flansburg/rockit/Full-Stack-LAMP/Milestones/m4/POS System/pos_sample/app/Models/Item.php",
+		"/Users/flansburg/rockit/Full-Stack-LAMP/Milestones/m4/POS System/pos_sample/app/Http/Controllers/Controller.php",
+		"/Users/flansburg/rockit/Full-Stack-LAMP/Milestones/m4/POS System/pos_sample/public/style.css",
+		"/Users/flansburg/rockit/Full-Stack-LAMP/Milestones/m4/POS System/pos_sample/.env",
+		"/Users/flansburg/rockit/Full-Stack-LAMP/Milestones/m4/POS System/pos_sample/app/Models/LineItem.php",
+		"/Users/flansburg/rockit/Full-Stack-LAMP/Milestones/m4/POS System/pos_sample/tables.sql",
+		"/Users/flansburg/rockit/Full-Stack-LAMP/Milestones/m4/POS System/pos_sample/resources/views/customer_new.blade.php",
+		"/Users/flansburg/rockit/Full-Stack-LAMP/Milestones/m4/POS System/pos_sample/resources/views/customer_edit.blade.php",
+		"/Users/flansburg/rockit/Full-Stack-LAMP/Milestones/m4/POS System/pos_sample/resources/views/item_edit.blade.php",
+		"/Users/flansburg/rockit/Full-Stack-LAMP/Milestones/m4/POS System/pos_sample/resources/views/home.blade.php",
+		"/Users/flansburg/rockit/Full-Stack-LAMP/Milestones/m4/POS System/pos_sample/resources/views/item_new.blade.php",
+		"/Users/flansburg/rockit/Full-Stack-LAMP/Milestones/m4/POS System/pos_sample/resources/views/item.blade.php",
+		"/Users/flansburg/rockit/Full-Stack-LAMP/Milestones/m4/POS System/pos_sample/app/Http/Controllers/ItemController.php",
+		"/Users/flansburg/rockit/Full-Stack-LAMP/Milestones/m4/POS System/pos_sample/resources/views/customer_all.blade.php",
+		"/Users/flansburg/rockit/Full-Stack-LAMP/Milestones/m4/POS System/pos_sample/app/Http/Controllers/CustomerController.php",
+		"/Users/flansburg/rockit/Full-Stack-LAMP/Milestones/m4/POS System/pos_sample/app/Http/routes.php",
+		"/Users/flansburg/rockit/Full-Stack-LAMP/Milestones/m4/POS System/pos_sample/app/Models/Model.php",
+		"/Users/flansburg/rockit/Full-Stack-LAMP/Milestones/m4/POS System/pos_sample/resources/views/invoice_all.blade.php",
+		"/Users/flansburg/rockit/Admin/Milestone Project Solutions/m4/pos/laravel-pos/app/Models/Customer.php",
+		"/Users/flansburg/rockit/Admin/Milestone Project Solutions/m4/pos/laravel-pos/app/Library/Sql.php",
+		"/Users/flansburg/rockit/Admin/Milestone Project Solutions/m4/pos/laravel-pos/app/Http/Controllers/WelcomeController.php",
+		"/Users/flansburg/rockit/Admin/Milestone Project Solutions/m4/pos/laravel-pos/vendor/laravel/framework/src/Illuminate/Support/Facades/Request.php",
+		"/Users/flansburg/rockit/Admin/Milestone Project Solutions/m4/pos/laravel-pos/app/Http/Requests/Request.php",
+		"/Users/flansburg/rockit/Admin/Milestone Project Solutions/m4/pos/laravel-pos/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php",
+		"/Users/flansburg/rockit/Admin/Milestone Project Solutions/m4/pos/laravel-pos/vendor/laravel/framework/src/Illuminate/Routing/Controller.php",
+		"/Users/flansburg/rockit/Admin/Milestone Project Solutions/m4/pos/laravel-pos/.env",
+		"/Users/flansburg/rockit/Admin/Milestone Project Solutions/m4/pos/laravel-pos/app/Models/Collection.php",
+		"/Users/flansburg/rockit/Admin/Milestone Project Solutions/m4/pos/laravel-pos/app/Models/Item.php",
+		"/Users/flansburg/rockit/Admin/Milestone Project Solutions/m4/pos/laravel-pos/resources/views/home.blade.php",
+		"/Users/flansburg/Sites/beform/app/controllers/CMEController.php",
+		"/Users/flansburg/Sites/beform/freshbooks/freshbooks-api/src/Freshbooks/FreshBooksApi.php",
+		"/Users/flansburg/Sites/beform/app/views/all-clients.blade.php",
+		"/Users/flansburg/Desktop/class-to-dos.txt",
+		"/Users/flansburg/Sites/beform/public/js/cme2.js",
+		"/Users/flansburg/Sites/beform/app/controllers/UserController.php",
+		"/Users/flansburg/Sites/beform/app/models/LineItem.php",
+		"/Users/flansburg/Sites/beform/app/models/Invoice.php",
+		"/Users/flansburg/Sites/beform/app/views/api-urls.blade.php",
+		"/Users/flansburg/Sites/beform/app/classes/FBClient.php",
+		"/Users/flansburg/Sites/beform/app/classes/FBThing.php",
+		"/Users/flansburg/Sites/beform/app/views/new-cme.blade.php",
+		"/Users/flansburg/Sites/beform/notes-mar-10-2015.txt",
+		"/Users/flansburg/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/flansburg/Sites/beform/app/routes.php",
+		"/Users/flansburg/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/flansburg/Sites/beform/app/controllers/ClientController.php",
+		"/Users/flansburg/Sites/beform/be_form.sublime-workspace",
+		"/Users/flansburg/Sites/beform/be_form.sublime-project",
+		"/Users/flansburg/Sites/beform/public/js/cme.js",
+		"/Users/flansburg/Sites/beform/tables.sql",
+		"/Users/flansburg/Sites/beform/app/models/Client.php",
+		"/Users/flansburg/Sites/beform/app/views/admin-layout.blade.php",
+		"/Users/flansburg/Sites/beform/app/views/cme.blade.php",
+		"/Users/flansburg/Sites/beform/app/views/all-cmes.blade.php",
+		"/Users/flansburg/Sites/beform/public/js/polyfill.js",
+		"/Users/flansburg/Sites/beform/public/css/beform-media-queries.css",
+		"/Users/flansburg/Sites/beform/public/css/media.queries.css",
+		"/Users/flansburg/projects/sparkio-notes.txt",
+		"/Users/flansburg/Library/Application Support/Sublime Text 3/Packages/User/Distraction Free.sublime-settings",
+		"/Users/flansburg/Library/Application Support/Sublime Text 3/Packages/User/laravel-blade.sublime-settings",
+		"/Users/flansburg/Sites/beform/public/css/admin.css",
+		"/Users/flansburg/Sites/beform/bootstrap/compiled.php",
+		"/Users/flansburg/Sites/beform/public/js/main.js",
+		"/Users/flansburg/Sites/beform/app/models/Experience.php",
+		"/Users/flansburg/Sites/beform/public/gold-test.html",
+		"/Users/flansburg/Sites/beform/app/viewComposers.php",
+		"/Users/flansburg/Library/Application Support/Sublime Text 3/Packages/User/jquery_dialog.sublime-snippet",
+		"/Users/flansburg/Sites/beform/app/controllers/ReservationController.php",
+		"/Users/flansburg/Sites/beform/app/controllers/AuthController.php",
+		"/Users/flansburg/Documents/milestone-analytics/Object 1/content.xml",
+		"/Users/flansburg/Sites/beform/app/start/global.php",
+		"/Users/flansburg/Sites/beform/members.php",
+		"/Users/flansburg/Sites/beform/app/views/layout.blade.php",
+		"/Users/flansburg/Sites/beform/app/views/ticket-orders.blade.php",
+		"/Users/flansburg/Sites/beform/app/models/TicketOrder.php",
+		"/Users/flansburg/Sites/beform/app/views/new-ticket-order.blade.php",
+		"/Users/flansburg/Sites/beform/app/views/reservations.blade.php",
+		"/Users/flansburg/Sites/beform/sb_events.js",
+		"/Users/flansburg/Sites/beform/app/views/ticket-order.blade.php",
+		"/Users/flansburg/Sites/beform/app/views/reservation.blade.php",
+		"/Users/flansburg/Sites/beform/public/css/base.css",
+		"/Users/flansburg/Sites/beform/app/controllers/AdminController.php",
+		"/Users/flansburg/Sites/beform/app/views/create-user.blade.php",
+		"/Users/flansburg/Sites/beform/app/views/login.blade.php",
+		"/Users/flansburg/Sites/beform/app/views/sidebar-box.blade.php",
+		"/Users/flansburg/Library/Application Support/Sublime Text 2/Packages/User/sqlvar.sublime-snippet",
+		"/Users/flansburg/Sites/beform/public/css/beform.css",
+		"/Users/flansburg/Sites/beform/app/views/base_reservation_form.blade.php",
+		"/Users/flansburg/Sites/beform/app/views/reservation_form.blade.php",
+		"/Users/flansburg/Sites/beform/app/views/reservation_submitted.blade.php",
+		"/Users/flansburg/Sites/beform/app/views/backoffice-layout.blade.php",
+		"/Users/flansburg/Sites/beform/app/models/User.php",
+		"/Users/flansburg/Sites/beform/public/js/vendor/jquery-ui.js",
+		"/Users/flansburg/Sites/beform/public/css/vendor/jquery-ui.css",
+		"/Users/flansburg/Sites/beform/app/config/app.php",
+		"/Users/flansburg/Sites/beform/public/formtest/stylesheets/beform.css",
+		"/Users/flansburg/Sites/beform/public/formtest/stylesheets/base.css",
+		"/Users/flansburg/Sites/ms_marine/app/views/create_user.blade.php",
+		"/Users/flansburg/Sites/ms_marine/app/views/search.blade.php",
+		"/Users/flansburg/Sites/ms_marine/app/views/reports.blade.php",
+		"/Users/flansburg/Sites/ms_marine/app/views/vendors.blade.php",
+		"/Users/flansburg/Sites/ms_marine/app/models/Vendor.php",
+		"/Users/flansburg/Sites/ms_marine/tables.sql",
+		"/Users/flansburg/Sites/ms_marine/app/models/Item.php",
+		"/Users/flansburg/Sites/ms_marine/app/views/vendor.blade.php",
+		"/Users/flansburg/Sites/ms_marine/public/index.php",
+		"/Users/flansburg/Sites/ms_marine/app/config/app.php",
+		"/Users/flansburg/Sites/ms_marine/app/view-composers.php",
+		"/Users/flansburg/Sites/ms_marine/app/models/Purchase.php",
+		"/Users/flansburg/Sites/ms_marine/app/models/Sale.php",
+		"/Users/flansburg/Sites/ms_marine/public/css/struct2.css",
+		"/Users/flansburg/Sites/ms_marine/app/start/local.php",
+		"/Users/flansburg/Sites/ms_marine/app/start/artisan.php",
+		"/Users/flansburg/Sites/ms_marine/app/start/global.php",
+		"/Users/flansburg/Sites/ms_marine/bootstrap/start.php",
+		"/Users/flansburg/Sites/ms_marine/bootstrap/paths.php",
+		"/Users/flansburg/Sites/ms_marine/app/views/item_edit.blade.php",
+		"/Users/flansburg/Sites/ms_marine/app/views/login.blade.php",
+		"/Users/flansburg/Sites/ms_marine/app/views/items.blade.php",
+		"/Users/flansburg/Sites/ms_marine/app/views/item.blade.php",
+		"/Users/flansburg/Sites/ms_marine/app/models/User.php"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"[",
+			"old",
+			"item",
+			"Item",
+			"item",
+			"Item",
+			"item",
+			"Item",
+			"item",
+			"Item",
+			"item",
+			"item_",
+			"item",
+			"ItemController",
+			"Input::get",
+			"type=\"text\"",
+			"input=",
+			"input",
+			"{{",
+			"country",
+			"id",
+			"clients",
+			"fb",
+			"<div",
+			"class",
+			"item",
+			"form_titles",
+			"print_r",
+			"src",
+			"item",
+			"setField",
+			"setfield",
+			"formField",
+			"item-num",
+			"cost",
+			"open",
+			"type",
+			"form_new_or",
+			"new_or_edit",
+			"service",
+			"vendor",
+			"service",
+			"vendor",
+			");\n",
+			" \n",
+			"\">",
+			"<div>",
+			"cc_fee",
+			"Name",
+			"<td>",
+			"markup",
+			"client-id",
+			"input",
+			"type",
+			"LineItem",
+			"alt",
+			"class",
+			"<td class",
+			"/span> <div ",
+			"nbsp",
+			"text <span",
+			"<td class=\"g5\">",
+			"<td",
+			"class",
+			"click",
+			"li",
+			"tbody",
+			"data",
+			"Auth",
+			"form",
+			"field",
+			"formField",
+			"exp_dialog",
+			"form",
+			"name",
+			"class",
+			"input",
+			"class",
+			"row",
+			"open",
+			"<input",
+			"input",
+			"text",
+			"Service",
+			"list",
+			">",
+			"type",
+			"epn",
+			"input",
+			"<option>",
+			"order",
+			"<div>",
+			"</span>",
+			"div><s",
+			"input",
+			"{{{",
+			"<li>",
+			"Golf",
+			"golf",
+			"Golf",
+			"golf",
+			"Golf",
+			"golf",
+			"rest",
+			"checkout",
+			"checkin",
+			"hotel",
+			"golf",
+			"None",
+			"formtest",
+			"type",
+			"stylesheets",
+			"href",
+			"-->\n",
+			"href",
+			"stylesheet",
+			"href",
+			"add",
+			"selected",
+			"accordion",
+			"segoe",
+			"<div",
+			"<select",
+			"<input",
+			"<select",
+			"count",
+			"()",
+			"</div>"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Users.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Sites/beform/public/js/cme.js"
+			],
+			[
+				"r",
+				"~/Sites/beform/app/routes.php"
+			],
+			[
+				"data.sql",
+				"/Library/WebServer/Documents/cart_backend/tables.sql"
+			],
+			[
+				"sni",
+				"/Users/flansburg/Library/Application Support/Sublime Text 2/Packages/User/hapiroute.sublime-snippet"
+			],
+			[
+				"ite",
+				"/Users/flansburg/code/node/hapi/itemRoutes.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 220.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
