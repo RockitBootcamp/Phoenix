@@ -30,7 +30,7 @@ class User {
 
         // SQL
         $sql = "
-            INSERT INTO USER (first_name, last_name, email, phone)
+            INSERT INTO user (first_name, last_name, email, phone)
             VALUES (:first_name, :last_name, :email, :phone)
             ";
 
