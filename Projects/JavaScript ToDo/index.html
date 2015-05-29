@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Things To Do</h1>
+    <form id="create-task">
+      <input id="create-text" type="text" placeholder="Enter task description">
+      <select name="importance" id="create-importance">
+        <option value="low">Low</option>
+        <option value="" selected>Normal</option>
+        <option value="high">High</option>
+      </select>
+      <input id="create-btn" type="button" value="Create">
+    </form>
+    <input id="show-completed" type="checkbox" checked>
+    <label for="show-completed">Show completed tasks</label>
+  </header>
+
+  <section id="tasks">
+
+    <div class="task">
+      <input id="task-1" type="checkbox">
+      <label for="task-1" class="text">Do something</label>
+    </div>
+
+    <div class="task">
+      <input id="task-2" type="checkbox">
+      <label for="task-2" class="text">This is a really long task with some overflow</label>
+    </div>
+
+    <div class="task">
+      <input id="task-3" type="checkbox" checked>
+      <label for="task-3" class="text">This is a completed task</label>
+    </div>
+
+  </section>
+
+</body>
+</html>
