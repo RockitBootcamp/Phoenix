@@ -1,0 +1,154 @@
+/* Reset */
+
+html {
+  color: #777;
+  font-family: 'Open Sans', Arial;
+}
+* {
+  box-sizing: border-box;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+}
+html, body { height: 100%; padding: 0; margin: 0; }
+body { min-height: 100%; }
+img { border: 0; }
+a:focus, a:active, button:focus { outline: 0; }
+
+
+/* Defaults */
+
+a {
+  color: #2E9AC2;
+  text-decoration: none;
+}
+
+input[type="button"], button {
+  background-color: #C5CACC;
+  border-radius: 3px;
+  border: none;
+  color: #555;
+  display: inline;
+  padding: 7px 15px;
+}
+
+h1 {
+  font-family: cursive;
+  font-size: 2.8em;
+  color: #76BDFF;
+  margin-bottom: 10px;
+}
+
+/* Form */
+
+#create-task input[type="text"] {
+  border-radius: 3px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #C5CACC;
+  width: 300px;
+  padding-right: 50px;
+  padding: 5px;
+  height: 2em;
+}
+
+#create-task input:focus {
+  /*outline: none;*/
+}
+
+select#create-importance {
+  position: relative;
+  top: -1px;
+  height: 2em;
+  border: 0;
+  width: 95px;
+}
+
+/* Task */
+
+.task {
+  padding: 5px 24px;
+  line-height: 1em;
+}
+
+.task .text {
+  overflow-x: hidden;
+  max-width: 300px;
+  white-space: nowrap;
+  display: inline-block;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+
+.task .remove:hover {
+  background-color: #FF0000;
+  color: #FFF;
+  border-color: #FFFFFF;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.task .remove {
+  background-color: #F9F9F9;
+  font-weight: 700;
+  color: #000;
+  padding: 3px 3px 5px;
+  line-height: 0.4em;
+  font-size: .8em;
+  position: relative;
+  top: -1px;
+  margin-left: 6px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #F9F9F9;
+}
+
+.task .remove::before {
+  content: "x";
+}
+
+.task input:checked + .text {
+  text-decoration: line-through;
+}
+
+.task.low {
+  border-left-color: #CACACA;
+  border-left-style: solid;
+  border-left-width: 5px;
+  padding-left: 19px;
+  color: #CACACA;
+}
+
+.task.high {
+  border-left-color: #F17A7A;
+  border-left-style: solid;
+  border-left-width: 5px;
+  padding-left: 19px;
+  color: #F17A7A;
+}
+
+/* Structure */
+
+body {
+  background-color: #F9F9F9;
+}
+
+main {
+  width: 600px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #EEE;
+  padding: 10px 24px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.tasks {
+  margin-top: 10px;
+  background-color: #fff;
+  border: 1px solid #C0E1ED;
+  border-radius: 10px;
+  overflow: hidden;
+}
