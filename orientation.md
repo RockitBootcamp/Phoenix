@@ -2,15 +2,13 @@
 
 ## Accounts
 
-- GitHub
-  - Signup and have username available
-  - Make sure each student has access to the Student Resources and the Plus page
-- Google Plus
-  - Invite each student into plus page
-- Create a Twitter account.
+- Create a GitHub account
+  - Have your GitHub username readily available on the first day of class
+- Google a Google Plus account
+- Create a Twitter account
 - Create a LinkedIn account
   - Link with other students and Rockit staff on LinkedIn
-- Use Google bookmarks and sync
+- Use Google bookmarks and chrome's built-in sync feature to organize links to class and study material
 
 ## High-level schedule (Full-Stack LAML)
 - Milestones (weeks 1-7)
