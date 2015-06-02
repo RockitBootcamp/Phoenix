@@ -10,7 +10,7 @@
   - Link with other students and Rockit staff on LinkedIn
 - Use Google bookmarks and chrome's built-in sync feature to organize links to class and study material
 
-## High-level schedule (Full-Stack LAML)
+## High-level schedule (Full-Stack LAMP)
 - Milestones (weeks 1-7)
 - Group Projects (weeks 8-9)
 - Individual Projects (weeks 10-12)
