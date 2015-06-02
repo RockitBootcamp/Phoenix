@@ -30,7 +30,7 @@
 - Don't be late to class
 - Our best students have historically always showed up early and stayed late
 - Every day is broken down into four quarters
-  - Each quarter is about an hour and fourty-five minutes
+  - Each quarter is about 1:45 minutes
   - Each quarter is filled with a lesson or misc activity
 - Lunch is between the 2nd and 3rd quarter
   - You can bring lunch and store it in the mini-fridge
@@ -48,15 +48,15 @@
   - A multiple choice test
   - A technical interview with teachers
   - Turning in a project for the milestone
-- Lessons can be redone as many times as it takes for you to grasp the material
-- Students can request more difficult material if they wish
+- Lessons are often repeated since students might be on different milestones.
+- Students can request more difficult material if they wish and are encouraged to do so if they feel like the class is not challenging them enough.
 - Homework is rarely turned in. There are no grades in the bootcamp so homework is never graded. The purpose of homework is to study and practice. If you don't understand a part of your homework then please ask questions but sometimes we assign homework without following up. The idea is that you are responsible for following up if you have questions.
 
 ## Class Materials
 
 - The schedule and some "power-point" style presentations are at [Google Drive](https://drive.google.com/a/azpixels.com/#folders/0Bx5x0ObRW281Q1lEbnJoOFBoUW8)
 - Most class materials are at GitHub in the [Student Resources Repository](https://github.com/RockitBootcamp/Student-Resources)
-  - Each milestone has approximately 14-18 lessons and discovering which lessons of Student Resources belong to which milestone is documented in the 15.2 repo
+  - Each milestone has approximately 14-18 lessons and discovering which lessons of Student Resources belong to which milestone is documented in the course's respective repository name. For example the "Frontend" course has a repo called Frontend
   - Each lesson has a list of objectives which you are responsible for learning
   - The objectives also double-serve as a study guide for any tests and interviews
   - All lessons have links to outside resources that will supplement the in-class lesson
@@ -67,8 +67,8 @@
 ## Study
 
 - Feel free to come in early, stay late, meet with students on weekends, organize meetups, organize hangouts with other students
-- Bring a notebook and pen every day
+- Bring a notebook and pen every day. You will need notepads for milestone interviews.
 - Use tools like WorkFlowy and GitHub Gists to take electronic notes if you wish
-- Study tomorrow's material today, at least enough to be familiar with terms and basic concepts
+- Study tomorrow's material today, at least enough to be familiar with terms and basic concepts. This refers to each lesson's "Pre Study" material on GitHub at the bottom of each lesson's objectives
   
   
