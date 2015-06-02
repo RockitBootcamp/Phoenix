@@ -3,6 +3,7 @@
 ## Accounts
 
 - Create a GitHub account
+  - Add your photo to your profile so we can easily see who's account it is (it can be difficult with some usernames to tell)
   - Have your GitHub username readily available on the first day of class
 - Google a Google Plus account
 - Create a Twitter account
