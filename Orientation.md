@@ -6,6 +6,7 @@
   - Add your photo to your profile so we can easily see who's account it is (it can be difficult with some usernames to tell)
   - Have your GitHub username readily available on the first day of class
 - Google a Google Plus account
+  - Add your photo here too
 - Create a Twitter account
 - Create a LinkedIn account
   - Link with other students and Rockit staff on LinkedIn
@@ -37,7 +38,7 @@
   - There is a food market within walking distance at the University of Phoenix building
   - Lunch lasts for 30-40 mins
   - You can eat in the classroom, just be careful
-- There is a weekly schedule made ahead of time at [Google Drive](https://drive.google.com/a/azpixels.com/#folders/0Bx5x0ObRW281Q1lEbnJoOFBoUW8)
+- There is a weekly schedule made ahead of time at Google Drive
   
 ## The Milestone Process
 
@@ -53,7 +54,7 @@
 
 ## Class Materials
 
-- The schedule and some "power-point" style presentations are at [Google Drive](https://drive.google.com/a/azpixels.com/#folders/0Bx5x0ObRW281Q1lEbnJoOFBoUW8)
+- The schedule and some "power-point" style presentations are at Google Drive
 - Most class materials are at GitHub in the [Student Resources Repository](https://github.com/RockitBootcamp/Student-Resources)
   - Each milestone has approximately 14-18 lessons and discovering which lessons of Student Resources belong to which milestone is documented in the course's respective repository name. For example the "Frontend" course has a repo called Frontend
   - Each lesson has a list of objectives which you are responsible for learning
