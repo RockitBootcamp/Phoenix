@@ -4,16 +4,22 @@
 
 - GitHub
   - Signup and have username available
-  - Make sure each student has access to the Student Resources and the 15.2
+  - Make sure each student has access to the Student Resources and the Plus page
 - Google Plus
   - Invite each student into plus page
 - Create a Twitter account.
 - Create a LinkedIn account
   - Link with other students and Rockit staff on LinkedIn
+- Use Google bookmarks and sync
 
-## High-level schedule
+## High-level schedule (Full-Stack LAML)
 - Milestones (weeks 1-7)
 - Group Projects (weeks 8-9)
+- Individual Projects (weeks 10-12)
+- Graduation (week 12)
+
+## High-level schedule (Frontend)
+- Milestones (weeks 1-9)
 - Individual Projects (weeks 10-12)
 - Graduation (week 12)
 
@@ -44,7 +50,7 @@
   - Turning in a project for the milestone
 - Lessons can be redone as many times as it takes for you to grasp the material
 - Students can request more difficult material if they wish
-- Homework is rarely turned in. There are no grades in the bootcamp so homework is never graded. If you are assigned homework or extra learning material. Make sure you learn it and you only need to follow up with teachers if there were parts you didn't understand or needed clarification on.
+- Homework is rarely turned in. There are no grades in the bootcamp so homework is never graded. The purpose of homework is to study and practice. If you don't understand a part of your homework then please ask questions but sometimes we assign homework without following up. The idea is that you are responsible for following up if you have questions.
 
 ## Class Materials
 
@@ -63,6 +69,6 @@
 - Feel free to come in early, stay late, meet with students on weekends, organize meetups, organize hangouts with other students
 - Bring a notebook and pen every day
 - Use tools like WorkFlowy and GitHub Gists to take electronic notes if you wish
-- Study tomorrow's material today, at least enough to be familair with terms and basic concepts
+- Study tomorrow's material today, at least enough to be familiar with terms and basic concepts
   
   
