@@ -2,6 +2,14 @@
 
 Create a mock version of twitter given the project's existing HTML/CSS
 
+## Acceptance Criteria
+
+- As a user, I should be able to send a new tweet, which should get added to the list of tweets
+- As a user, I should be able to click any top-level tweet to expand it
+- As a user, I should be able to see all replies to a tweet while it is expanded
+- As a user, I should be able to reply to any top-level tweet
+- As a user, I should be able to close/collapse an expanded top-level tweet by clicking it a second time
+
 ## HTML Structure
 
 The project is broken down into two main sections: `header` and `.tweets`
