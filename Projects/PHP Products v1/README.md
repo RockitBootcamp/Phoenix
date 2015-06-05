@@ -13,32 +13,29 @@ Follow the provided graphic design to accomplish the site's HTML and CSS. The he
 Your project must include the following:
 
 ### Files
-- header.php
-  - included on each page and consists of a 'logo' that reads 'Business Site' and links to navigate between pages
-- footer.php
-  - included on each page and consists of a copyright sign followed by '2015'
-- index.php
-  - this is the home page with the welcome message and browse products link
-- contact.php
-  - consists of contact information of the business (name, phone number, and email can be ficticious)
-- browse.php
-  - Three product links: Mac, Ubuntu, Windows
-  - Do not use `<br>` tags
-  - Each link will have a GET variable indicating its product ID (1, 2, 3).
-    - the ID variable will be passed to the `product` page when clicked. 
+
+- `header.php`
+- `footer.php`
+- `index.php`
+- `contact.php`
+  - Just make up basic contact info
+- `browse.php`
+  - Three product links: "Mac", "Ubuntu", "Windows"
+  - Each product link will have an `id` variable indicating its ID (1, 2, 3).
+    - the ID variable will be passed to the `view.php` page via `GET` request. 
     - Use 1 for Mac, 2 for Ubuntu, and 3 for Windows.
-- view.php
-  - Use `if` and `if-else` statements to determine which product was clicked.
+- `product.php`
+  - Use `if` and `else-if` statements to determine which product was clicked.
   - An output should be displayed to show the name of the product clicked.
   - You also need to include a statement to handle any product ID other than 1, 2, 3. For example, if the user were to enter "0" or "4" or "123", a message should be output to read something like "Your entry is not valid, please try again."
-- css/styles.css
+- `css/styles.css`
   - Use the graphic design provided to accomplish the HTML & CSS.
-- images/background.png
+- `images/background.png`
   - taken from http://subtlepatterns.com 
 
 ### Tips
 
-All pages are PHP pages, but the ones that have logic should have its PHP logic at the top of the page, then echos down in the HTML. For example:
+While sometimes a file might only hold HTML even though it's extension is `.php`, many times your PHP files will have logical sections to them. For good "separation of concerns", it's best to place the main PHP logic at the top (and away from) the HTML. Then the PHP can create variables to place into the HTML:
 
 ```php
 <?php
@@ -65,9 +62,9 @@ if ($_GET['foo'] == 'foo') {
 </html>
 ```
 
-Notice the PHP logic on top creates a variable to be echoed into the correct place below. We can't fully separate HTML from PHP but this is good enough for now. 
+Notice the PHP logic on top creates a variable to be "echoed" into the correct place below. We can't fully separate HTML from PHP but this is good enough for now. 
 
-Spacing makes things easier to read. Be sure to use spaces around your PHP tags for legibility.
+Spacing makes things easier to read. Be sure to use spaces around your PHP tags for legibility:
 
 ```php
 <?php
@@ -90,3 +87,5 @@ Spacing makes things easier to read. Be sure to use spaces around your PHP tags 
 </body>
 </html>
 ```
+
+Notice how we can see the difference between HTML and PHP section more easily when we use spaces to make gaps.
