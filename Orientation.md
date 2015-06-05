@@ -1,9 +1,15 @@
 # Orientation
 
+## Rockit Mission
+
+At Rockit, we work to bridge the skills gap in supply and demand for web developers.
+- Meet employer needs for well-rounded web developers who will contribute to and share in company success
+- Meet individual student needs in becoming web developers.
+
 ## Accounts
 
 - Create a GitHub account
-  - Add your photo to your profile so we can easily see who's account it is (it can be difficult with some usernames to tell)
+  - Add your photo to your profile so we can easily see who's account it is (it can be difficult to tell with some usernames)
   - Have your GitHub username readily available on the first day of class
 - Google a Google Plus account
   - Add your photo here too
@@ -26,7 +32,7 @@
 ## Daily Schedule
 
 - Class starts at 9am and ends at 5pm
-- The room is officially unlocked at 8am but if you ask the security guard they will open it up early for you
+- The room is officially unlocked at 8am but if you ask the security guard, they will open it up early for you
 - Don't be late to class
 - Our best students have historically always showed up early and stayed late
 - Every day is broken down into four quarters
@@ -45,28 +51,34 @@
 - Each student is on an individual pace to learn.
 - When a student has proven that they've mastered a milestone, they can graduate onto the next milestone
 - Graduating a milestone requires
-  - A multiple choice test
-  - A technical interview with teachers
+  - Passing a multiple choice test
+  - Passing a technical interview with teachers
   - Turning in a project for the milestone
 - Lessons are often repeated since students might be on different milestones.
 - Students can request more difficult material if they wish and are encouraged to do so if they feel like the class is not challenging them enough.
-- Homework is rarely turned in. There are no grades in the bootcamp so homework is never graded. The purpose of homework is to study and practice. If you don't understand a part of your homework then please ask questions but sometimes we assign homework without following up. The idea is that you are responsible for following up if you have questions.
+- Homework is rarely turned in. There are no grades in the bootcamp, so homework is never graded. The purpose of homework is to study and practice. If you don't understand a part of your homework, then please ask questions. There are times we assign homework without following up. The idea is that you are responsible for following up if you have questions.
+
+## Professional and Personal Development
+
+- For the first half of the bootcamp, there will be a non-technical theme to help enhance your professional and personal development. Some topics include: self-awareness, organization & time management, teamwork, and more. 
+- The second half of the bootcamp will continue to focus on non-technical skills, but will be related to resume building and the job search. We conduct mock interviews to provide you with real world interview experience. 
+- In addition, we host networking events in the last few weeks of the bootcamp where we invite employers to come in and talk about their company and culture for the last hour of class. They are then invited to stay for a couple of hours to network with students.
 
 ## Class Materials
 
-- The schedule and some "power-point" style presentations are at Google Drive
+- The weekly schedule and some "power-point" style presentations are at Google Drive
 - Most class materials are at GitHub in the [Student Resources Repository](https://github.com/RockitBootcamp/Student-Resources)
   - Each milestone has approximately 14-18 lessons and discovering which lessons of Student Resources belong to which milestone is documented in the course's respective repository name. For example the "Frontend" course has a repo called Frontend
-  - Each lesson has a list of objectives which you are responsible for learning
+  - Each lesson has a list of objectives that you are responsible for learning
   - The objectives also double-serve as a study guide for any tests and interviews
   - All lessons have links to outside resources that will supplement the in-class lesson
   - Many lessons have "Extra Study" or homework assignments at the bottom of the lesson
   - There is a "Glossary of terms" available in the Student Resources
-  - There is a file called "Cool Resources" which links to all kinds of interesting blogs and learning material
+  - There is a file called "Cool Resources" that links to all kinds of interesting blogs and learning material
 
 ## Study
 
-- Feel free to come in early, stay late, meet with students on weekends, organize meetups, organize hangouts with other students
+- Feel free to come in early, stay late, meet with students on weekends, organize meetups, and organize hangouts with other students
 - Bring a notebook and pen every day. You will need notepads for milestone interviews.
 - Use tools like WorkFlowy and GitHub Gists to take electronic notes if you wish
 - Study tomorrow's material today, at least enough to be familiar with terms and basic concepts. This refers to each lesson's "Pre Study" material on GitHub at the bottom of each lesson's objectives
