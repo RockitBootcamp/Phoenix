@@ -1,11 +1,12 @@
-# Milestone 4: PHP Project
-###A POS System
+# PHP MVC - POS CRUD
 
 ## Project Background and Description
+
 For this milestone, a point-of-sale (POS) system that a retailer might use to track of customers, invoices, and the items that are for sale is partially created. You will finish the system by adding the invoice piece to include CRUD (Create, Retrieve, Update, Delete). There are bonus tasks that you can do once you have **fully** met the acceptance criteria.
 
-##Acceptance Criteria
-- use the database tables.sql file provided to create the POS database, tables, and content on your local environment
+## Acceptance Criteria
+
+- Use the database `tables.sql` file provided to create the POS database, tables, and content on your local environment
 - **Home page**
 	- add a link to your invoices page
 - **Invoices page**

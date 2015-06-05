@@ -1,6 +1,4 @@
-# Milestone 3: PHP Project Outline
-
-## User Login & Validation
+# PHP Login with Sessions
 
 ## Project Background and Description
 
