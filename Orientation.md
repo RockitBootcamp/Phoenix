@@ -29,7 +29,7 @@ At Rockit, we work to bridge the skills gap in supply and demand for web develop
 - Individual Projects (weeks 10-12)
 - Graduation (week 12)\
 
-## Weekly Schedule
+## Typical Week Schedule
 - Each week has a theme that related to a non-technical topic.
   - The non-technical topic is a skill that employers are looking are.
 - Monday
