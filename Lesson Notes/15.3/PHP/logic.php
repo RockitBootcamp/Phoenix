@@ -118,6 +118,46 @@ if ($a < 4) {
 //if Sun is up && kid is less than 5 - take to day care
 //if Sun is not up, put them to bed
 
-$sun = true;
-$age = 7;
+// $sun = true;
+// $age = 7;
+
+// if ($sun) {
+//   if ($age >= 5) {
+//     echo "Take me to school!";
+//   } else {
+//     echo "Take me to daycare!";
+//   }
+// } else {
+//   echo "Put me to bed!";
+// }
+
+
+// if () {
+//   if () {
+
+//   } else {
+
+//   }
+// } else {
+
+// }
+
+
+// If you like people, youre a front end person, otherwise youre
+// aa backednd person.
+//
+// if youre frontend and like art, you'll like CSS, otherwise you'll like
+// JS
+//
+// if youre a backend person and you like data, then you'll like mysql
+// otherwise you'll like systems admin
+
+
+$peoplePerson = true;
+$artist = true;
+$data = false;
+
+
+
+
 
