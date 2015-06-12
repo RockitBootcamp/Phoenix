@@ -8,7 +8,7 @@ Create a simple ToDo app that allows creating new tasks, marking tasks as comple
 ![Advanced](images/Basic ToDo.gif)
 
 - As a user, I should be able to create new tasks by entering a task description and clicking a "Create" button
-- As a user, I should be able to set the importance of the task (low, normal, high) via a dropdown when creating a new task 
+- As a user, I should be able to set the importance of the task (low, normal, high) via a dropdown when creating a new task
 - As a user, I expect the default importance level to be "normal"
 - As a user, I should be able to checkmark individual tasks to indicate the task was completed
 - As a user, I should be able to uncheck individual tasks to undo the completed state
@@ -60,12 +60,12 @@ The `#tasks` section will have it's direct children elements be `.task`s. Some a
 </div>
 ```
 
-A new task will be created programmatically each time the user clicks the `#create-btn` button in the `header`. If the user has not entered any text in the text field, no new task will be created. 
+A new task will be created programmatically each time the user clicks the `#create-btn` button in the `header`. If the user has not entered any text in the text field, no new task will be created.
 
 
 ## State Management
 
-Be sure to study the CSS and see how it works. The state of each task is managed via the state of the associated checkbox. 
+Be sure to study the CSS and see how it works. The state of each task is managed via the state of the associated checkbox.
 
 ```css
 .task input:checked + .text {
@@ -86,22 +86,26 @@ Tasks that have "low" or "high" importance will have an additional class of `low
 
 You will only need 2 jQuery event handlers for this project and a template rendering function. Follow this guide to ensure success.
 
-## Rendering a template
+## Generating new DOM
 
-Use Handlebars to break the reusable HTML into a template. Include your template in the `index.html` using the following format
+Use jQuery to generate HTML in the format of the tweet (see above). You will have to set certain attributes based on values. For instance, if "importance" is "low", add the "low" class to the `div.task` element.
 
-```html
-<script id="tmpl-task" type="text/x-handlebars-template">
-	template HTML here
-</script>
-```
-
-Create a template function that accepts an `Object` to pass to the Handlebars renderer and `return`s the rendered template string.
+Create a function that accepts an `Object` and `return`s the rendered template string.
 
 ```js
-function render(details) {
+function generate(details) {
 
 }
+```
+
+Use jQuery's DOM generation syntax to create each element and assign the necessary attributes and values.
+
+```js
+// creating a new <div class="foo" id="bar"> by example
+$('<div>', {
+  class: 'foo',
+  id: 'bar'
+})
 ```
 
 Test the function by calling the function with a data Object and console logging the output.
@@ -110,10 +114,10 @@ Test the function by calling the function with a data Object and console logging
 
 Create a jQuery click event handler for the "Create" button that does the following (you will need to figure out the optimal logical order of operations)
 
+- retrieve the value from the text input
+- retrieve the value from the select dropdown
+- get the generated DOM by passing the values to your generate function
 - `if` condition checking if there is any text in the text input
-- retriev the value from the text input
-- retriev the value from the select dropdown
-- get the rendered template by passing the values to your template rendering function
 - append the new task to the `#tasks` container
 
 ## Showing or hiding completed tasks
