@@ -1,4 +1,4 @@
-# jQuery Twitter v1
+# jQuery Twitter v1 
 
 Create a mock version of twitter given the project's existing HTML/CSS
 
@@ -36,6 +36,7 @@ The header will always only consist of the compose form:
     </form>
 </header>
 ```
+![alt text](images/tweetCompose.png "Compose")
 
 The `.tweets` section will have its direct children elements be `.thread`s. Some are already made for you so you can see the structure. Others will be created dynamically:
 
@@ -73,6 +74,7 @@ A new thread will be dynamically created each time someone uses the `.compose` s
 
 </div>
 ```
+![alt text](images/tweetThread.png "Thread")
 
 Notice how the thread comes with a `.replies` section which will have its own `.compose`. Also notice that this `.compose` HTML is exactly the same as the one in the `header`.
 
@@ -112,6 +114,7 @@ When a reply `.tweet` is added, it will be placed as a sibling to the `.compose`
 
 </div>
 ```
+![alt text](images/tweetReply.png "Reply")
 
 ## State Management
 
