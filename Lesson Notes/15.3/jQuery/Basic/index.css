@@ -1,7 +1,7 @@
-.hello {
-  background-color: magenta;
+div.foo {
+    background-color: blue;
 }
 
-.blue {
-  background-color: blue;
+div.foo.active {
+    background-color: green;
 }

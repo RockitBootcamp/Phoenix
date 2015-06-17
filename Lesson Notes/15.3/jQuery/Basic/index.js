@@ -1,20 +1,20 @@
-// the jQuery global variables are
-// jQuery
-// $
+$(function() {
+  
+  // Rewrites all the text of div
+  //$('div').text('Hello');
 
-// jQuery()
+  // Adds content to the end
+  //$('div').append('Hello');
 
-// "DOM-ready" callback
+  // works like text, but actually creats HTML
+  //$('div').html('<h1>hello</h1>');
 
-$(function () {
-  var $head = $('h1')
-  var $foo = $('.foo')
+  // This adds inline styles
+  //$('div').css('color', 'red');
 
-  $foo.addClass('hello').appendTo($head)
 
-  // $foo.html('<div class="blue">I\'m blue</div>')
 
-  $foo.text('Words')
+  $('div').removeClass('foo bar');
 
-  console.log($foo)
-})
+
+});
