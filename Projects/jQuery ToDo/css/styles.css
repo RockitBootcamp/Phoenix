@@ -146,7 +146,7 @@ header {
   margin-bottom: 10px;
 }
 
-.tasks {
+#tasks {
   margin-top: 10px;
   background-color: #fff;
   border: 1px solid #C0E1ED;
