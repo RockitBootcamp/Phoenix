@@ -1,0 +1,29 @@
+div {
+    background-color: green;
+    border-radius: 10px;
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    position: relative;
+}
+
+div:hover {
+    background-color: yellow;
+    border-color: yellow;
+}
+
+div::after {
+    content: '';
+    border: 10px solid inherit;
+    width: 0;
+    height: 0;
+    display: block;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    top: 120px;
+    left: 30px;
+}
+
+div:hover 

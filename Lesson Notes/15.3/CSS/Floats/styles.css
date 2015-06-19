@@ -1,0 +1,26 @@
+
+.tweet::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.tweet {
+    background-color: green;
+    width: 500px;
+    /*overflow: hidden;*/
+}
+
+.graphic {
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+
+.content1 {
+    background-color: blue;
+    margin-left: 105px;
+    /*overflow: hidden;*/
+}
