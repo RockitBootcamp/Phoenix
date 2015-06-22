@@ -13,7 +13,7 @@ Create a simple ToDo app that allows creating new tasks, marking tasks as comple
 - As a user, I should be able to checkmark individual tasks to indicate the task was completed
 - As a user, I should be able to uncheck individual tasks to undo the completed state
 
-### Advanced features
+### Advanced features (extra credit)
 
 ![Advanced](images/Advanced ToDo.gif)
 
