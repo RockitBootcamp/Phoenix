@@ -1,0 +1,29 @@
+form {
+  clear: both;
+}
+
+.logline {
+  clear: both;
+  overflow: hidden;
+}
+
+.username::after {
+  content: ":";
+  float: right;
+}
+.username {
+  float: left;
+  width: 100px;
+  border: 1px solid;
+  clear: both;
+  height: 18px;
+  line-height: 18px;
+  margin: 1px 0;
+}
+
+.message {
+  vertical-align: middle;
+  height: 20px;
+  line-height: 20px;
+  margin-left: 105px;
+}
