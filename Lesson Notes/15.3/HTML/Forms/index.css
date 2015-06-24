@@ -1,0 +1,21 @@
+.form {
+  background-color: yellow;
+  overflow: hidden;
+}
+
+label, input {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.labels {
+  white-space: nowrap;
+  background-color: cyan;
+  float: left;
+  width: 100px;
+}
+
+.inputs {
+  background-color: orange;
+  margin-left: 105px;
+}

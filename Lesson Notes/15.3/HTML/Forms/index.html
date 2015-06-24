@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forms</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<form novalidate action="user.php" method="POST">
+
+  <div class="form">
+    <div class="labels">
+      <label for="first-name">First Name: </label>
+      <label for="last-name">Last Name: </label>
+      <label for="fav">Favorite color: </label>
+      <label for="pet-name">Pet name: </label>
+      <label for="password">Pet name: </label>
+    </div>
+
+    <div class="inputs">
+      <input type="text" id="first-name" name="firstName">
+      <input type="text" id="last-name" name="lastName">
+      <input type="text" id="fav" name="favColor">
+      <input type="text" id="pet-name" name="petName">
+      <input type="password" id="password">
+    </div>
+  </div>
+</form>
+
+
+
+  <label>
+    <span>Giraffe</span>
+    <input type="checkbox" name="giraffe" id="giraffechk" value="true" checked>
+  </label>
+  <input type="checkbox" name="rhino" id="rhinochk" value="true" checked>
+
+  <input type="radio" name="radio" value="brown" checked>
+  <input type="radio" name="radio" value="blonde">
+
+  <input type="hidden" value="sdlkfj23r9sdf834">
+
+  <select name="country" id="hair-color">
+    <option value="foobar">Algeria</option>
+    <option value="asdf">Brazil</option>
+    <option value="lkjasdf">Canada</option>
+    <option value="lkjasdfjf">...</option>
+    <option selected value="sadf">United States</option>
+  </select>
+
+  <input type="button" value="CLICK ME!">
+  <button type="submit">Submit</button>
+  <button type="reset">Reset</button>
+  <button>Button 4</button>
+
+
+  <input type="number" step="123">
+
+  <input type="range" step="10" min="0" max="100">
+
+  <input type="text" required pattern=".+@.+\..+">
+
+  <input type="date" disabled>
+
+  <input list="numbers">
+  <datalist id="numbers">
+    <option value="one">One</option>
+    <option value="two">Two</option>
+    <option value="three"></option>
+    <option value="four">Four</option>
+    <option value="five">Five</option>
+  </datalist>
+
+  <input type="search">
+
+</form>
+
+</body>
+</html>
