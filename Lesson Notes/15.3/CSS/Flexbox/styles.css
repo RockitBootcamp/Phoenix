@@ -1,0 +1,29 @@
+.container {
+    overflow: hidden;
+}
+
+.graphic {
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    float: left;
+}
+
+.content {
+    background-color: yellow;
+    height: 100px;
+    margin-left: 100px;
+}
+
+html.flexbox .container {
+    display: flex;
+    overflow: visible;
+}
+
+html.flexbox .graphic {
+    float: none;
+}
+
+html.flexbox .content {
+    flex: 1;
+}

@@ -1,0 +1,12 @@
+.primary-footer {
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    height: 100px;
+    background-color: red;
+}
+
+body {
+    padding-bottom: 130px;
+}
