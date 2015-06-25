@@ -1,0 +1,12 @@
+div {
+    background-color: #aaa;
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+div.highlight {
+    background-color: yellow;
+    padding: 20px;
+}

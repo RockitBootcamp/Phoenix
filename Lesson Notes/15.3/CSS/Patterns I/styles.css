@@ -1,0 +1,98 @@
+
+/*div.container {
+    background-color: blue;
+    padding: 10px;
+    text-align: center;
+}
+
+div.container div {
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    transform: translateY(-50px);
+}*/
+
+
+
+
+
+
+
+
+
+/*.lock-icon {
+    padding-left: 1.2em;
+    background-image: url('lock.png');
+    background-size: 1em;
+    background-repeat: no-repeat;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+/*aside {
+    width: 250px;
+    background: linear-gradient(red, blue);
+    padding: 10px;
+}
+
+aside > * + * {
+    margin-top: 10px;
+}*/
+
+
+/* vast disntance */
+
+
+/*.component1 {
+    background-color: blue;
+}
+
+.component2 {
+    background-color: yellow;
+}
+
+button {
+    background-color: red;
+}
+
+footer {
+    background-color: magenta;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+div.container {
+    background-color: blue;
+    width: 500px;
+    height: 300px;
+    position: relative;
+}
+
+div.container div {
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    
+    position: absolute;
+    right: -50px;
+    top: 10px;
+}
