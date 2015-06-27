@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+.panel {
+}
+
+.panel > div {
+    width: 960px;
+    margin: 0 auto;
+    min-height: 300px;
+}
+
+
+.panel.header {
+    background-color: blue;
+}
+
+.panel.header > div {
+    position: relative; /* For the nav */
+    background-color: yellow;
+}
+
+
+.panel.contact {
+    background-color: orange;
+}
+
+.panel.contact > div {
+    background-color: magenta;
+    padding: 10px;
+}
+
+
+
+
+
+nav {
+    background-color: black;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+nav a {
+    background-color: green;
+    padding: 30px;
+    display: block;
+    float: left;
+}
+
+
+
+
+
+.tiles {
+    background-color: blue;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.tiles > a {
+    background: linear-gradient(green, lime);
+    display: block;
+    float: left;
+    margin: 5px;
+    width: calc(20% - 10px);
+    height: 120px;
+    color: white;
+    font-size: 2em;
+}
+
+/*.tiles a:nth-child(2) {
+    height: 140px;
+}*/
+
