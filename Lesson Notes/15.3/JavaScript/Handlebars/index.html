@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="index.js"></script>
+
+  <!-- <script id="user-template" type="text/x-handlebars-template">
+    <div>
+      <span>{{firstName}}</span>
+    </div>
+  </script> -->
+
+  <!-- <script id="user-template" type="text/x-handlebars-template">
+    <div>
+      <span>{{firstName}}</span>
+      <span>{{lastName}}</span>
+    </div>
+  </script> -->
+
+  <script id="user-template" type="text/x-handlebars-template">
+    <div>
+      <span>{{firstName}}</span>
+      <span>{{lastName}}</span>
+      <div>Favorite Foods
+        <ul>
+          {{#each food}}
+          <li>{{this}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </script>
+
+</head>
+<body>
+  <form action="">
+    <input name="firstName" type="text">
+    <input name="lastName" type="text">
+    <div>
+      <input id="pizza" type="checkbox" name="food" value="pizza">
+      <label for="pizza">Pizza</label>
+      <input id="beer" type="checkbox" name="food" value="beer">
+      <label for="beer">Beer</label>
+      <input id="hamburger" type="checkbox" name="food" value="hamburger">
+      <label for="hamburger">Hamburger</label>
+    </div>
+    <button>Add User</button>
+  </form>
+</body>
+</html>
