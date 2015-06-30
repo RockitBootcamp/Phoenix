@@ -17,12 +17,34 @@ $(function() {
     // Challenge 6. Console.log "Good bye" when the firstname looses focus(blur)
 
     // Challenge 7. Console.log "Nice try" when you Submit the form
-    
+
 
     // Challenge 8-14. Repeat challenges 1-7 using the shortcut event syntax
 
-    // Challenge 8. Console.log $(this) when anything is clicked
+
+    // Challenge 15. Console.log $(this) when anything is clicked
     
+    // Challenge 16 Console.log "Fun" when you click on a button in the fun div that already exists
+    
+
+    // Challenge 17 Console.log "Fun" when you click on a button in the fun div that already exists and for any new button
+    $('div.fun').on('click', "button", function(){
+        
+        console.log("fun");
+      
+
+        
+    });
+
+
+    // HELPER Function
+
+    $('a.btn').on('click', function(){
+        
+        $('div.fun').append(' <button>Fun</button> ');
+             
+    });
+
 });
 
 
