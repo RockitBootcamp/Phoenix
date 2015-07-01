@@ -25,11 +25,6 @@ editMe {
 	color: red;
 }
 
-/* Select the first h2 tag, 'Section 1' */
-editMe {
-	color: orange;
-}
-
 /* Select the footer */
 editMe {
 	color: yellow;
@@ -38,6 +33,11 @@ editMe {
 /* Select 'list item 3' */
 editMe {
 	color: green;
+}
+
+/* Select the first h2 tag, 'Section 1' */
+editMe {
+	color: orange;
 }
 
 /* Select 'footer item 2' */
