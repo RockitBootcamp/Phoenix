@@ -28,17 +28,40 @@
         <ul>
           {{#each food}}
           <li>{{this}}</li>
+          {{else}}
+          <li>{{food}}</li>
           {{/each}}
         </ul>
       </div>
     </div>
   </script>
 
+  <!-- <script id="user-template" type="text/x-handlebars-template">
+    <div>
+      {{#user}}
+      <div>
+        <div class="media">
+          <span>{{photo}}</span>
+        </div>
+        <div class="content">
+          <span>{{firstName}}</span>
+          <span>{{lastName}}</span>
+          <div>{{address}}</div>
+          <div>{{phone}}</div>
+        </div>
+      </div>
+      {{/user}}
+      <div>{{hello}}</div>
+    </div>
+  </script> -->
+
 </head>
 <body>
   <form action="">
     <input name="firstName" type="text">
     <input name="lastName" type="text">
+    <input name="address" type="text">
+    <input name="phone" type="text">
     <div>
       <input id="pizza" type="checkbox" name="food" value="pizza">
       <label for="pizza">Pizza</label>

@@ -31,6 +31,7 @@ $(function () {
 
     var simpleFields = {}
 
+    // use with only second-to-last template
     fields.forEach(function (field) {
       if (simpleFields[field.name]) {
         simpleFields[field.name] = [].concat(simpleFields[field.name], field.value)
@@ -38,7 +39,16 @@ $(function () {
         simpleFields[field.name] = field.value
       }
     })
-    console.log(simpleFields)
+
+    // use with all but second-to-last template
+    // fields.forEach(function (field) {
+    //   simpleFields[field.name] = field.value
+    // })
+
+    // use with last template
+    // $('body').append(userTmpl({ user: simpleFields}))
+
+    // use with all other templates
     $('body').append(userTmpl(simpleFields))
 
     return false
