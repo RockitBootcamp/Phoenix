@@ -20,10 +20,11 @@
     </div>
   </script> -->
 
-  <script id="user-template" type="text/x-handlebars-template">
+  <!-- <script id="user-template" type="text/x-handlebars-template">
     <div>
       <span>{{firstName}}</span>
       <span>{{lastName}}</span>
+      {{#if food}}
       <div>Favorite Foods
         <ul>
           {{#each food}}
@@ -33,35 +34,46 @@
           {{/each}}
         </ul>
       </div>
+      {{/if}}
     </div>
-  </script>
+  </script> -->
 
   <!-- <script id="user-template" type="text/x-handlebars-template">
     <div>
-      {{#user}}
-      <div>
-        <div class="media">
-          <span>{{photo}}</span>
-        </div>
-        <div class="content">
-          <span>{{firstName}}</span>
-          <span>{{lastName}}</span>
-          <div>{{address}}</div>
-          <div>{{phone}}</div>
-        </div>
+      <span>{{firstName}}</span>
+      <span>{{lastName}}</span>
+      <div>Favorite Foods
+        <ul>
+          {{#each food}}
+          <li>{{this}}</li>
+          {{/each}}
+        </ul>
       </div>
-      {{/user}}
-      <div>{{hello}}</div>
     </div>
   </script> -->
+
+  <script id="user-template" type="text/x-handlebars-template">
+    <div>
+      <span>{{firstName}}</span>
+      <span>{{lastName}}</span>
+    </div>
+  </script>
 
 </head>
 <body>
   <form action="">
-    <input name="firstName" type="text">
-    <input name="lastName" type="text">
-    <input name="address" type="text">
-    <input name="phone" type="text">
+    <div>
+      <input name="firstName" type="text">
+    </div>
+    <div>
+      <input name="lastName" type="text">
+    </div>
+    <div>
+      <input name="address" type="text">
+    </div>
+    <div>
+      <input name="phone" type="text">
+    </div>
     <div>
       <input id="pizza" type="checkbox" name="food" value="pizza">
       <label for="pizza">Pizza</label>
