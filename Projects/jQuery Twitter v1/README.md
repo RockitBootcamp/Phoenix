@@ -36,7 +36,7 @@ The header will always only consist of the compose form:
     </form>
 </header>
 ```
-![alt text](images/tweetCompose.png "Compose")
+![Compose](images/tweetCompose.png)
 
 The `.tweets` section will have its direct children elements be `.thread`s. Some are already made for you so you can see the structure. Others will be created dynamically:
 
@@ -74,7 +74,7 @@ A new thread will be dynamically created each time someone uses the `.compose` s
 
 </div>
 ```
-![alt text](images/tweetThread.png "Thread")
+![Thread](images/tweetThread.png)
 
 Notice how the thread comes with a `.replies` section which will have its own `.compose`. Also notice that this `.compose` HTML is exactly the same as the one in the `header`.
 
@@ -114,7 +114,7 @@ When a reply `.tweet` is added, it will be placed as a sibling to the `.compose`
 
 </div>
 ```
-![alt text](images/tweetReply.png "Reply")
+![Reply](images/tweetReply.png)
 
 ## State Management
 
@@ -140,9 +140,9 @@ You will only need 6 functions for this project: three event handlers (each with
 
 ## 1. User Object
 
-Create a `User` object to hold your twitter handle and your image name. We will use this when we compose tweets.
+Create a `user` object to hold your twitter handle and your image name. We will use this when we compose tweets.
 ```js
-var User = {
+var user = {
     handle: '@bradwestfall',
     img: 'brad.png'
 }
@@ -180,15 +180,19 @@ In other words, remember to keep your templates DRY.
 </script>
 ```
 
-We will create three template functions where each one will represent its respective template. Name your functions as follows:
+We will create three render functions where each one will represent its respective template. Name your functions as follows:
 
-- `renderTweet(User, message)`
+- `renderTweet(user, message)`
+- `renderThread(user, message)`
 - `renderCompose()`
-- `renderThread(User, message)`
 
 Each of these templates will return a string. The string will be the respective template to the functions name. Build the functions in the order above and test them out by console logging their results. You can always pass fake data in to test.
 
-The `renderTweet()` and `renderCompose()` functions are pretty straight forward. They simply use Handlebars to return the template as a string. The `renderThread()` function though takes some more thought. It will need to call off to the other two render functions to get its contents, then it will take those "sub templates" and build them into the thread template. Even though `renderThread()` won't use the `User` and `message` values directly, it will need to pass those along to the `renderTweet()`.
+The `renderTweet` function needs to take 2 parameters, an object representing the user, and a string of the message they are tweeting. They simply use Handlebars to return the template as a string. 
+
+The `renderThread` function takes some more thought. It will need to call off to the other two render functions to get its contents, then it will take those "sub templates" and build them into the thread template. Even though `renderThread` won't use the `user` and `message` values directly, it will need to pass those along to the `renderTweet`.
+
+The `renderCompose` function will just call the function returned from Handlebars and just return its value.
 
 ## 4. Composition
 
@@ -196,7 +200,7 @@ So far you should have 5/6 functions made. Two for state management and three te
 
 This last event handler function will be based on when the user clicks the "Send" button. Here is a breakdown of what this function should do:
 
-> I recommend doing each of these steps one at a time and test them often in the browser to make sure they work
+> I recommend doing each of these steps *one at a time* and *test them often* in the browser to make sure they work
 
 - Cancel the form submission. Since our submit button is inside a form, we don't want the form to actually submit to the form's action do we?
 - Get the `message` the user typed into a variable
@@ -205,6 +209,6 @@ This last event handler function will be based on when the user clicks the "Send
   - Add the HTML response to the correct place in the DOM
 - Clear the `textarea` box so it has no value, and change the state of the `.compose` section so it's not expanded anymore.
 
-# Extra Credit
+## Extra Credit
 
 When composing, get the 140 character count to decrement similar to how twitter.com does. We'll let you take it from here. Good luck!
