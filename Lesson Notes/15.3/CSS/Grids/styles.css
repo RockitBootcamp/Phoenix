@@ -1,0 +1,15 @@
+.row > div:nth-child(1) {
+    background-color: red;
+}
+
+.row > div:nth-child(2) {
+    background-color: blue;
+}
+
+.row > div:nth-child(3) {
+    background-color: green;
+}
+
+.right {
+    padding: 10px;
+}
