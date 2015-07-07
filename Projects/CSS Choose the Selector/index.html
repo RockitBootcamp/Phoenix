@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Choose the Selector</title>
+	<link rel="stylesheet" href="project.css">
+</head>
+<body>
+	<h1>Choose the Selector</h1>
+	<section id="firstSection">
+		<h2>Section 1</h2>
+		<div>
+			<h3>Paragraph Subsection</h3>
+			<p>paragraph 1</p>
+			<div>
+				<p class="important">paragraph 2</p>
+				<p>paragraph <span class="paragraphNumber">3</span></p>
+			</div>
+		</div>
+		<div>
+			<h3>Unordered List Subsection</h3>
+			<ul>
+				<li>list item 1</li>
+				<li id="listItemTwo">list item 2</li>
+				<li id="listItemThree">list item 3</li>
+				<li>list item 4</li>
+			</ul>
+		</div>
+	</section>
+	<section id="secondSection">
+		<h2>Section 2</h2>
+		<div>
+			<h3>Deeply Nested Section</h3>
+			<div>
+				<div class="important">
+					<p>shallow nested paragraph</p>
+					<div>
+						<div>
+							<div>
+								<div>
+									<p>deeply nested paragraph</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<p>footer paragraph <span class="paragraphNumber">1</span></p>
+		<span>footer item 1</span>
+		<span class="important">footer item 2</span>
+		<span class="unimportant">footer item 3</span>
+		<p>footer paragraph <span>2</span></p>
+	</footer>
+</body>
+</html>

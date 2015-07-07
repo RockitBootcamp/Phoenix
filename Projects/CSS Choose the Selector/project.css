@@ -1,0 +1,56 @@
+/*
+ * Complete this project by modifying the selectors below in order to change
+ * the elements into their appropriate colors, and match the associated image.
+ * replace the 'editMe' sections below with one of the provided selectors.
+ *
+ * Each commented section below expects you to select one or more elements in
+ * index.html, which will result in a color being applied. You will be able
+ * to do this using only the following selectors, but be careful - not all of
+ * them are useful to complete the project:
+ *
+ * header
+ * footer
+ * .unportant div p
+ * #listItemThree
+ * footer .important
+ * h1
+ * #firstSection h2
+ * h3
+ * span.unimportant
+ * .important div p
+ */
+
+/* Select the h1 tag */
+editMe {
+	color: red;
+}
+
+/* Select the footer */
+editMe {
+	color: yellow;
+}
+
+/* Select 'list item 3' */
+editMe {
+	color: green;
+}
+
+/* Select the first h2 tag, 'Section 1' */
+editMe {
+	color: orange;
+}
+
+/* Select 'footer item 2' */
+editMe {
+	color: blue;
+}
+
+/* Select 'footer item 3' */
+editMe {
+	color: blue;
+}
+
+/* Select 'deeply nested paragraph' */
+editMe {
+	color: purple;
+}

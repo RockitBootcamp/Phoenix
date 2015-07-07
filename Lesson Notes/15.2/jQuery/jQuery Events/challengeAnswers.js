@@ -50,3 +50,18 @@
 //     event.stopPropagation()
 //    console.log($(this));
 // });
+
+// Challenge 7
+// $('button.btn').click(function(){
+//    console.log("hello world");
+//});
+
+// Challenge 16 Console.log "Fun" when you click on a button in the fun div that already exists
+// $('div.fun button').on('click', function(){   
+//     console.log("fun");       
+// });
+
+// Challenge 17 Console.log "Fun" when you click on a button in the fun div  that already exists and for any new button
+// $('div.fun').on('click', "button", function(){  
+//     console.log("fun");    
+// });

@@ -1,0 +1,630 @@
+{
+  "tweets": [
+    {
+      "id": 1,
+      "userId": 3,
+      "message": "tweet tweet!!"
+    },
+    {
+      "id": 2,
+      "userId": 3,
+      "message": "Hey, who wants to teach?"
+    },
+    {
+      "id": 5,
+      "userId": 2,
+      "message": "Yo!"
+    },
+    {
+      "id": 1436292066373,
+      "userId": 36,
+      "message": "I might have done it Richi"
+    },
+    {
+      "id": 1436292070521,
+      "userId": 3,
+      "message": "ello"
+    },
+    {
+      "id": 1436292082559,
+      "userId": 102182,
+      "message": "Anything you want as long as it is not offensive please!!"
+    },
+    {
+      "id": 1436292090096,
+      "userId": 36,
+      "message": "I didn't do it Richi!"
+    },
+    {
+      "id": 1436292121570,
+      "userId": 10989,
+      "message": "Help I'm stuck in the computer!!"
+    },
+    {
+      "id": 1436292115962,
+      "userId": "@magicMan",
+      "message": "Shake and BAKE!"
+    },
+    {
+      "id": 1436292166651,
+      "userId": "@magicMan",
+      "message": "Shake and BAKE!"
+    },
+    {
+      "id": 1436292186382,
+      "userId": 105,
+      "message": "sometimes nothin can be a real cool hand"
+    },
+    {
+      "id": 1436292189861,
+      "userId": 2,
+      "message": "Don't forget to bring a towel"
+    },
+    {
+      "id": 1436292200620,
+      "userId": 10989,
+      "message": "Help I'm stuck in the computer!!"
+    },
+    {
+      "id": 1436292197595,
+      "userId": 3,
+      "message": "ello"
+    },
+    {
+      "id": 1436292224203,
+      "userId": 93,
+      "message": "Random message!!"
+    },
+    {
+      "id": 1436292295903,
+      "userId": 93,
+      "message": "Random message!!"
+    },
+    {
+      "id": 1436292298342,
+      "userId": 2,
+      "message": "Don't forget to bring a towel"
+    },
+    {
+      "id": 1436292353834,
+      "userId": 10989,
+      "message": "Help I'm stuck in the computer!!"
+    },
+    {
+      "id": 1436292362039,
+      "userId": 102182,
+      "message": "Anything you want as long as it is not offensive please!!"
+    },
+    {
+      "id": 1436292380943,
+      "userId": "@magicMan",
+      "message": "Shake and BAKE!"
+    },
+    {
+      "id": 1436292419164,
+      "userId": 2,
+      "message": "Don't forget to bring a towel"
+    },
+    {
+      "id": 1436292425376,
+      "userId": 105,
+      "message": "sometimes nothin can be a real cool hand"
+    },
+    {
+      "id": 1436292425950,
+      "userId": 102182,
+      "message": "Anything you want as long as it is not offensive please!!"
+    },
+    {
+      "id": 1436292437856,
+      "userId": 10989,
+      "message": "Help I'm stuck in the computer!!"
+    },
+    {
+      "id": 1436292465517,
+      "userId": 2,
+      "message": "Don't forget to bring a towel"
+    },
+    {
+      "id": 1436292502400,
+      "userId": 105,
+      "message": "sometimes nothin can be a real cool hand"
+    },
+    {
+      "id": 1436292509421,
+      "userId": 3,
+      "message": "funky town"
+    },
+    {
+      "id": 1436292510635,
+      "userId": 102182,
+      "message": "I said I was sorry Keith!!"
+    },
+    {
+      "id": 1436292534703,
+      "userId": 10989,
+      "message": "Help I'm stuck in the computer!!"
+    },
+    {
+      "id": 1436292529128,
+      "userId": 102182,
+      "message": "I said I was sorry Keith!!"
+    },
+    {
+      "id": 11195,
+      "message": "Im doin fine, thank you"
+    },
+    {
+      "id": 1436292557487,
+      "userId": 102182,
+      "message": "I said I was sorry Keith!!"
+    },
+    {
+      "id": 1436292594697,
+      "userId": 3,
+      "message": "funky town"
+    },
+    {
+      "id": 1436292633904,
+      "userId": 102182,
+      "message": "I said I was sorry Keith!! And I meant it"
+    },
+    {
+      "id": 1436292673307,
+      "userId": 102182,
+      "message": "I said I was sorry Keith!!"
+    },
+    {
+      "id": 1436292724950,
+      "userId": 10989,
+      "message": "Help I'm stuck in the computer!!"
+    },
+    {
+      "id": 1436292718899,
+      "userId": 3,
+      "message": "funky town"
+    },
+    {
+      "id": 1436292800470,
+      "userId": 3,
+      "message": "funky town........"
+    },
+    {
+      "id": 1436292884615,
+      "userId": 102182,
+      "message": "No more funny business!!"
+    },
+    {
+      "id": 1436292908557,
+      "userId": 102182,
+      "message": "No more funny business!!"
+    },
+    {
+      "id": 23245,
+      "userId": 3,
+      "message": "hello"
+    },
+    {
+      "id": 1436293046930,
+      "userId": 102182,
+      "message": "No more funny business!!"
+    },
+    {
+      "id": 1436293046935,
+      "userId": 102182,
+      "message": "failure is an option"
+    },
+    {
+      "id": 1436293050568,
+      "userId": 102182,
+      "message": "No more funny business!!"
+    },
+    {
+      "id": 1436293050573,
+      "userId": 102182,
+      "message": "failure is an option"
+    },
+    {
+      "id": 924,
+      "userID": 9,
+      "message": "ok, so here is an updated message using \".put\""
+    },
+    {
+      "id": 23232323232,
+      "userId": "@sweetBabyJesus",
+      "messsage": "I'm all jacked up on Mountain DEW!"
+    },
+    {
+      "id": 1436293497125,
+      "userId": 3,
+      "message": "funky town"
+    },
+    {
+      "id": 345,
+      "userId": 3,
+      "message": "Waka Waka"
+    },
+    {
+      "id": 1436293515747,
+      "userId": 3,
+      "message": "funky town"
+    },
+    {
+      "id": 1436293566413,
+      "userId": 3,
+      "message": "funky town"
+    },
+    {
+      "id": 1436293568841,
+      "userId": 3,
+      "message": "funky town"
+    },
+    {
+      "id": 90288,
+      "userId": 36,
+      "message": "thunder... Thunder... THUNDERCATS HOOOOOOOOOOOOO!"
+    },
+    {
+      "id": 1436293678195,
+      "userId": 3,
+      "message": "funky town"
+    },
+    {
+      "id": 1000456,
+      "userId": 105,
+      "message": "yo yo yo"
+    },
+    {
+      "id": 1436293718063,
+      "userId": 3,
+      "message": "funky town"
+    },
+    {
+      "id": 1436293727322,
+      "userId": 10989,
+      "message": "Is this how I get to Facebook?"
+    },
+    {
+      "id": 1436293734357,
+      "userId": 10989,
+      "message": "Help I'm stuck in the computer!!"
+    },
+    {
+      "id": 121,
+      "userId": 93,
+      "message": "New message"
+    },
+    {
+      "id": 1436293816913,
+      "userId": 10989,
+      "message": "Help I'm stuck in the computer!!"
+    },
+    {
+      "id": 1436293809878,
+      "userId": 10989,
+      "message": "Does this work?"
+    },
+    {
+      "id": 1436294005819,
+      "userId": 10989,
+      "message": "hellloooooo"
+    },
+    {
+      "id": 10211982,
+      "userId": 10211982,
+      "message": "AJAX fun"
+    },
+    {
+      "id": 1436294606718,
+      "userId": 10989,
+      "message": "Is this how I get to Facebook?"
+    },
+    {
+      "id": 1436294733012,
+      "userId": 10989,
+      "message": "Is this how I get to Facebook?"
+    },
+    {
+      "id": 1436294753790,
+      "userId": 1,
+      "message": "Im hungry"
+    },
+    {
+      "id": 1436302842356,
+      "userId": 17,
+      "message": "Don't forget a towel LOL"
+    },
+    {
+      "id": 1436302849885,
+      "userId": 17,
+      "message": "Don't forget a towel LOL"
+    }
+  ],
+  "replies": [
+    {
+      "id": 1,
+      "userId": 1,
+      "tweetId": 2,
+      "message": "@rockit_bootcamp I do!"
+    },
+    {
+      "id": 2,
+      "userId": 3,
+      "tweetId": 2,
+      "message": "@bradwestfall Sweet!"
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "tweetId": 5,
+      "message": "@therealklanni What up!"
+    },
+    {
+      "id": 1436293452091,
+      "userId": "@magicMan/CARL",
+      "message": "I'm gonna Marry HER RICKY!"
+    },
+    {
+      "id": 1436293532005,
+      "userId": "@magicMan/CARL",
+      "message": "I'm gonna Marry HER RICKY!"
+    },
+    {
+      "id": 1436293597533,
+      "userId": "@magicMan/CARL",
+      "message": "I'm gonna Marry HER RICKY!"
+    },
+    {
+      "id": 1436293615601,
+      "userId": "@magicMan/CARL",
+      "message": "I'm gonna Marry HER RICKY!"
+    },
+    {
+      "id": 1436293635426,
+      "userId": "@magicMan/CARL",
+      "message": "I'm gonna Marry HER RICKY!"
+    },
+    {
+      "id": 1436293643690,
+      "userId": "@magicMan/CARL",
+      "message": "I'm gonna Marry HER RICKY!"
+    },
+    {
+      "id": 1436293655231,
+      "userId": "@magicMan/CARL",
+      "message": "I'm gonna Marry HER RICKY!"
+    },
+    {
+      "id": 1436293726878,
+      "userId": "@magicMan/CARL",
+      "message": "I'm gonna Marry HER RICKY!"
+    },
+    {
+      "id": 1436293785772,
+      "userId": "@magicMan/CARL",
+      "message": "I'm gonna Marry HER RICKY!"
+    },
+    {
+      "id": 1436293791456,
+      "userId": "@magicMan/CARL",
+      "message": "I'm gonna Marry HER RICKY!"
+    },
+    {
+      "id": 121,
+      "userId": 93,
+      "tweetId": 1,
+      "message": "My reply"
+    },
+    {
+      "id": 1436293831391,
+      "userId": "@magicMan/CARL",
+      "message": "I'm gonna Marry HER RICKY!"
+    },
+    {
+      "id": 1436293833716,
+      "userId": "@magicMan/CARL",
+      "message": "I'm gonna Marry HER RICKY!"
+    },
+    {
+      "id": 1436293836358,
+      "userId": "@magicMan/CARL",
+      "message": "I'm gonna Marry HER RICKY!"
+    },
+    {
+      "id": 1436293923449,
+      "userId": "@magicMan/CARL",
+      "message": "I'm gonna Marry HER RICKY!"
+    },
+    {
+      "id": 1436293928950,
+      "userId": "@magicMan/CARL",
+      "message": "I'm gonna Marry HER RICKY!"
+    },
+    {
+      "id": 1436294119761,
+      "userId": "@magicMan/CARL",
+      "message": "I'm gonna Marry HER RICKY!"
+    },
+    {
+      "id": 1436294130719,
+      "userId": "@magicMan/CARL",
+      "message": "I'm gonna Marry HER RICKY!"
+    },
+    {
+      "id": 1436294157260,
+      "userId": "@magicMan/CARL",
+      "message": "I'm gonna Marry HER RICKY!"
+    },
+    {
+      "id": 1436294189491,
+      "userId": "@magicMan/CARL",
+      "message": "I'm gonna Marry HER RICKY!"
+    },
+    {
+      "id": 1436294364461,
+      "userId": "@magicMan/CARL",
+      "message": "I'm gonna Marry HER RICKY!"
+    },
+    {
+      "id": 1436294424494,
+      "userId": "@magicMan/CARL",
+      "message": "I'm gonna Marry HER RICKY!"
+    },
+    {
+      "id": 1436294443059,
+      "userId": "@magicMan/CARL",
+      "message": "I'm gonna Marry HER RICKY!"
+    },
+    {
+      "id": 1436294449261,
+      "userId": "@magicMan/CARL",
+      "message": "I'm gonna Marry HER RICKY!"
+    },
+    {
+      "id": 1436294458181,
+      "userId": "@magicMan/CARL",
+      "message": "I'm gonna Marry HER RICKY!"
+    },
+    {
+      "id": 11195,
+      "userId": "@magicMan/CARL",
+      "message": "She had a name!"
+    },
+    {
+      "id": 1436294482424,
+      "userId": "@magicMan/CARL",
+      "message": "I'm gonna Marry HER RICKY!"
+    },
+    {
+      "id": 1436294494103,
+      "userId": "@magicMan/CARL",
+      "message": "I'm gonna Marry HER RICKY!"
+    },
+    {
+      "id": 1436294500294,
+      "userId": "@magicMan/CARL",
+      "message": "I'm gonna Marry HER RICKY!"
+    },
+    {
+      "id": 1436294512995,
+      "userId": "@magicMan/CARL",
+      "message": "I'm gonna Marry HER RICKY!"
+    },
+    {
+      "id": 555555577777,
+      "tweetID": 1436293050573,
+      "message": "unless it's a non acredited course then you can't fail just booted out"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "img": "brad.png",
+      "handle": "@bradwestfall",
+      "realName": "Brad Westfall"
+    },
+    {
+      "id": 2,
+      "img": "kevin.png",
+      "handle": "@therealklanni",
+      "realName": "Kevin Lanni"
+    },
+    {
+      "id": 3,
+      "img": "rockit.png",
+      "handle": "@rockit_bootcamp",
+      "realName": "RockIt Bootcamp"
+    },
+    {
+      "id": 10989,
+      "img": "Matt.png",
+      "handle": "@mtlewandowsk89",
+      "realName": "Matt Lewandowski"
+    },
+    {
+      "id": 102182,
+      "img": "learning.isfun",
+      "handle": "@stopitkeith",
+      "realName": "Richi Jeffery"
+    },
+    {
+      "id": 36,
+      "img": "whatever",
+      "handle": "@stopitkeith",
+      "realName": "BluestarNEO",
+      "message": "don't mess with the BluestarNEO"
+    },
+    {
+      "id": 93,
+      "img": "troy.png",
+      "handle": "@troy",
+      "realName": "Really Troy? Wonderful job"
+    },
+    {
+      "id": "march031900",
+      "img": "brad.png",
+      "handle": "@winkeljr",
+      "realName": "Duane Winkel jr."
+    },
+    {
+      "id": 11195,
+      "img": "me_atop_of_mtnEverest.png",
+      "handle": "@ryanbondmedina",
+      "realName": "Ryan M. Medina"
+    },
+    {
+      "id": 924,
+      "img": "rtaylor.jpg",
+      "handle": "@rwtaylor",
+      "realName": "Ryan Wade Taylor"
+    },
+    {
+      "id": 105,
+      "img": "aaron.png",
+      "handle": "@coolhand37",
+      "realName": "Aaron Suzuki"
+    },
+    {
+      "id": 1993,
+      "handle": "@troy",
+      "realName": "Troy Mullaney",
+      "img": "notreal.jpg"
+    },
+    {
+      "id": 2093409384092904,
+      "handle": "@BluestarNEO",
+      "realName": "Keith Wasielewski",
+      "img": "awesomeKeith.png"
+    },
+    {
+      "id": 19821021,
+      "handle": "@rickybobby",
+      "realName": "Richi Jeffery",
+      "img": "ugh"
+    },
+    {
+      "id": 345091919890124,
+      "handle": "TJBANEY",
+      "realName": "Timothy Baney",
+      "img": "\n\t<div>\n\t\t<img src=\"dino.jpg\">\n\t</div>\n"
+    },
+    {
+      "id": 12271992,
+      "handle": "@chrisdonthaveatweeeeter",
+      "realName": "Chris Vandenberg",
+      "img": "imagery.png"
+    },
+    {
+      "id": 6064208,
+      "handle": "@thegopherguy",
+      "realName": "levi donaldson",
+      "img": "sweet.png"
+    },
+    {
+      "id": 2134234,
+      "handle": "whatever",
+      "realName": "batman",
+      "img": "blah.png"
+    }
+  ]
+}
