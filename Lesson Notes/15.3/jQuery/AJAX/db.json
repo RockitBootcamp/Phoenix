@@ -232,10 +232,7 @@
     {
       "id": 23232323232,
       "userId": "@sweetBabyJesus",
-      "messsage": "I'm all jacked up on Mountain DEW!",
-      "img": "brad.png",
-      "handle": "@winkeljr",
-      "realName": "Duane Winkel jr."
+      "messsage": "I'm all jacked up on Mountain DEW!"
     },
     {
       "id": 1436293497125,
@@ -444,10 +441,6 @@
       "message": "I'm gonna Marry HER RICKY!"
     },
     {
-      "tweetId": 5,
-      "id": 1436293928951
-    },
-    {
       "id": 1436294119761,
       "userId": "@magicMan/CARL",
       "message": "I'm gonna Marry HER RICKY!"
@@ -466,10 +459,6 @@
       "id": 1436294189491,
       "userId": "@magicMan/CARL",
       "message": "I'm gonna Marry HER RICKY!"
-    },
-    {
-      "id": 1337,
-      "tweetId": 5
     },
     {
       "id": 1436294364461,
@@ -498,6 +487,7 @@
     },
     {
       "id": 11195,
+      "userId": "@magicMan/CARL",
       "message": "She had a name!"
     },
     {
@@ -616,7 +606,7 @@
       "id": 345091919890124,
       "handle": "TJBANEY",
       "realName": "Timothy Baney",
-      "image": "\n\t<div>\n\t\t<img src=\"dino.jpg\">\n\t</div>\n"
+      "img": "\n\t<div>\n\t\t<img src=\"dino.jpg\">\n\t</div>\n"
     },
     {
       "id": 12271992,
@@ -635,36 +625,6 @@
       "handle": "whatever",
       "realName": "batman",
       "img": "blah.png"
-    },
-    {
-      "id": 1436303158715,
-      "userId": 2,
-      "message": "you can't trash the blue icon, you will delete the internet"
-    },
-    {
-      "id": 1436303414606,
-      "userId": 2,
-      "message": "you can't trash the blue icon, you will delete the internet"
-    },
-    {
-      "id": 1436303423600,
-      "userId": 2,
-      "message": "you can't trash the blue icon, you will delete the internet"
     }
-  ],
-  "users1": [],
-  "users2": [],
-  "users36": [],
-  "users3": [],
-  "users102182": [],
-  "users10989": [],
-  "users93": [],
-  "usersmarch031900": [],
-  "users11195": [],
-  "users924": [],
-  "users105": [],
-  "users1993": [],
-  "users2093409384092904": [],
-  "users19821021": [],
-  "users345091919890124": []
+  ]
 }
