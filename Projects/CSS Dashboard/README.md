@@ -14,7 +14,7 @@ This project will teach you how to build a site using [Twitter Bootstrap](http:/
 
 ### Statistics:
 
-![Statistics](Screenshots/Statisctics.png)
+![Statistics](Screenshots/Statistics.png)
 
 Note that you will also need to make use of [Font Awesome](http://fortawesome.github.io/Font-Awesome/) for the icons and [High Charts](http://www.highcharts.com/) for the spline chart.
 
