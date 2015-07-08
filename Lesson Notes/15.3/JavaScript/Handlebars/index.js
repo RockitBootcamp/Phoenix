@@ -32,24 +32,30 @@ $(function () {
     var simpleFields = {}
 
     // use with only second-to-last template
-    fields.forEach(function (field) {
-      if (simpleFields[field.name]) {
-        simpleFields[field.name] = [].concat(simpleFields[field.name], field.value)
-      } else {
-        simpleFields[field.name] = field.value
-      }
-    })
-
-    // use with all but second-to-last template
     // fields.forEach(function (field) {
-    //   simpleFields[field.name] = field.value
+    //   if (simpleFields[field.name]) {
+    //     simpleFields[field.name] = [].concat(simpleFields[field.name], field.value)
+    //   } else {
+    //     simpleFields[field.name] = field.value
+    //   }
     // })
 
+    // use with all but second-to-last template
+    fields.forEach(function (field) {
+      simpleFields[field.name] = field.value
+    })
+
     // use with last template
-    // $('body').append(userTmpl({ user: simpleFields}))
+    // $('body').append(userTmpl({
+    //   user: simpleFields,
+    //   hello: 'Hi everyone!'
+    // }))
 
     // use with all other templates
-    $('body').append(userTmpl(simpleFields))
+    $('body').append(userTmpl({
+      firstName: $('#firstName').val(),
+      lastName: 'Doe'
+    }))
 
     return false
   })

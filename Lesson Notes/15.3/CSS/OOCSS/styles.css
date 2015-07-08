@@ -1,0 +1,48 @@
+.media-object {
+    display: flex;
+}
+
+.media-object > :first-child {
+    width: 50px;
+}
+
+.media-object > :last-child {
+    flex: 1;
+}
+
+
+/* Apply Design Styles separatly from structure */
+.media-object.puppy {}
+.media-object.puppy > .graphic {}
+.media-object.puppy > .content {}
+
+
+
+
+
+
+
+/* New Example: "Variations" ----------------------*/
+
+button {
+    padding: 1em;
+    border: none;
+    border-radius: 0.5em;
+    background-color: #aaa;
+}
+
+button.small-btn {
+    font-size: 0.8em;
+}
+
+button.large-btn {
+
+}
+
+button.warning {
+
+}
+
+button.create {
+
+}
