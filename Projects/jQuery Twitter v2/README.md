@@ -213,6 +213,7 @@ You will need to create a `template.js` that uses CommonJS to expose what you ne
 Feel free to do any (or all) of these as extra credit, or come back later and do them as extra practice on your free time. These do not take the place of any of the acceptance criteria, so before sure you focus on completing those first.
 
 - Add minification to the bundle task (also known as uglifying)
-- Add a watch task that rebundles your js when any js file (excluding `bundle.js`) is changed
 - Add a "login" (drop down for switching users) and allow posting as a different user, optionally allow creating a new user
-- Add a "watch" task that reruns the build and refreshes the browser using [Browser Sync](http://www.browsersync.io/)
+- Add a watch task that
+  - rebundles your js when any js file (excluding `bundle.js`) is changed
+  - optionally, refreshes the browser using [Browser Sync](http://www.browsersync.io/)
