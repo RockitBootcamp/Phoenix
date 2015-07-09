@@ -215,3 +215,4 @@ Feel free to do any (or all) of these as extra credit, or come back later and do
 - Add minification to the bundle task (also known as uglifying)
 - Add a watch task that rebundles your js when any js file (excluding `bundle.js`) is changed
 - Add a "login" (drop down for switching users) and allow posting as a different user, optionally allow creating a new user
+- Add a "watch" task that reruns the build and refreshes the browser using [Browser Sync](http://www.browsersync.io/)
