@@ -1,0 +1,59 @@
+{
+  "tweets": [
+    {
+      "id": 1,
+      "userId": 3,
+      "message": "tweet tweet!!"
+    },
+    {
+      "id": 2,
+      "userId": 3,
+      "message": "Hey, who wants to teach?"
+    },
+    {
+      "id": 5,
+      "userId": 2,
+      "message": "Yo!"
+    }
+  ],
+  "replies": [
+    {
+      "id": 1,
+      "userId": 1,
+      "tweetId": 2,
+      "message": "@rockit_bootcamp I do!"
+    },
+    {
+      "id": 2,
+      "userId": 3,
+      "tweetId": 2,
+      "message": "@bradwestfall Sweet!"
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "tweetId": 5,
+      "message": "@therealklanni What up!"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "img": "brad.png",
+      "handle": "@bradwestfall",
+      "realName": "Brad Westfall"
+    },
+    {
+      "id": 2,
+      "img": "kevin.png",
+      "handle": "@therealklanni",
+      "realName": "Kevin Lanni"
+    },
+    {
+      "id": 3,
+      "img": "rockit.png",
+      "handle": "@rockit_bootcamp",
+      "realName": "RockIt Bootcamp"
+    }
+  ]
+}
