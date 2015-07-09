@@ -16,8 +16,8 @@ In addition to the above user requirements, the following criteria determine pas
 
 - As a developer, I should load all tweets and replies using AJAX
 - As a developer, I should create or update tweets/replies using AJAX
-- As a developer, I should be able to create a gulp build task using browserify
-- As a developer, I should be able to create a gulp clean task to remove build files
+- As a developer, I should be able to create a gulp "lint" task using jshint
+- As a developer, I should be able to create a gulp "clean" task to remove build files
 
 ## HTML Structure
 
@@ -100,7 +100,7 @@ When a reply `.tweet` is added it will be placed as a sibling to the `.compose` 
         <button>Send</button>
       </div>
     </form>
-    
+
     <!-- Notice here is our reply -->
     <div class="tweet" id="tweet-2">
       <img src="images/rockit.png">
@@ -134,7 +134,7 @@ The second state we will manage is when an original tweet gets clicked (not a re
 
 # Guide
 
-Your objective with this project is to develop a project using modules and gulp. You will create a gulp "build" task which uses Browserify to concatenate the module files together. You will use AJAX to connect to a local API server (which interfaces with a mock database) to retrieve, add, and update records. Refer to the *Acceptance Criteria* section for details about UX.
+Your objective with this project is to develop a project using modules and gulp. You will create a gulp "clean" task which will delete the `js/bundle.js` file. You will use AJAX to connect to a local API server (which interfaces with a mock database) to retrieve, add, and update records. Refer to the *Acceptance Criteria* section for details about UX.
 
 ## Database / API
 
@@ -146,7 +146,7 @@ The basic endpoints are:
 - `http://localhost:3000/tweets`
 - `http://localhost:3000/replies`
 
-For a specific record, you can provide the relevent ID to the endpoint (showing only 1 example):
+For a specific record, you can provide the relevant ID to the endpoint (showing only 1 example):
 
 - `http://localhost:3000/users/1`
 
@@ -155,7 +155,7 @@ And for relational data, you can call the relation endpoint (showing 2 examples)
 - `http://localhost:3000/users/1/tweets`
 - `http://localhost:3000/tweets/1/replies`
 
-To read records, make a `GET` request. To create records, make a `POST` request. To update records, make a `PUT` request. To remove records, make a `DELETE` request. **All changes will be persisted to `db.json` instantly.**
+To read records, make a `GET` request. To create records, make a `POST` request. To update records, make a `PUT` request. **All changes will be persisted to `db.json` instantly.**
 
 To see an example response, start the API and issue the following command from your terminal:
 
@@ -163,7 +163,7 @@ To see an example response, start the API and issue the following command from y
 curl localhost:3000/users
 ```
 
-You can also use `curl` to test all of the other available endpoints, to see what data is returned, so you know what you're working with. Alternatively, write an AJAX request and inspect/log the response from Dev Tools.
+You can also use `curl` to test all of the other available endpoints, to see what data is returned, so you know what you're working with. Alternatively, write an AJAX request and inspect or log the response from Dev Tools.
 
 ## gulp
 
@@ -173,26 +173,24 @@ You have been provided a `gulpfile.js` by default with some gulp tasks already c
 
 Available tasks are:
 
-- `gulp serve`: serves the app on `localhost:8000` and starts the API on `localhost:3000`
+- `gulp serve`: serves the web app on `localhost:8000` **and** starts the API on `localhost:3000`
+- `gulp serve:web`: serves **only** the web app on `localhost:8000`
 - `gulp serve:api`: serves **only** the API
+- `gulp build`: build the `js/bundle.js` file using Browserify
 
-### build
+### lint
 
-The `build` tasks needs to use Browserify to compile the JavaScript files into a `js/bundle.js` file, using `js/index.js` as the entrypoint. Use `hbsfy` as a Browserify transform for your Handlebars templates.
-
-The npm modules required are
-
-- browserify
-- hbsfy
-- vinyl-source-stream
+For the `lint` task, you will need to use the "gulp-jshint" package from npm. Add the "lint" task as a *dependency* for the "default" task. Use the `'default'` reporter for JSHint.
 
 ### clean
 
-For the `clean` task, simply delete the `js/bundle.js` file to "clean up" your project files. On larger projects, everything might be built into a special build directory, and a `clean` task would be responsible for removing the build output.
+For the `clean` task, simply delete the `js/bundle.js` file to "clean up" your project files.
+
+> On larger projects, everything might be built into a special build directory, and a `clean` task would be responsible for removing the build directory to ensure the new build is clean of any old files.
 
 ## State Management
 
-Since some threads are alread provided for you in the initial HTML, the first thing you should do is create the aforementioned state managment. This should take care of 2 out of the 6 functions we just mentioned. It's important to implement state management early so we can see the moving parts even though nothing dynamic is being created yet.
+Since some threads are already provided for you in the initial HTML, the first thing you should do is create the aforementioned state management. This should take care of 2 out of the 6 functions we just mentioned. It's important to implement state management early so we can see the moving parts even though nothing dynamic is being created yet.
 
 ## Templating
 
