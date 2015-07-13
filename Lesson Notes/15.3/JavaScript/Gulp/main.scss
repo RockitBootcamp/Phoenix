@@ -1,0 +1,19 @@
+nav {
+  ul {
+    margin: 0;
+    display: block;
+    list-style: none;
+    border-radius: 2px;
+    box-sizing: border-box;
+  }
+  p {
+    margin: 100px;
+  }
+  li { display: inline-block; }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}

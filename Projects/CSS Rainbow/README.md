@@ -14,7 +14,12 @@ After completing this assignment, you should be able to use css colors:
 
 ## Acceptance Criteria
 
-- Every segment should be a different color, between the two adjoining segments.
+- Every segment should be a different color
+- Segments that don't have any color will have a color that is between the two adjoining segments 
+    - A segment between Red and Yellow should be Orange.
+    - A segment between Yellow and Blue should be Green
+    - A segment beteween Red and Orange should be RedOrange
+    - A segment between Blue and Green should be BlueGreen
 - Each type of color value is used at least once
     - Use rgb color
     - Use rgba color

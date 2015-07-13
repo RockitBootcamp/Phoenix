@@ -52,11 +52,28 @@
     </div>
   </script> -->
 
-  <script id="user-template" type="text/x-handlebars-template">
+  <!--<script id="user-template" type="text/x-handlebars-template">
     <div>
       <span>{{firstName}}</span>
       <span>{{lastName}}</span>
     </div>
+  </script>
+
+  <script id="tweet-template" type="text/x-handlebars-template">
+    <div class="{{class}}">{{{tweet}}}</div>
+  </script>-->
+
+  <script id="tweet-template" type="text/x-handlebars">
+    <div>{{message}}</div>
+  </script>
+
+  <script type="text/x-handlebars-template" id="thread-template">
+      <div>
+      {{#user}}
+        {{name}}: <img src="{{img}}">
+      {{/user}}
+      <div>{{{tweet}}}</div>
+      </div>
   </script>
 
 </head>

@@ -1,0 +1,1 @@
+function longestPal(n){var t="";return n.split("").forEach(function(a,i){var s=n.slice(i,n.lastIndexOf(a)+1);isPal(s)&&s.length>t.length&&(t=s)}),t}var string="this is a string",obj={name:"Joe"};

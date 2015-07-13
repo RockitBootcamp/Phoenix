@@ -1,6 +1,28 @@
 $(function () {
-  var tmpl = $('#user-template').html()
-  var userTmpl = Handlebars.compile(tmpl)
+  var user = {
+    name: 'Kevin',
+    img: 'http://www.gstatic.com/tv/thumb/tvbanners/184854/p184854_b_v7_aa.jpg'
+  }
+
+  var threadString = $('#thread-template').html()
+  var threadTmpl = Handlebars.compile(threadString)
+
+  var tweetString = $('#tweet-template').html()
+  var tweetTmpl = Handlebars.compile(tweetString)
+
+  function renderThread(user, message) {
+    var tweetHtml = renderTweet(user, message)
+    var fields = {
+      user: user,
+      tweet: tweetHtml
+    }
+
+    return threadTmpl(fields)
+  }
+
+  function renderTweet(user, message) {
+    return tweetTmpl({ message: message })
+  }
 
   $('button').on('click', function () {
     // console.log('click!')
@@ -26,10 +48,10 @@ $(function () {
 
     // An alternate way to build your Handlebars data
     //
-    var fields = $('form').serializeArray()
-    console.log(fields)
+    // var fields = $('form').serializeArray()
+    // console.log(fields)
 
-    var simpleFields = {}
+    // var simpleFields = {}
 
     // use with only second-to-last template
     // fields.forEach(function (field) {
@@ -41,9 +63,9 @@ $(function () {
     // })
 
     // use with all but second-to-last template
-    fields.forEach(function (field) {
-      simpleFields[field.name] = field.value
-    })
+    // fields.forEach(function (field) {
+    //   simpleFields[field.name] = field.value
+    // })
 
     // use with last template
     // $('body').append(userTmpl({
@@ -52,10 +74,17 @@ $(function () {
     // }))
 
     // use with all other templates
-    $('body').append(userTmpl({
-      firstName: $('#firstName').val(),
-      lastName: 'Doe'
-    }))
+    // $('body').append(userTmpl({
+    //   firstName: $('#firstName').val(),
+    //   lastName: 'Doe'
+    // }))
+
+    // var threadCompiled = userTmpl({ name: 'Kevin', tweet: userCompiled })
+    // var tweetCompiled = tweetTmpl({ message: 'I am hardcoded' })
+
+    // $('body').append(threadCompiled)
+
+    $('body').append(renderTweet(user, 'I am hardcoded'))
 
     return false
   })
