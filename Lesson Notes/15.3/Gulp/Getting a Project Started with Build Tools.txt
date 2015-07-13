@@ -1,0 +1,14 @@
+Getting a Project Started with Build Tools
+
+
+- Create a new folder
+- Setup Git
+- Set up npm
+- Make files (HTML, CSS)
+- Include JQuery
+- Write our JavaScript
+- Don't forget to commit (And ignore node_modules)
+- Minifiy our code
+- Create a clean task
+- Update our HTML to use the  min.js
+
