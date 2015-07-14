@@ -1,0 +1,21 @@
+{
+  "name": "gulppractice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^2.1.4"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-serve": "^1.0.0",
+    "gulp-uglify": "^1.2.0",
+    "json-server": "^0.7.20",
+    "rimraf": "^2.4.1"
+  }
+}
