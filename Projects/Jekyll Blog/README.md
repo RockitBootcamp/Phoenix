@@ -35,6 +35,6 @@ It might take a few minutes (15 at the most) for your site to become "live" the 
 
 Separately from your Jekyll project, create a static HTML and CSS website that you'll use on your blog. Build them separately with the idea that we will introduce this code into the Jekyll project when it's finished (this is called "sandboxing")
 
-When you're satisfied with how your HTMl and CSS looks in your sandbox, introduce the HTML and CSS into the Jekyll blog piece-by-piece (you'll probably need to break your sandbox HTML down into re-usable templates for Jekyll).
+When you're satisfied with how your HTML and CSS looks in your sandbox, introduce the HTML and CSS into the Jekyll blog piece-by-piece (you'll probably need to break your sandbox HTML down into re-usable templates for Jekyll).
 
 How you have a blog! All you need to do now is create more pages
