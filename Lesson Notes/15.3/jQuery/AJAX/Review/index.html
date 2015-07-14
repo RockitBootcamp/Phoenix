@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.js"></script>
+  <script src="index.js"></script>
+
+  <script type="text/x-handlebars-template" id="user-posts">
+    {{#user}}
+      <h1>{{name}}</h1>
+    {{/user}}
+      <div>
+      {{#each posts}}
+        <h2>{{title}}</h2>
+        <p>{{body}}</p>
+      {{/each}}
+      </div>
+  </script>
+</head>
+<body>
+
+</body>
+</html>
