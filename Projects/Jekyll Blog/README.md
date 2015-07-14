@@ -25,6 +25,8 @@ Be sure that you also add your `gh-pages` branch to your remote at GitHub:
 git push origin gh-pages
 ```
 
+At GitHub, you can prove that the brach was created with this dropdown menu at the top level of your repo:
+
 ![GitHub Example](GitHub gh-pages.png)
 
 It might take a few minutes (15 at the most) for your site to become "live" the first time you push the code to the `gh-pages` branch, but when it's ready you should be able to go to `http://[your-user-name].github.io/[repo-name]` to see your project
