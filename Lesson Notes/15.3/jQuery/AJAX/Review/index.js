@@ -230,11 +230,40 @@ $(function () {
     })
   }
 
+  function getUserComments(users) {
+    users.forEach(function (user) {
+      $.get(baseUrl + '/users/' + user.id + '/comments/')
+    })
+  }
+
   getUsers()
     .done(getUserPosts)
+    .done(getUserComments)∏
+    .done(getUserTodos)
     .fail(function (xhr) {
       console.log('users request failed', xhr.status)
     })
+
+
+
+    $.get(....users...)
+      .done(function (users) {
+          $.get(....posts...)
+            .done(function (posts) {
+                  $.get(....comments...)
+                    .done(function (comments) {
+
+                    })
+            })
+      })
+      .done(function (users) {
+        $.get(...todos...)
+          .done(function (todos) {
+            .....
+          })
+      })
+
+
 
   $.get('http://jsonplaceholder.typicode.com/posts')
     .done(function (posts) {
@@ -244,3 +273,8 @@ $(function () {
       console.log('users request failed', xhr.status)
     })
 })
+
+
+
+
+
