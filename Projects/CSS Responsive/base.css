@@ -1,0 +1,214 @@
+/****************************************
+  Inherited Syles
+*****************************************/
+
+/*
+See this explanation for details
+https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+*/
+
+html {
+    box-sizing: border-box;
+    color: #444;
+    font: 12pt 'Open Sans', Arial;
+    font-weight: normal;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    color: inherit;
+    font: inherit;
+}
+
+/****************************************
+  Defaults
+*****************************************/
+
+body {
+    background-color: #D7E1E7;
+    padding:0px;
+    margin: 0px;
+}
+
+button {
+    width: 200px;
+    margin: 10px;
+    padding: 5px;
+    border: none;
+}
+
+
+
+/****************************************
+  Layout
+*****************************************/
+
+/**
+ * Layout Abstractions
+ */
+
+.panel > div {
+    margin: 0 auto;
+}
+
+
+/**
+ * Hero
+ */
+
+.hero {
+    background: radial-gradient(#00acbc, #005B7F) fixed;
+    background-size: cover;
+}
+
+.hero > div {
+    
+    height: 350px;
+    position: relative; /* For the .intro section */
+    color: #FFF; /* To cascase white as the default color of this area */
+}
+
+/**
+ * Primary Header
+ */
+
+.primary-header {
+    background-color: rgb(28, 43, 57);
+    position: relative;
+    height: 100px;
+}
+
+.primary-header a {
+    color: #FFF;
+    height: 100px;
+}
+
+.primary-header .logo {
+    font-family: 'Raleway',Arial,Helvetica,sans-serif;;
+    padding: 12px;
+    font-size: 36pt;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.75);
+}
+
+.primary-header nav {
+    border-left: none;
+    border-right: none;
+    position: absolute;    
+    top: 0;
+    right: 0;
+    text-align: center;
+    display:none;
+}
+
+.primary-header nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: 100;
+}
+
+.primary-header nav a:hover {
+    background-color: rgba(255,255,255,0.25);
+}
+
+/**
+ * Intro
+ */
+
+ .hero .intro {
+    position: absolute;
+    top: 130px;
+    width: 100%;
+
+    text-align: center;
+}
+
+.hero .intro h1 {
+    font-size: 18pt;
+    font-weight: 100;
+    margin: 0;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.hero .intro h1 small {
+    font-size: 17px;
+    color: #ccc;
+}
+
+.hero .intro p {
+    width: 90%;
+
+    margin: 0 auto;
+}
+
+/**
+ * Primary Content
+ */
+.primary-content {
+    sbackground-color:red;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.primary-content > div {
+    /*position: relative;*/
+}
+
+.primary-content main {
+    padding-top: 10px;
+}
+
+
+/****************************************
+  Components
+*****************************************/
+
+.breakouts {
+    text-align: center;
+}
+
+.breakouts .breakout {
+    color: rgb(80, 80, 80);
+}
+
+.breakout {
+    overflow:hidden;
+}
+.breakout .image {
+    margin: 0 auto;
+    width: 100px;
+    font-size:45px;
+    color: rgb(28, 43, 57);
+}
+
+.breakout .content {
+
+}
+
+.breakout h3 {
+    margin: 0;
+    font-size: 16pt;
+    font-weight: 400;
+
+}
+
+.breakout .description {
+    font-weight: 100;
+}
+
+
+button.primary {
+    background-color: rgba(0, 103, 136, 0.65);
+    border: 1px solid rgba(0, 103, 136, 0.65);
+}
+
+button.default {
+    background-color: #f7f7f7;
+    border: 1px solid #f7f7f7;
+}
+button:hover{
+    background-color: rgba(204, 204, 204, 0.5)
+}

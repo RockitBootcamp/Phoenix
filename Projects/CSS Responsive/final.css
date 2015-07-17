@@ -1,0 +1,34 @@
+/*
+Use These Properties
+------------------------
+
+
+
+*/
+
+@media(min-width:600px) {
+
+    .hero .intro h1 {
+        font-size: 30pt;
+    }
+
+    .hero .intro h1 small {
+        font-size: 27pt;
+    }
+
+    .breakout {
+        margin-top: 25px;
+    }
+    .breakout .image {
+        width: 150px;
+        height: 80px;
+        font-size:70px;
+        float: left;
+    }
+
+    .breakout .content {
+        text-align: left;
+    }
+
+
+}
