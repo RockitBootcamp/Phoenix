@@ -11,8 +11,8 @@ After completing this assignment, you should be able to use css media query to a
 
 ## Acceptance Criteria
 
-- Your site will look like <img src="small.png" alt="Small screen" style="width: 200px;"/> when the screen is small
-- Your site will look like <img src="large.png" alt="Large screen" style="width: 200px;"/>  when the screen is large
+- Your site will look like <img src="small.png" alt="Small screen" style="width: 100px;"/> when the screen is small
+- Your site will look like <img src="large.png" alt="Large screen" style="width: 100px;"/>  when the screen is large
 
 ## Instructions
 
