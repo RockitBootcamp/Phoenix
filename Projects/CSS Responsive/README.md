@@ -11,8 +11,8 @@ After completing this assignment, you should be able to use css media query to a
 
 ## Acceptance Criteria
 
-- Your site will look like ![small screen](small.png =250x) when the screen is small
-- Your site will look like ![big screen](large.png =250x) when the screen is large
+- Your site will look like ![small screen](small.png=250x) when the screen is small
+- Your site will look like ![big screen](large.png=250x) when the screen is large
 
 ## Instructions
 
