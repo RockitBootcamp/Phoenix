@@ -23,6 +23,28 @@ After completing this assignment, you should be able to use github collaboration
 **Bonus**
 
 - Each team member will contribute a change to each feature branch
-- 
+- Fork an open source project into your own account
+- Fix a bug for an open source project and create a pull-request
+- Create more than the 4 required pages.
 
 ## Instructions
+
+You will break into teams and work with github. Choose a team leader and team name. You are going to work on a website. Divide the work between team members:
+
+- Create a home page
+- Create CSS to style to project
+- Create a new feature for an about page
+- Create a new feature for a blog page
+- Create a new feature for a video on the home page
+- Create a new feature for users to request for more information
+
+Steps: 
+
+- The team leader should go to Github and create a new repository. 
+- Everyone should clone the repo to their own computer.
+- Divide the work between team members (home page and different features)
+- Create feature branches for each new feature
+- Commit your changes to the branches
+- Merge your changes into the main branch
+- Push your changes to GitHub
+
