@@ -11,8 +11,10 @@ height: 150px;
 width: 50px;
 width: 150px;
 
+float: right;
 float: left;
 text-align: left;
+text-align: right;
 
 
 */
@@ -30,6 +32,7 @@ text-align: left;
     .breakout {
         
     }
+    
     .breakout .image {
         
     }
