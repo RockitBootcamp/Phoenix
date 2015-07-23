@@ -21,3 +21,7 @@ Let's break down the code a little more for the `user` entity.
 ## Your Task
 
 Your task is to study how the user CRUD was built and to develop another entity for products. You'll start by creating a products "table" in the "JSON-Server" database. You can pick any product fields you want. Then you'll create the ability to list, create, update, and delete products. Don't override the user crud code. In fact, don't edit it at all. The end result of your system should have users and products together.
+
+You'll also need to make your own special user interface. The existing one is pretty lame. Create that separately from the Backbone code and when it's looking nice, introduce it into the code base.
+
+Have fun.
