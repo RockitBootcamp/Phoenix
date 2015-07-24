@@ -11,10 +11,10 @@ var App = require('../app');
 var User = require('../models/user');
 
 /****************************************
-  View: Add User
+  View: User Form
 *****************************************/
 
-var AddUser = Backbone.View.extend({
+var UserFormView = Backbone.View.extend({
   el: $("main"),
   editMode: false,
 
@@ -22,12 +22,12 @@ var AddUser = Backbone.View.extend({
     var _this = this;
     this.editMode = !!userId;
 
-    // Add Mode
+    // Display form in Create Mode
     if (!this.editMode) {
       var output = formTemplate();
       this.$el.html(output);
 
-    // Edit Mode
+    // Display form in Update Mode
     } else {
       var user = this.user = new User({ id: userId });
 
@@ -36,7 +36,6 @@ var AddUser = Backbone.View.extend({
         _this.$el.html(output);
       });
     }
-
   },
 
   events: {
@@ -44,26 +43,25 @@ var AddUser = Backbone.View.extend({
   },
 
   submitForm: function () {
-
     // Collect Form Data
     var formData = {
-      name: $('form').find('input[name="name"]').val(),
-      hobby: $('form').find('input[name="hobby"]').val()
+      name: $('form.user input[name="name"]').val(),
+      hobby: $('form.user input[name="hobby"]').val()
     };
 
-    // Add Mode (Save new User)
+    // Add Mode (Create User)
     if (!this.editMode) {
 
       // Only set the image on add mode
       formData.img = 'http://robohash.org/'+ Date.now().toString(16) + '.png'
 
-      App.Collections.User.create(formData, {
+      App.Collections.user.create(formData, {
         success: function (user) {
           App.router.navigate('/', { trigger: true });
         }
       });
-      
-    // Edit Mode (Edit User)
+
+    // Edit Mode (Update User)
     } else {
       this.user.set(formData);
       this.user.save().done(function () {
@@ -73,8 +71,7 @@ var AddUser = Backbone.View.extend({
 
     // Prevent Default
     return false;
-
   }
 });
 
-module.exports = AddUser;
+module.exports = UserFormView;

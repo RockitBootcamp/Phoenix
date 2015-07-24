@@ -5,7 +5,6 @@ var listUsersTemplate = require('../templates/list-users.hbs');
 // App
 
 var App = require('../app');
-require('../collections/user');
 
 // View: List Users
 

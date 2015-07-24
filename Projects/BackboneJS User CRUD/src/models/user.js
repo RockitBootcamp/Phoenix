@@ -7,12 +7,11 @@ var Backbone = require('backbone');
 
 var App = require('../app');
 
-
 /****************************************
   Model: User
 *****************************************/
 
-var UserModel = Backbone.Model.extend({
+App.Models.User = Backbone.Model.extend({
   url: function() {
     var base = App.Settings.apiRoot + '/users';
     if (this.isNew()) return base;
@@ -20,4 +19,4 @@ var UserModel = Backbone.Model.extend({
   }
 });
 
-module.exports = UserModel;
+module.exports = App.Models.User;

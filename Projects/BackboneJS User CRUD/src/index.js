@@ -2,7 +2,7 @@ var Backbone = require('backbone');
 
 // App
 var App = require('./app');
-App.Collections.User = require('./collections/user');
+var userCollection = require('./collections/user');
 
 // View: User Form
 var UserFormView = require('./views/user-form');
@@ -35,7 +35,7 @@ App.Router = Backbone.Router.extend({
   },
 
   deleteUser: function(id) {
-    var user = App.Collections.User.get(id);
+    var user = userCollection.get(id);
 
     user.destroy().done(function (user) {
       App.router.navigate('/', { trigger: true })
