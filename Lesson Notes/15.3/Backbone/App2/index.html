@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+</head>
+<body>
+
+    <a href="/#/">Home</a> | <a href="/#/users">Users</a>
+
+    <hr>
+
+    <main></main>
+
+    <script type="gibberish" id="list-user">
+    <ul>
+        {{#each this}}
+        <li><a href="/#/user/{{id}}">{{name}}</a></li>
+        {{/each}}
+    </ul>
+    </script>
+    
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/underscore/underscore.js"></script>
+    <script src="/bower_components/backbone/backbone.js"></script>
+    <script src="/bower_components/handlebars/handlebars.js"></script>
+    
+    <script src="/src/main.js"></script>
+    <script src="/src/models/user.js"></script>
+    <script src="/src/collections/user.js"></script>
+    <script src="/src/views/user-profile.js"></script>
+    <script src="/src/views/list-users.js"></script>
+
+</body>
+</html>
