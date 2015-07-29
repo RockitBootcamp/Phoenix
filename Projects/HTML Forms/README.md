@@ -8,3 +8,5 @@ Get started with
 > npm install
 > node forms.js
 ``` 
+
+Open `index.html` and complete each challenge
