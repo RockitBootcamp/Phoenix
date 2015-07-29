@@ -27,7 +27,7 @@ At Rockit, we work to bridge the skills gap in supply and demand for web develop
 ## High-level schedule (Frontend)
 - Milestones (weeks 1-9)
 - Individual Projects (weeks 10-12)
-- Graduation (week 12)\
+- Graduation (week 12)
 
 ## Typical Week Schedule
 - Each week has a theme that related to a non-technical topic.
