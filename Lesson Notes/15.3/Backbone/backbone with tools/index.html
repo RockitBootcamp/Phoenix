@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    
+
     <header>
         <nav>
             <a href="/#/homes">List Homes</a>
@@ -21,7 +21,7 @@
 
     <main></main>
 
-    <script type="whatever" id="template-home">
+    <script type="text/x-handlebars-template" id="template-home">
         <div class="home" data-id="{{id}}">
             <div class="graphic">
                 <input type="text" value="{{price}}">
@@ -34,10 +34,17 @@
         </div>
     </script>
 
-    <script src="/src/views/homes-view.js"></script>        
-    <script src="/src/views/homes-profile-view.js"></script> 
-    <script src="/src/models/home-model.js"></script>       
-    <script src="/src/collections/home-collection.js"></script>       
+    <script type="text/x-handlebars-template" id="template-home-profile">
+      <h1>{{name}}</h1>
+      <h2>{{price}}</h2>
+      <div>{{realtor.name}} {{realtor.phone}}</div>
+    </script>
+
+    <script src="/src/views/homes-view.js"></script>
+    <script src="/src/views/homes-profile-view.js"></script>
+    <script src="/src/models/home-model.js"></script>
+    <script src="/src/models/realtor-model.js"></script>
+    <script src="/src/collections/home-collection.js"></script>
     <script src="index.js"></script>
 
 </body>

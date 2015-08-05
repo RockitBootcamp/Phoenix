@@ -7,7 +7,7 @@ var HomesView = Backbone.View.extend({
     },
 
     render: function() {
-        
+
         this.$el.html('<div class="homes"></div>');
 
         homeCollection.fetch().done(function() {
@@ -42,12 +42,12 @@ var HomesView = Backbone.View.extend({
         console.log(id);
 
         // uncomment this to do a backbone redirect to a new "page"
-        //router.navigate('homes/' + id, true);
+        router.navigate('homes/' + id, true);
 
         // Note that the above .navigate() method will change the
         // URL path, but the router is currently setup to do
-        // nothing but a console log for visinging the home/:id 
-        // route. So you'll have to develop that view to 
+        // nothing but a console log for visinging the home/:id
+        // route. So you'll have to develop that view to
         // replace the contents of the <main> tag to feel like the
         // page changed
     }

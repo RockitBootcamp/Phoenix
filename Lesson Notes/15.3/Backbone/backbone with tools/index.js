@@ -34,12 +34,13 @@ var Router = Backbone.Router.extend({
         homesView.render();
     },
 
-    homeProfile: function() {
-        homesProfileView.render();
+    homeProfile: function(id) {
+        homesProfileView.render(id);
     },
 
     default: function() {
         console.log('404');
+        $('main').html('<h1>That home doesn\'t exist</h1>')
     }
 
 });
