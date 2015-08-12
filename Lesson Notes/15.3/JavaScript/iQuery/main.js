@@ -6,7 +6,7 @@
 // - iQuery takes a single parameter (css selector)
 // Bonus
 // - Pass a function iQuery and have it run
-
+// - Match a Tag selector
 
 // Pre-req Objectives
 // - Demonstrate if statements
