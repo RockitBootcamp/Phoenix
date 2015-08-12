@@ -1,0 +1,32 @@
+{
+  "homes": [
+    {
+      "id": 1,
+      "price": 120000,
+      "name": "brads house",
+      "lat": 33.4544722,
+      "lng": -111.9701346,
+      "realtorId": 1
+    },
+    {
+      "id": 2,
+      "price": 380000,
+      "name": "daves house",
+      "lat": 33.4244722,
+      "lng": -111.8901346,
+      "realtorId": 2
+    }
+  ],
+  "realtors": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "phone": "404-555-1212"
+    },
+    {
+      "id": 2,
+      "name": "Sally",
+      "phone": "404-555-1213"
+    }
+  ]
+}

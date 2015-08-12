@@ -1,0 +1,30 @@
+.map {
+    height: 400px;
+    background-color: yellow;
+}
+
+
+.homes {
+    border: 1px solid #aaa;
+    padding: 10px;
+}
+
+.homes > * + * {
+    margin-top: 10px;
+}
+
+
+
+
+.homes .home {
+    display: flex;
+}
+
+.homes .home .graphic {
+    width: 50px;
+    height: 50px;
+}
+
+.homes .home .content {
+    flex: 1;
+}

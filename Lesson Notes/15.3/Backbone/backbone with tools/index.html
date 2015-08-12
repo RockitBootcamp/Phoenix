@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="/bower_components/gmaps/gmaps.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/lodash/lodash.js"></script>
+    <script src="/bower_components/backbone/backbone.js"></script>
+    <script src="/bower_components/handlebars/handlebars.js"></script>
+    <script src="/bower_components/jquery-knob/dist/jquery.knob.min.js"></script>
+</head>
+<body>
+
+
+    <header>
+        <nav>
+            <a href="/#/homes">List Homes</a>
+        </nav>
+    </header>
+
+    <main></main>
+
+    <script type="text/x-handlebars-template" id="template-home">
+        <div class="home" data-id="{{id}}">
+            <div class="graphic">
+                <input type="text" value="{{price}}">
+            </div>
+            <div class="content">
+                {{name}}
+                <button class="add-marker">Add Marker</button>
+                <button class="view-profile">View Home Profile</button>
+            </div>
+        </div>
+    </script>
+
+    <script type="text/x-handlebars-template" id="template-home-profile">
+      <h1>{{name}}</h1>
+      <h2>{{price}}</h2>
+      <div>{{realtor.name}} {{realtor.phone}}</div>
+    </script>
+
+    <script src="/src/views/homes-view.js"></script>
+    <script src="/src/views/homes-profile-view.js"></script>
+    <script src="/src/models/home-model.js"></script>
+    <script src="/src/models/realtor-model.js"></script>
+    <script src="/src/collections/home-collection.js"></script>
+    <script src="index.js"></script>
+
+</body>
+</html>
