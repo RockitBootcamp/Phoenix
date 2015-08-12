@@ -25,7 +25,7 @@ Be sure that you also add your `gh-pages` branch to your remote at GitHub:
 git push origin gh-pages
 ```
 
-At GitHub, you can prove that the brach was created with this dropdown menu at the top level of your repo:
+At GitHub, you can prove that the branch was created with this dropdown menu at the top level of your repo:
 
 <img src="GitHub gh-pages.png" width="400px">
 
