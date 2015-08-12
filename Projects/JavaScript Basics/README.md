@@ -1,4 +1,4 @@
-# Sunday Chores
+# JavaScript Basics
 
 This project serves to reinforce Basic JavaScript Concepts.
 
