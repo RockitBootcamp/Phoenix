@@ -1,4 +1,0 @@
-rock_it_techgames:
-    resource: "@RockITTechgamesBundle/Resources/config/routing.yml"
-    prefix:   /
-

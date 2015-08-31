@@ -1,6 +1,0 @@
-MySQL
-========
-
-Lessons
---------
-* Normalization

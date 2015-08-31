@@ -1,8 +1,0 @@
-.danger {
-
-    border: 5px solid pink;
-}
-
-tbody>tr.danger>td {
-  background-color: red !important ;
-}
