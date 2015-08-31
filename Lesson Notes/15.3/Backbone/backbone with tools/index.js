@@ -1,50 +1,58 @@
-
-/****************************************
-  Views
-*****************************************/
-
-var homesView = new HomesView();
-var homesProfileView = new HomesProfileView();
-
-/****************************************
-  Collections
-*****************************************/
-
-var homeCollection = new HomeCollection();
+var App = {};
+App.Models = {};
+App.Views = {};
+App.Collections = {};
 
 
-/****************************************
-  Router
-*****************************************/
+$(function() {
 
-var Router = Backbone.Router.extend({
+    /****************************************
+      Views
+    *****************************************/
 
-    routes: {
-        '': 'index',
-        'homes(/)': 'listHomes',
-        'homes/:id': 'homeProfile',
-        '*actions': 'default'
-    },
+    App.Views.home = new App.Views.Homes();
+    App.Views.homeProfile = new App.Views.HomeProfile();
 
-    index: function() {
-        console.log('index');
-    },
+    /****************************************
+      Collections
+    *****************************************/
 
-    listHomes: function() {
-        homesView.render();
-    },
+    App.Collections.home = new App.Collections.Home();
 
-    homeProfile: function(id) {
-        homesProfileView.render(id);
-    },
 
-    default: function() {
-        console.log('404');
-        $('main').html('<h1>That home doesn\'t exist</h1>')
-    }
+    /****************************************
+      Router
+    *****************************************/
+
+    App.Router = Backbone.Router.extend({
+
+        routes: {
+            '': 'index',
+            'homes(/)': 'listHomes',
+            'homes/:id': 'homeProfile',
+            '*actions': 'default'
+        },
+
+        index: function() {
+            console.log('index');
+        },
+
+        listHomes: function() {
+            App.Views.home.render();
+        },
+
+        homeProfile: function(id) {
+            App.Views.homeProfile.render(id);
+        },
+
+        default: function() {
+            $('main').html('<h1>That home doesn\'t exist</h1>')
+        }
+
+    });
+
+    App.router = new App.Router();
+
+    Backbone.history.start();
 
 });
-
-var router = new Router();
-
-Backbone.history.start();

@@ -1,13 +1,14 @@
-var HomesProfileView = Backbone.View.extend({
+App.Views.HomeProfile = Backbone.View.extend({
   el: 'main',
 
   render: function(id) {
-    console.log('render home profile');
+
     var _this = this
     var templateString = $('#template-home-profile').html()
     var tmpl = Handlebars.compile(templateString)
 
-    var home = new HomeModel({
+
+    var home = new App.Models.Home({
       id: id
     })
 
@@ -18,7 +19,7 @@ var HomesProfileView = Backbone.View.extend({
       })
       .fail(function () {
         console.log('something went wrong (that ID probably didn\'t exist)')
-        router.navigate('/404', true);
+        router.navigate('/not-found', true);
       })
 
   }

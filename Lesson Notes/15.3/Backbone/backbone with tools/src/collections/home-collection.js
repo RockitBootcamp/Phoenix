@@ -1,4 +1,4 @@
-var HomeCollection = Backbone.Collection.extend({
+App.Collections.Home = Backbone.Collection.extend({
     url: 'http://localhost:3000/homes',
-    model: HomeModel
+    model: App.Collections.Home
 });

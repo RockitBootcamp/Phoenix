@@ -1,4 +1,4 @@
-var HomesView = Backbone.View.extend({
+App.Views.Homes = Backbone.View.extend({
 
     el: 'main',
 
@@ -10,9 +10,13 @@ var HomesView = Backbone.View.extend({
 
         this.$el.html('<div class="homes"></div>');
 
-        homeCollection.fetch().done(function() {
+        App.Collections.home.fetch().done(function() {
+
+            console.log('done');
+            return;
+
             var template = Handlebars.compile( $('#template-home').html() )
-            homeCollection.each(function(homeModel) {
+            App.Collections.home.each(function(homeModel) {
 
                 var output = template({
                     id: homeModel.id,
@@ -42,7 +46,7 @@ var HomesView = Backbone.View.extend({
         console.log(id);
 
         // uncomment this to do a backbone redirect to a new "page"
-        router.navigate('homes/' + id, true);
+        App.router.navigate('homes/' + id, true);
 
         // Note that the above .navigate() method will change the
         // URL path, but the router is currently setup to do
