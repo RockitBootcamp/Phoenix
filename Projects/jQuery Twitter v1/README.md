@@ -1,4 +1,4 @@
-# jQuery Twitter v1 
+# jQuery Twitter v1
 
 Create a mock version of twitter given the project's existing HTML/CSS
 
@@ -18,8 +18,8 @@ The project is broken down into two main sections: `header` and `.tweets`
 
 ```html
 <main>
-    <header>...</header>
-    <div class="tweets">...</div>
+  <header>...</header>
+  <section class="tweets">...</section>
 </main>
 ```
 
@@ -27,53 +27,57 @@ The header will always only consist of the compose form:
 
 ```html
 <header>
-    <form class="compose">
-        <textarea placeholder="Compose new Tweet..."></textarea>
-        <div>
-            <span class="count">140</span>
-            <button>Send</button>
-        </div>
-    </form>
+  <form class="compose">
+    <textarea placeholder="Compose new Tweet..."></textarea>
+    <div>
+      <span class="count">140</span>
+      <button>Send</button>
+    </div>
+  </form>
 </header>
 ```
+
 ![Compose](images/tweetCompose.png)
 
 The `.tweets` section will have its direct children elements be `.thread`s. Some are already made for you so you can see the structure. Others will be created dynamically:
 
 ```html
-<div class="tweets">
-    <div class="thread">...</div>
-    <div class="thread">...</div>
-</div>
+<section class="tweets">
+  <section class="thread">...</section>
+  <section class="thread">...</section>
+</section>
 ```
 
 A new thread will be dynamically created each time someone uses the `.compose` section in the `header`. A `.thread` has the following structure when a new tweet is created:
 
 ```html
-<div class="thread">
+<section class="thread">
 
-    <div class="tweet">
-        <img src="images/rockit.png">
-        <div class="body">
-            <div class="title">@ROCKIT_BOOTCAMP</div>
-            <div class="message">tweet tweet!!</div>
-        </div>
-    </div>
+  <article class="tweet">
+    <aside>
+      <img src="images/rockit.png">
+    </aside>
+    <section class="body">
+      <div class="title">@ROCKIT_BOOTCAMP</div>
+      <div class="message">tweet tweet!!</div>
+    </section>
+  </article>
 
-    <div class="replies">
-        
-        <form class="compose">
-            <textarea placeholder="Compose new Tweet..."></textarea>
-            <div>
-                <span class="count">140</span>
-                <button>Send</button>
-            </div>
-        </form>
+  <section class="replies">
 
-    </div>
+    <form class="compose">
+      <textarea placeholder="Compose new Tweet..."></textarea>
+      <div>
+        <span class="count">140</span>
+        <button>Send</button>
+      </div>
+    </form>
 
-</div>
+  </section>
+
+</section>
 ```
+
 ![Thread](images/tweetThread.png)
 
 Notice how the thread comes with a `.replies` section which will have its own `.compose`. Also notice that this `.compose` HTML is exactly the same as the one in the `header`.
@@ -81,18 +85,20 @@ Notice how the thread comes with a `.replies` section which will have its own `.
 When a reply `.tweet` is added, it will be placed as a sibling to the `.compose` section. Also note that all `.tweet`s will have the exact same HTML whether they are original tweets or replies:
 
 ```html
-<div class="thread">
+<section class="thread">
 
-    <div class="tweet">
-        <img src="images/rockit.png">
-        <div class="body">
+    <article class="tweet">
+        <aside>
+          <img src="images/rockit.png">
+        </aside>
+        <section class="body">
             <div class="title">@ROCKIT_BOOTCAMP</div>
             <div class="message">tweet tweet!!</div>
-        </div>
-    </div>
+        </section>
+    </article>
 
-    <div class="replies">
-        
+    <section class="replies">
+
         <form class="compose">
             <textarea placeholder="Compose new Tweet..."></textarea>
             <div>
@@ -100,37 +106,40 @@ When a reply `.tweet` is added, it will be placed as a sibling to the `.compose`
                 <button>Send</button>
             </div>
         </form>
-        
+
         <!-- Notice here is our reply -->
-        <div class="tweet">
-            <img src="images/rockit.png">
-            <div class="body">
+        <article class="tweet">
+            <aside>
+              <img src="images/rockit.png">
+            </aside>
+            <section class="body">
                 <div class="title">@ROCKIT_BOOTCAMP</div>
                 <div class="message">tweet tweet!!</div>
-            </div>
-        </div>
+            </section>
+        </article>
 
-    </div>
+    </section>
 
-</div>
+</section>
 ```
+
 ![Reply](images/tweetReply.png)
 
 ## State Management
 
-Be sure to study the CSS and see how it works. There are two parts to this site that use class names for state management. The first is the `.compose` section. By Default, the `.compose` section hides the div which contains the count and send button. The `textarea` is also smaller by default. When the `textarea` is clicked, you will need to add a class `.expand` to the `.compose` section as follows:
+Be sure to study the CSS and see how it works. There are two parts to this site that use class names for state management. The first is the `.compose` section. By Default, the `.compose` section hides the element which contains the count and send button. The `textarea` is also smaller by default. When the `textarea` is clicked, you will need to add a class `.expand` to the `.compose` section as follows:
 
 ```html
 <form class="compose expand">
-    <textarea placeholder="Compose new Tweet..."></textarea>
-    <div>
-        <span class="count">140</span>
-        <button>Send</button>
-    </div>
+  <textarea placeholder="Compose new Tweet..."></textarea>
+  <div>
+    <span class="count">140</span>
+    <button>Send</button>
+  </div>
 </form>
 ```
 
-The presence of `.expand` is a state change and the CSS will change the `.compose` to allow the `div` to be shown. It will also change the height of the `textarea`. JavaScript is responsible for behavior, so JS will determine when a state needs to be changed with events (like clicks), but it will only add/remove this class. CSS is responsible for what that state looks like.
+The presence of `.expand` is a state change and the CSS will change the `.compose` to allow the element to be shown. It will also change the height of the `textarea`. JavaScript is responsible for behavior, so JS will determine when a state needs to be changed with events (like clicks), but it will only add/remove this class. CSS is responsible for what that state looks like.
 
 The second state we will manage is when an original tweet gets clicked (not a reply tweet). When this happens we will toggle the respective `.thread`'s visibility. Similarly to the compose section mentioned earlier, we will use an `.expand` to be added to the `.thread`. Just keep in mind that this `.expand` has nothing to do with the other one. We're just using similar class names to do similar concepts. Again, study the CSS to see how this is done.
 
@@ -141,16 +150,17 @@ You will only need 6 functions for this project: three event handlers (each with
 ## 1. User Object
 
 Create a `user` object to hold your twitter handle and your image name. We will use this when we compose tweets.
+
 ```js
 var user = {
-    handle: '@bradwestfall',
-    img: 'brad.png'
+  handle: '@bradwestfall',
+  img: 'brad.png'
 }
 ```
 
 ## 2. State Management
 
-Since some threads are alread provided for you in the initial HTML, the first thing you should do is create the aforementioned state management. This should take care of 2 out of the 6 functions we just mentioned. It's important to implement state management early so we can see the moving parts even though nothing dynamic is being created yet.
+Since some threads are already provided for you in the initial HTML, the first thing you should do is create the aforementioned state management. This should take care of 2 out of the 6 functions we just mentioned. It's important to implement state management early so we can see the moving parts even though nothing dynamic is being created yet.
 
 ## 3. Templating
 
@@ -188,7 +198,7 @@ We will create three render functions where each one will represent its respecti
 
 Each of these templates will return a string. The string will be the respective template to the functions name. Build the functions in the order above and test them out by console logging their results. You can always pass fake data in to test.
 
-The `renderTweet` function needs to take 2 parameters, an object representing the user, and a string of the message they are tweeting. They simply use Handlebars to return the template as a string. 
+The `renderTweet` function needs to take 2 parameters, an object representing the user, and a string of the message they are tweeting. They simply use Handlebars to return the template as a string.
 
 The `renderThread` function takes some more thought. It will need to call off to the other two render functions to get its contents, then it will take those "sub templates" and build them into the thread template. Even though `renderThread` won't use the `user` and `message` values directly, it will need to pass those along to the `renderTweet`.
 

@@ -1,102 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="stylesheet" href="css/styles.css">
-	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
-	<script src="js/main.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+  <script src="js/main.js"></script>
 </head>
 <body>
-	
-	<main>
-		<header>
-			<form class="compose">
-				<textarea placeholder="Compose new Tweet..."></textarea>
-				<div>
-					<span class="count">140</span>
-					<button>Send</button>
-				</div>
-			</form>
-		</header>
-		<div class="tweets">
-			
-			<!-- Thread with no replies -->
-			<div class="thread">
 
-				<div class="tweet">
-					<img src="images/rockit.png">
-					<div class="body">
-						<div class="title">@ROCKIT_BOOTCAMP</div>
-						<div class="message">tweet tweet!!</div>
-					</div>
-				</div>
+  <main>
+    <header>
+      <form class="compose">
+        <textarea placeholder="Compose new Tweet..."></textarea>
+        <div>
+          <span class="count">140</span>
+          <button>Send</button>
+        </div>
+      </form>
+    </header>
+    <section class="tweets">
 
-				<div class="replies">
-					
-					<form class="compose">
-						<textarea placeholder="Compose new Tweet..."></textarea>
-						<div>
-							<span class="count">140</span>
-							<button>Send</button>
-						</div>
-					</form>
+      <!-- Thread with no replies -->
+      <section class="thread">
 
-				</div>
+        <article class="tweet">
+          <aside>
+            <img src="images/rockit.png">
+          </aside>
+          <section class="body">
+            <div class="title">@ROCKIT_BOOTCAMP</div>
+            <div class="message">tweet tweet!!</div>
+          </section>
+        </article>
 
-			</div>
+        <section class="replies">
 
-			<!-- Thread with 2 Replies -->
-			<div class="thread">
+          <form class="compose">
+            <textarea placeholder="Compose new Tweet..."></textarea>
+            <div>
+              <span class="count">140</span>
+              <button>Send</button>
+            </div>
+          </form>
 
-				<div class="tweet">
-					<img src="images/rockit.png">
-					<div class="body">
-						<div class="title">@ROCKIT_BOOTCAMP</div>
-						<div class="message">Hey who wants to teach?</div>
-					</div>
-				</div>
+        </section>
 
-				<div class="replies">
-					
-					<form class="compose">
-						<textarea placeholder="Compose new Tweet..."></textarea>
-						<div>
-							<span class="count">140</span>
-							<button>Send</button>
-						</div>
-					</form>
+      </section>
 
-					<div class="tweet">
-						<img src="images/brad.png">
-						<div class="body">
-							<div class="title">@bradwestfall</div>
-							<div class="message">I do!</div>
-						</div>
-					</div>
+      <!-- Thread with 2 Replies -->
+      <section class="thread">
 
-					<div class="tweet">
-						<img src="images/rockit.png">
-						<div class="body">
-							<div class="title">@ROCKIT_BOOTCAMP</div>
-							<div class="message">sweet!</div>
-						</div>
-					</div>
+        <article class="tweet">
+          <aside>
+            <img src="images/rockit.png">
+          </aside>
+          <section class="body">
+            <div class="title">@ROCKIT_BOOTCAMP</div>
+            <div class="message">Hey who wants to teach?</div>
+          </section>
+        </article>
 
-				</div>
+        <section class="replies">
 
-			</div>
+          <form class="compose">
+            <textarea placeholder="Compose new Tweet..."></textarea>
+            <div>
+              <span class="count">140</span>
+              <button>Send</button>
+            </div>
+          </form>
 
-		</div>
-	</main>
+          <article class="tweet">
+            <aside>
+              <img src="images/brad.png">
+            </aside>
+            <section class="body">
+              <div class="title">@bradwestfall</div>
+              <div class="message">I do!</div>
+            </section>
+          </article>
 
-	<script id="template-tweet" type="text/x-handlebars-template">
-	</script>
+          <article class="tweet">
+            <aside>
+              <img src="images/rockit.png">
+            </aside>
+            <section class="body">
+              <div class="title">@ROCKIT_BOOTCAMP</div>
+              <div class="message">sweet!</div>
+            </section>
+          </article>
 
-	<script id="template-thread" type="text/x-handlebars-template">
-	</script>
+        </section>
 
-	<script id="template-compose" type="text/x-handlebars-template">
-	</script>
+      </section>
+
+    </section>
+  </main>
+
+  <script id="template-tweet" type="text/x-handlebars-template">
+  </script>
+
+  <script id="template-thread" type="text/x-handlebars-template">
+  </script>
+
+  <script id="template-compose" type="text/x-handlebars-template">
+  </script>
 
 </body>
 </html>
