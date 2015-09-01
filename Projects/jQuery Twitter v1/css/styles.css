@@ -3,20 +3,27 @@
 *****************************************/
 
 html {
-	color: #777;
-	font-family: 'Open Sans', Arial;
+  color: #777;
+  font-family: 'Open Sans', Arial;
 }
 * {
-	box-sizing: border-box;
-	color: inherit;
-	font-family: inherit;
-	font-size: inherit;
+  box-sizing: border-box;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
 }
-html, body { height: 100%; padding: 0; margin: 0; }
-body { min-height: 100%; }
-img { border: 0; }
+html, body {
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 100%;
+}
+img {
+  border: 0;
+}
 a:focus, a:active, button:focus {
-	outline: 0;
+  outline: 0;
 }
 
 
@@ -25,16 +32,16 @@ a:focus, a:active, button:focus {
 *****************************************/
 
 a {
-	color: #2E9AC2;
-	text-decoration: none;
+  color: #2E9AC2;
+  text-decoration: none;
 }
 
 button {
-	background-color: #2E9AC2;
-	border-radius: 5px;
-	border: none;
-	color: #FFF;
-	padding: 5px 15px;
+  background-color: #2E9AC2;
+  border-radius: 5px;
+  border: none;
+  color: #FFF;
+  padding: 5px 15px;
 }
 
 
@@ -43,35 +50,35 @@ button {
 *****************************************/
 
 .compose > div {
-	margin-top: 10px;
-	text-align: right;
-	display: none;
+  margin-top: 10px;
+  text-align: right;
+  display: none;
 }
 
 .compose textarea {
-	border-radius: 3px;
-	background-color: #fff;
-	border: 1px solid #C0E1ED;
-	display: block;
-	width: 100%;
-	padding: 4px;
-	resize: none;
-	height: 1.8em;
+  border-radius: 3px;
+  background-color: #fff;
+  border: 1px solid #C0E1ED;
+  display: block;
+  width: 100%;
+  padding: 4px;
+  resize: none;
+  height: 1.8em;
 }
 
 .compose textarea:focus {
-	outline: none;
+  outline: none;
 }
 
 /**
  * Active State
  */
 .compose.expand textarea {
-	height: 5em;
+  height: 5em;
 }
 
 .compose.expand > div {
-	display: block;
+  display: block;
 }
 
 
@@ -80,60 +87,68 @@ button {
 *****************************************/
 
 .tweet {
-	overflow: hidden;
+  display: flex;
+  /* flex-direction: row; */
 }
 
-.tweet > img {
-	display: block;
-	float: left;
-	width: 60px;
-	height: 60px;
-	background-color: #eee;
-	border-radius: 4px;
+.tweet > aside {
+  width: 60px;
+  height: 60px;
+  background-color: #eee;
+  border-radius: 4px;
 }
 
-.tweet .body {
-	margin-left: 60px;
-	padding-left: 10px;
+.tweet > aside img {
+  width: 100%;
+  height: 100%;
+}
+
+.tweet > section.body {
+  flex: 1;
+  margin-left: 10px;
 }
 
 .tweet .title {
-	font-weight: 700;
-	color: #333;
+  font-weight: 700;
+  color: #333;
 }
 
 .tweet .message {
-	margin-top: 10px;
+  margin-top: 10px;
 }
-
 
 /****************************************
   Structure
 *****************************************/
 
 body {
-	background: rgb(192, 222, 237) url('../images/bg.png') repeat-x;
+  background: rgb(192, 222, 237) url('../images/bg.png') repeat-x;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 main {
-	width: 600px;
-	margin: 0 auto;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-	margin-top: 20px;
-	background-color: #E5F2F7;
-	border: 1px solid #C0E1ED;
-	border-radius: 10px;
-	padding: 10px;
+  margin-top: 20px;
+  background-color: #E5F2F7;
+  border: 1px solid #C0E1ED;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .tweets {
-	margin-top: 10px;
-	background-color: #fff;
-	border: 1px solid #C0E1ED;
-	border-radius: 10px;
-	overflow: hidden;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 10px;
+  background-color: #fff;
+  border: 1px solid #C0E1ED;
+  border-radius: 10px;
 }
 
 /**
@@ -141,24 +156,26 @@ header {
  */
 
 .thread {
-	border-bottom: 1px solid #E1E8ED;
+  border-bottom: 1px solid #E1E8ED;
 }
 
 .thread .tweet {
-	margin: 10px;
+  margin: 10px;
 }
 
 .replies {
-	padding: 10px;
-	background-color: #E5F2F7;
-	display: none;
+  padding: 10px;
+  background-color: #E5F2F7;
+  display: none;
 }
 
 .replies .compose {
-	border-bottom: 1px solid #C4D8E6;
-	padding-bottom: 10px;
+  order: 99999;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #C4D8E6;
 }
 
 .thread.expand .replies {
-	display: block;
+  display: flex;
+  flex-direction: column-reverse;
 }
