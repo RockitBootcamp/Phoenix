@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            spadding: 10px;
+            border: 1px solid black;
+            background-color: red;
+            margin: 10px;
+        }
+
+        p {
+            padding: 10px;
+            margin: 10px;
+            sborder: 5px solid rgba(255,0,0,0.5);
+            background-color: green;
+            
+        }
+
+        p.special {
+            margin: 20px;
+        }
+
+        /*p::after{
+            content: ".";
+            display:block;
+        }*/
+
+         
+    </style>
+</head>
+<body>
+
+    <div>
+        <p>Hello</p>
+        <p class="special">Hello</p>
+        <p>Hello</p>
+    </div>
+    
+</body>
+</html>
+<!-- 
+// 1. Show me parent child collapsing margins... demo that it happens
+
+// 2. Show me sibling collapsing margins
+
+
+// 3. Show the difference in width between normal vs border-box
+
+// 4. Show me the layers of the box model
+
+// Bonus
+
+    Create a situation where there are three siblings with margins:
+
+    10px
+    Content
+    20px
+    Content
+    20px
+    Content
+    10px
+
+
+ -->

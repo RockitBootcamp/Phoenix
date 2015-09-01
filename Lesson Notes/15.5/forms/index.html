@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1>Fun with Forms</h1>
+
+    <form method="post" action="backend.php">
+        <label>First Name: 
+            <input type="text" name="firstName" placeholder="Fill me out">
+        </label>
+        <label>Last Name: 
+            <input type="text" name="lastName">
+        </label>
+        <label for="married">Married: </label>
+        <input type="checkbox" name="married" id="married">
+
+        <input type="radio" name="emotion" value="hap">Happy</input>
+        <input type="radio" name="emotion" value="sad">Sad</input>
+        
+        <label>Password: 
+            <input type="password" name="password">
+        </label>
+
+        <input type="hidden" name="cantSeeMe" value="special">
+        
+        <select name="state">
+            <option value="AZ">Arizona</option>
+            <option value="CA">California</option>
+            <option value="TX">Texas</option>
+        </select>
+
+        <input type="submit">
+    </form>
+
+
+
+</body>
+</html>
