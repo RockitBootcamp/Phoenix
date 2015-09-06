@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./JavaScript/**/test.js"
+    "test": "mocha ./JavaScript/**/test.js --reporter nyan"
   },
   "author": "Kevin Lanni <therealklanni@gmail.com> (https://github.com/therealklanni)",
   "license": "MIT",

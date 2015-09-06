@@ -1,13 +1,14 @@
 // Solve the issues with the following code (make it work)
 // Check your code by running `npm test` in your terminal
 
-// Is array1 correct?
+// Is array1 correct? (uncomment and solve)
 
 var array1 = (1, 2, 3, 4, 5, 42);
 
-// Get the value at position 5, is this code correct?
+// Get the value at position 5, is this code correct? (uncomment and solve)
 
-var value1 = array1(5);
+var value1
+// value1 = array1(5);
 
 // Accessing with a variable: get the 3rd value
 

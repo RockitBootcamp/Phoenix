@@ -1,7 +1,5 @@
-var chai = require('chai');
-var sinon = require('sinon');
-var expect = chai.expect;
-chai.use(require('sinon-chai'));
+var chai = require('chai')
+var expect = chai.expect
 
 var solutions = require('./solve')
 
