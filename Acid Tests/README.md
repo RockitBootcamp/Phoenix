@@ -13,3 +13,19 @@ When you're ready to check your answers, run `npm test` from your terminal (in t
 > :fire: :fire: :fire: ***DO NOT OPEN OR EDIT ANY OF THE `test.js` FILES*** :fire: :fire: :fire:
 
 *Good luck!* If you complete them all successfully, there will be cake :cake:
+
+## Running the tests
+
+Run all tests using the following command. This will tell you how many tests you have passed and how many are still failing.
+
+```
+npm test
+```
+
+To run only the tests for an individual discipline, `cd` to that directory and run the following command.
+
+```
+mocha
+```
+
+> :warning: Make sure Mocha is installed globally: `npm install -g mocha` to use the `mocha` command.
