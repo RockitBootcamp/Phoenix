@@ -63,59 +63,10 @@ For this project, place all your classes in a folder called `classes`. Each clas
 
 The classes you need to make are as follows:
 
-- `ErrorManager`
-- `UserLogin`
 - `Validator`
 - `PasswordValidator extends Validator`
 - `UsernameValidator extends Validator`
 
-### ErrorManager
-
-The `ErrorManager` class will allow you to keep track of errors for input fields. It should have three methods:
-
-- `addError($name, $message)`
-- `getError($name)`
-- `hasErrors()`
-
-Using this class would work as follows:
-
-```php
-
-$errors = new ErrorManager();
-
-$errors->addError('username', 'This value isn\'t set');
-
-if ($errors->hasErrors()) {
-    // this would happen because our error object has errors
-}
-```
-
-### UserLogin
-
-The `UserLogin` class will start user sessions and end user sessions among other things. It should have four methods:
-
-- `startSession($username)`
-- `isLogged()`
-- `logout()`
-- `getUsername()`
-
-Using this class would work as follows:
-
-```php
-session_start();
-
-$userLogin = new UserLogin;
-
-$userLogin->startSession('davesmith');
-if ($userLogin->isLogged()) {
-    // This would happen because we're logged
-}
-
-$userLogin->logout();
-if ($userLogin->isLogged()) {
-    // This would not happen because we're not logged anymore
-}
-```
 
 ### Validation
 
@@ -135,15 +86,3 @@ The Regular expressions needed are as follows:
 
 The method `isValid($value)` should only return a `true` or `false`
 
-
-### Initializer
-
-Remember that only certain PHP files are intended for the user to visit in the browser. Other PHP files exist to facilitate the former. For now, let's call those files that the user visits in the browser "controllers". For this project, your controllers are `index.php`, `account.php` and `logout.php`.
-
-It's common when creating an application for each controller to need the same setup. In the case of this project, the setup would include doing a session start:
-
-```
-session_start();
-```
-
-... and doing all the necessary requires for other PHP files. Instead of having all this setup at the top of each controller, let's create a PHP file called `initialize.php`. Then from each controller let's include the initialize file which then do all the setup stuff that we need.
