@@ -1,0 +1,90 @@
+Terminal Commands
+
+pwd
+Print Working Directory
+(shows which directory we're currently in)
+
+ls
+list files and directories from current directory (or specified dir)
+
+ls -l
+list files in longer format
+
+ls -a
+list all files (includes "dotfiles" hidden files)
+
+cd
+change dir
+
+rm
+remove files
+
+rm -rf
+recursively remove files and dirs
+
+cat
+prints file contents
+
+nano
+text editor of champions
+
+vi/vim
+text editor of losers
+
+mv
+move files/directories
+
+sudo
+gives permission to do awesome things
+
+touch
+create empty file
+
+mkdir
+makes directories
+
+clear
+clears the screen
+
+rmdir
+removes directories
+
+man
+manual pages for given command
+
+(with any command) --help
+
+cp
+copies files
+
+cp -r
+recursively copy folders
+
+Bash:
+\ - escape character (treat next character literally)
+"" - treat everything inside literally
+- : single character options (e.g -l)
+-- : "word" options (e.g. --help)
+:q - most of the time: quit
+
+(arrow up)
+command history
+
+(tab)
+completes command/filename
+
+wildcards
+- * placeholder for "anything"
+- ? placeholder for single character
+
+.
+current directory (aka "here")
+
+..
+up one dir (aka "parent dir")
+
+~
+Home dir
+
+!!
+"last command"
