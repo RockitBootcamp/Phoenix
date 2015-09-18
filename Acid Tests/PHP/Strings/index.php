@@ -12,7 +12,7 @@ $noun2 = "";
 
 // Then fix each string to see the funny phrases!
 
-$string = '$exclamation! he said $adverb as he jumped into his convertible $noun and drove off with his $adjective1 wife.';
+$string = '$adjective3' . ' had a '. '$noun3' . ', E-I-E-I-O';
 
 echo $string;
 
@@ -24,6 +24,6 @@ $string = $noun1 "is the new" $noun2;
 
 echo $string;
 
-$string = '$adjective3' . ' had a '. '$noun3' . ', E-I-E-I-O';
+$string = '$exclamation! he said $adverb as he jumped into his convertible $noun and drove off with his $adjective1 wife.';
 
 echo $string;
