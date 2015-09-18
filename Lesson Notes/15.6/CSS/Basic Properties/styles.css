@@ -1,0 +1,18 @@
+/*div {
+    width: 200px;
+    height: 200px;
+    background-image: url("download.png");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 50%;
+}*/
+
+div {
+    background-color: red;
+    margin: 20px;
+    margin: 20px 70px;
+    margin-top: 40px;
+    padding: 10px;
+}

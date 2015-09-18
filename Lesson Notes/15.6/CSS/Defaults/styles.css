@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+}
+
+div {
+    background-color: red;
+}
+
+span {
+    background-color: green;
+    display: inline-block;
+    padding: 10px;
+}

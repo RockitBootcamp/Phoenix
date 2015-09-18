@@ -1,0 +1,12 @@
+.recent-login .user {
+    background-color: #aaa;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.recent-login .user.admin {
+    background-color: yellow;
+}
+
+
