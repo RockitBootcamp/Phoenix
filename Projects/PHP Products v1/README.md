@@ -91,7 +91,7 @@ Spacing makes things easier to read. Be sure to use spaces around your PHP tags 
 </head>
 <body>
 
-	<?php require_once('header.php'); ?>
+	<?php require_once 'header.php'; ?>
 	
 	<main>
 	</main>
