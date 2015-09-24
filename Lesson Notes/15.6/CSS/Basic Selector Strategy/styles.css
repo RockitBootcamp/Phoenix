@@ -1,0 +1,6 @@
+/*div > ul li:last-child {
+    color: red;
+}*/
+div > ul {
+    color: blue;
+}
