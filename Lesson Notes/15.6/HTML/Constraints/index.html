@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <form>
+    <input pattern="" type="email" name="email">
+
+    <input type="number" name="dogAge">
+
+    <input type="date" name="date">
+
+    <input list="numberList">
+    <datalist id="numberList">
+      <option value="1">one</option>
+      <option value="2">two</option>
+      <option value="3">three</option>
+    </datalist>
+
+    <input type="search" name="search">
+
+    <textarea name="blogPost" id="whatevs"></textarea>
+
+    <input type="range" name="hotWingz" min="0" max="10" value="8" step="5">
+
+    <button>Submit</button>
+  </form>
+
+  <form>
+    <h1>PizzaShack</h1>
+    <div>
+      <label>First Name
+        <input required pattern="\d+" type="text" name="first" placeholder="Atari">
+      </label>
+    </div>
+    <div>
+      <label>Last Name
+        <input type="text" name="last" placeholder="Dayde">
+      </label>
+    </div>
+
+    <div>
+      <label>Address: <input type="text" name="address" placeholder="123 Sesame St"></label>
+    </div>
+
+    <label>
+      Payment Method:
+      <label><input type="radio" name="paymentType" checked value="Cash"> Cash</label>
+      <label><input type="radio" name="paymentType" value="Credit"> Credit</label>
+    </label>
+
+    <div>
+      <label>Card Number <input type="text" name="cc"></label>
+    </div>
+
+    <div>
+      <label>Delivery Date<input type="datetime-local"></label>
+    </div>
+
+    <label>Size
+    <select name="" id="">
+      <option value="1">Small</option>
+      <option value="2">Medium</option>
+      <option value="2.1">Super Medium</option>
+      <option value="9001" selected>Super Duper Extra Mega Gargantua-Large</option>
+    </select>
+    </label>
+
+    <div>
+      <label>Saucy<input type="range" min=2 max=17></label>
+    </div>
+
+    <button>Where's my pizza?</button>
+  </form>
+</body>
+</html>
+
+<!--
+- name first/last
+- address
+- payment option (cash/credit)
+- creditcard
+- delivery date
+- delivery time
+
+- size (s/m/l)
+- sauce (marinara/white)
+- sauceyness
+- toppings (6+)
+- extras (red pepper, parmesan packet)
+- crust (deep dish / thin)
+
+- Drinks (2)
+- num of drinks
+
+- Sign up for super spam extravaganva??
+(*) yes
+
+- Special instructions
+
+- password
+
+- submit
+- reset
