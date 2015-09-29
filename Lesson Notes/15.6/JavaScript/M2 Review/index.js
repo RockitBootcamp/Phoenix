@@ -51,3 +51,69 @@ console.dir(Number('5'));
 console.dir(String(5));
 console.dir(Boolean(-1));
 
+
+
+
+
+var x = y + z;
+
+if (x === y) {
+
+}
+
+if (x && y) {
+  drawCircle(x, y)
+}
+
+if (x === Number(y)) {
+
+}
+
+
+Number()
+String()
+
+// (int)$y
+// (string)$z
+
+function boolean(what) {
+  return !!what;
+}
+
+
+
+Boolean()
+!!foo;
+
+
+
+var x = !5; // => false
+var y = !true; // => false
+var z = !!false; // => false
+var zz = !!y;
+var yy = Boolean(zz);
+
+
+
+
+var x = undefined;
+
+
+
+
+var a = !null; // => true
+var b = !!null; // => false
+
+var c = !undefined; // => true
+var d = !!undefined; // => false
+var e = !!!undefined; // => true
+
+console.log(c, d);
+
+
+/*
+undefined = 'hello'
+
+console.log(undefined)
+*/
+
