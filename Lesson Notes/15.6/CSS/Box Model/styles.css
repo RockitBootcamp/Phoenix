@@ -1,0 +1,13 @@
+div {
+    background-color: red;
+}
+
+header {
+    background-color: blue;
+    padding-left: 4px;
+    overflow: hidden;
+}
+
+p {
+    background-color: yellow;
+}
