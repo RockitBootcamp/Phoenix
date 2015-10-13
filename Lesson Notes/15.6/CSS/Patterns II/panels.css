@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+}
+
+.panel > div {
+    width: 960px;
+    margin: 0 auto;
+    min-height: 200px;
+}
+
+.panel.services {
+    background-color: blue;
+}
+
+.panel.hero {
+    background-color: orange;
+}

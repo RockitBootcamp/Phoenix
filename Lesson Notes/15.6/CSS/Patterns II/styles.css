@@ -1,0 +1,22 @@
+.container {
+    width: 500px;
+    background-color: orange;
+}
+
+.container::after {
+    content: '';
+    display: block;
+    clear: left;
+}
+
+
+
+.tile {
+    float: left;
+    width: 60px;
+    height: 60px;
+    background-color: lightblue;
+    margin: 10px;
+}
+
+
