@@ -31,8 +31,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <button>Submit</button>
 
         <ul>
-            <?php foreach($puppies as $puppy){?>
-                <li class="puppy"><span><?= $puppy ?></span> <a href="#">Remove</a></li>
+            <?php foreach($puppies as $id=>$puppy){?>
+                <li class="puppy"><span><?= $puppy ?></span> <a href="#">Remove</a><p><?= $id ?></p></li>
             <?php } ?>
         </ul>
     </form>
