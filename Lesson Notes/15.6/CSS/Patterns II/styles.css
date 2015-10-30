@@ -1,22 +1,21 @@
-.container {
-    width: 500px;
-    background-color: orange;
+header {
+    background-color: red;
+    padding: 4px;
+    height: 80px;
+    position: relative;
 }
 
-.container::after {
-    content: '';
-    display: block;
-    clear: left;
+.logo {
+    background-color: green;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    
 }
 
-
-
-.tile {
-    float: left;
-    width: 60px;
-    height: 60px;
-    background-color: lightblue;
-    margin: 10px;
+nav {
+    background-color: green;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
 }
-
-
