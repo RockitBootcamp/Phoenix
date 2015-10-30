@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Response;
 use PDO;
 
 Class RaceController extends Controller {
@@ -91,8 +92,8 @@ Class RaceController extends Controller {
         if(isset($_POST["raceId"])){
             $raceId = $_POST["raceId"];
         }
-
-        response()->json(["message"=>"Good job"]);
+        // echo ("Removed");
+        return response()->json(["message"=>"Good job"]);
         
 
     }
