@@ -1,42 +1,24 @@
 {
   "teams": [
     {
-      "id": 1,
-      "name": "Suns"
+      "name": "The Suns",
+      "city": "Phoenix",
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "Heat"
-    },
-    {
-      "name": "Sonics",
-      "city": "Seatle",
-      "id": 3
+      "name": "Lakers",
+      "city": "LA",
+      "id": 2
     },
     {
       "name": "foo",
       "city": "bar",
+      "id": 3
+    },
+    {
+      "name": "New Team",
+      "city": "New Team",
       "id": 4
-    },
-    {
-      "name": "davw",
-      "city": "sdfds",
-      "id": 5
-    },
-    {
-      "name": "Bull",
-      "city": "Chicago",
-      "id": 6
-    },
-    {
-      "name": "Lakers",
-      "city": "La",
-      "id": 7
-    },
-    {
-      "name": "Cardinals",
-      "city": "AZ",
-      "id": 8
     }
   ]
 }

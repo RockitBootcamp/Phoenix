@@ -10,6 +10,7 @@
 <body>
 
 <form>
+    <input type="hidden" class="teamId">
     Name: <input type="text" class="name">
     City: <input type="text" class="city">
     <button>Submit</button>
@@ -19,8 +20,13 @@
 </ul>
 
 
+
 <script id="li-template" type="foo">
-    <li data-id="{{id}}">{{name}}</li>
+    <li data-id="{{id}}">
+        {{name}}
+        <button class="update">Update</button>
+        <button class="delete">Delete</button>
+    </li>
 </script>
     
 </body>
