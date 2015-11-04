@@ -1,0 +1,42 @@
+{
+  "teams": [
+    {
+      "id": 1,
+      "name": "Suns"
+    },
+    {
+      "id": 2,
+      "name": "Heat"
+    },
+    {
+      "name": "Sonics",
+      "city": "Seatle",
+      "id": 3
+    },
+    {
+      "name": "foo",
+      "city": "bar",
+      "id": 4
+    },
+    {
+      "name": "davw",
+      "city": "sdfds",
+      "id": 5
+    },
+    {
+      "name": "Bull",
+      "city": "Chicago",
+      "id": 6
+    },
+    {
+      "name": "Lakers",
+      "city": "La",
+      "id": 7
+    },
+    {
+      "name": "Cardinals",
+      "city": "AZ",
+      "id": 8
+    }
+  ]
+}
