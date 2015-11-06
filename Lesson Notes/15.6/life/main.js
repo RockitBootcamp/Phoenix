@@ -44,14 +44,14 @@ $(function() {
             users.forEach(function(user) {
                 var result = template(user)
                 $('ul').append(result)
+                plot(user.lat, user.lng, user.name)
             })
 
         })
 
     };
 
-    // Initial Call
-    loadTeams();
+
 
 
     $('ul').on('click', 'button.delete', function() {
@@ -83,5 +83,30 @@ $(function() {
 
 
     });
+
+
+    var map = new GMaps({
+      div: '.map',
+      lat: -12.043333,
+      lng: -77.028333
+    });
+
+
+
+    var plot = function(lat, lng, name) {
+        
+        map.addMarker({
+          lat: lat,
+          lng: lng,
+          title: name,
+          click: function(e) {
+            console.log('you clicked the' + this.title + 'city');
+          }
+        });
+
+    }
+
+    // Initial Call
+    loadTeams();
 
 })

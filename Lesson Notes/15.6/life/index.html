@@ -5,7 +5,12 @@
     <title>Document</title>
     <script src="/node_modules/jquery/dist/jquery.js"></script>
     <script src="/node_modules/handlebars/dist/handlebars.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="/bower_components/gmaps/gmaps.js"></script>
     <script src="/main.js"></script>
+    <style>
+    div.map {width: 500px; height: 300px; background-color: yellow;}
+    </style>
 </head>
 <body>
 
@@ -15,6 +20,8 @@
     City: <input type="text" class="city">
     <button>Submit</button>
 </form>
+
+<div class="map"></div>
 
 <ul>
 </ul>
