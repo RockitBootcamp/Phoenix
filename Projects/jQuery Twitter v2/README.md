@@ -169,7 +169,7 @@ You can also use `curl` to test all of the other available endpoints, to see wha
 
 Before you can begin work on the UI/UX, you'll need to get Browserify working with gulp. The required modules are already saved to package.json.
 
-You have been provided a `gulpfile.js` by default with some gulp tasks already created for you. However, you will need to create the `build` and `clean` tasks yourself.
+You have been provided a `gulpfile.js` by default with some gulp tasks already created for you. However, you will need to create the `default`, `lint`, and `clean` tasks yourself.
 
 Available tasks are:
 
@@ -184,7 +184,7 @@ For the `lint` task, you will need to use the "gulp-jshint" package from npm. Ad
 
 ### clean
 
-For the `clean` task, simply delete the `js/bundle.js` file to "clean up" your project files.
+For the `clean` task, simply delete the `js/bundle.js` file to "clean up" your project files. Use the "del" npm package.
 
 > On larger projects, everything might be built into a special build directory, and a `clean` task would be responsible for removing the build directory to ensure the new build is clean of any old files.
 
